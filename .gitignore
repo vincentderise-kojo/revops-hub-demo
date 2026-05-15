@@ -2,3 +2,5 @@
 
 # Contract PDF fixtures — customer-signed, local-only
 lib/contract-acr/fixtures/*.pdf
+.vercel/*
+!.vercel/project.json
