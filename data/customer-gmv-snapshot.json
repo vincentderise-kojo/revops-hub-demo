@@ -1,0 +1,5633 @@
+{
+  "windowEnd": "2026-03-31",
+  "generatedAt": "2026-04-23T17:35:37.817Z",
+  "source": "Luke Brown 2025_09 GMV Backup.xlsx · Customer Summary",
+  "recordCount": 625,
+  "records": [
+    {
+      "sfdcId18": "0014x00000BSs16AAD",
+      "sfdcId15": "0014x00000BSs16",
+      "customer": "W. Bradley Electric, LLC.",
+      "annualRevenue": 112000000,
+      "trade": "Electrical",
+      "t12Gmv": 17625675,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000BSs62AAD",
+      "sfdcId15": "0014x00000BSs62",
+      "customer": "RC Power Inc",
+      "annualRevenue": 6700000,
+      "trade": "Electrical",
+      "t12Gmv": 5230605,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSuhcAAD",
+      "sfdcId15": "0014x00000BSuhc",
+      "customer": "Emerald Standard",
+      "annualRevenue": 6219000,
+      "trade": "Electrical",
+      "t12Gmv": 3124264,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSuhdAAD",
+      "sfdcId15": "0014x00000BSuhd",
+      "customer": "A-1 Electric Service Co, Inc.",
+      "annualRevenue": 9090898,
+      "trade": "Electrical",
+      "t12Gmv": 243339,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSuheAAD",
+      "sfdcId15": "0014x00000BSuhe",
+      "customer": "OWL Services USA",
+      "annualRevenue": 90000000,
+      "trade": "Electrical",
+      "t12Gmv": 21517894,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSuhfAAD",
+      "sfdcId15": "0014x00000BSuhf",
+      "customer": "T&T Electrical Contractors, Inc.",
+      "annualRevenue": 8000000,
+      "trade": "Electrical",
+      "t12Gmv": 530225,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSuhgAAD",
+      "sfdcId15": "0014x00000BSuhg",
+      "customer": "Carol Electric",
+      "annualRevenue": 22000000,
+      "trade": "Electrical",
+      "t12Gmv": 5819125,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSuhlAAD",
+      "sfdcId15": "0014x00000BSuhl",
+      "customer": "Edge Electric",
+      "annualRevenue": 10207000,
+      "trade": "Electrical",
+      "t12Gmv": 9334809,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSuhmAAD",
+      "sfdcId15": "0014x00000BSuhm",
+      "customer": "K2 Electric LLC",
+      "annualRevenue": 56000000,
+      "trade": "Electrical",
+      "t12Gmv": 17721656,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSuhVAAT",
+      "sfdcId15": "0014x00000BSuhV",
+      "customer": "National Electric Works",
+      "annualRevenue": 32000000,
+      "trade": "Electrical",
+      "t12Gmv": 9251169,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSuhXAAT",
+      "sfdcId15": "0014x00000BSuhX",
+      "customer": "IHS Electrical Services, LLC",
+      "annualRevenue": 1700000,
+      "trade": "Electrical",
+      "t12Gmv": 154013,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSunlAAD",
+      "sfdcId15": "0014x00000BSunl",
+      "customer": "McGrath Electric, Inc.",
+      "annualRevenue": 30000000,
+      "trade": "Electrical",
+      "t12Gmv": 5200536,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSunmAAD",
+      "sfdcId15": "0014x00000BSunm",
+      "customer": "Nova Power Systems",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 4821269,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSunpAAD",
+      "sfdcId15": "0014x00000BSunp",
+      "customer": "NSW Integrated Systems",
+      "annualRevenue": 3612000,
+      "trade": "Electrical",
+      "t12Gmv": 2126494,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSunqAAD",
+      "sfdcId15": "0014x00000BSunq",
+      "customer": "Armour & Sons Electric, Inc.",
+      "annualRevenue": 50000000,
+      "trade": "Electrical",
+      "t12Gmv": 594139,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSunrAAD",
+      "sfdcId15": "0014x00000BSunr",
+      "customer": "Fox Valley Electric",
+      "annualRevenue": 5300075,
+      "trade": "Electrical",
+      "t12Gmv": 564235,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSuntAAD",
+      "sfdcId15": "0014x00000BSunt",
+      "customer": "Owen Electric",
+      "annualRevenue": 48952330,
+      "trade": "Electrical",
+      "t12Gmv": 25164720,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSunvAAD",
+      "sfdcId15": "0014x00000BSunv",
+      "customer": "Echo ED Corporation",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 3195921,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSunxAAD",
+      "sfdcId15": "0014x00000BSunx",
+      "customer": "D&S Electrical Technologies",
+      "annualRevenue": 13275000,
+      "trade": "Electrical",
+      "t12Gmv": 650797,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSvRuAAL",
+      "sfdcId15": "0014x00000BSvRu",
+      "customer": "Land Mark Electric, Inc.",
+      "annualRevenue": 73507000,
+      "trade": "Electrical",
+      "t12Gmv": 16461336,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BSvRwAAL",
+      "sfdcId15": "0014x00000BSvRw",
+      "customer": "Long Electric",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 1631028,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000BVOH8AAP",
+      "sfdcId15": "0014x00000BVOH8",
+      "customer": "James Babcock Inc.",
+      "annualRevenue": 62000000,
+      "trade": "Electrical",
+      "t12Gmv": 3580089,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cvNXXAA2",
+      "sfdcId15": "0014x00000cvNXX",
+      "customer": "Associated Mechanical Contractors, Inc.",
+      "annualRevenue": 64400000,
+      "trade": "Mechanical",
+      "t12Gmv": 28291813.91,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cvOVrAAM",
+      "sfdcId15": "0014x00000cvOVr",
+      "customer": "Service Complete Electric, Inc.",
+      "annualRevenue": 35000000,
+      "trade": "Electrical",
+      "t12Gmv": 6459304,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cvOW3AAM",
+      "sfdcId15": "0014x00000cvOW3",
+      "customer": "Alessandro Electric",
+      "annualRevenue": 16196000,
+      "trade": "Electrical",
+      "t12Gmv": 1288420,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cvOWHAA2",
+      "sfdcId15": "0014x00000cvOWH",
+      "customer": "Carey Electric, Inc.",
+      "annualRevenue": 6069000,
+      "trade": "Electrical",
+      "t12Gmv": 4085096,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cvW0PAAU",
+      "sfdcId15": "0014x00000cvW0P",
+      "customer": "Specialized Electric",
+      "annualRevenue": 4000000,
+      "trade": "Electrical",
+      "t12Gmv": 1102731,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cvX0sAAE",
+      "sfdcId15": "0014x00000cvX0s",
+      "customer": "Allied Electric, Inc.",
+      "annualRevenue": 3000000,
+      "trade": "Electrical",
+      "t12Gmv": 717391,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cw0yeAAA",
+      "sfdcId15": "0014x00000cw0ye",
+      "customer": "Synergy Electrical",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 6009862,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000cw2aAAAQ",
+      "sfdcId15": "0014x00000cw2aA",
+      "customer": "Lynn Woodward Electric, LLC",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 1571572,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cw2huAAA",
+      "sfdcId15": "0014x00000cw2hu",
+      "customer": "Judge Electrical, Inc.",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 3084507,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cw2MLAAY",
+      "sfdcId15": "0014x00000cw2ML",
+      "customer": "Adirondack Cabling & Security",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 3512636,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cw3JqAAI",
+      "sfdcId15": "0014x00000cw3Jq",
+      "customer": "Connectivity Point",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 8174347,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cw5oeAAA",
+      "sfdcId15": "0014x00000cw5oe",
+      "customer": "St. Andrews Construction Services",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 2753584,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cw7c5AAA",
+      "sfdcId15": "0014x00000cw7c5",
+      "customer": "Advanced Cable Systems",
+      "annualRevenue": 3000000,
+      "trade": "Electrical",
+      "t12Gmv": 8994,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000cw7FJAAY",
+      "sfdcId15": "0014x00000cw7FJ",
+      "customer": "Sprint Electrical Service",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 18948,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000cw8U8AAI",
+      "sfdcId15": "0014x00000cw8U8",
+      "customer": "N & S Electric, Inc.",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 2442333,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cw8VLAAY",
+      "sfdcId15": "0014x00000cw8VL",
+      "customer": "Hobbs & Company, Inc.",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 5904836,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cw9QnAAI",
+      "sfdcId15": "0014x00000cw9Qn",
+      "customer": "Gold Star Electric, Inc.",
+      "annualRevenue": 2970000,
+      "trade": "Electrical",
+      "t12Gmv": 1958410,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwADvAAM",
+      "sfdcId15": "0014x00000cwADv",
+      "customer": "Champion Electrical Contracting LLC",
+      "annualRevenue": 9024000,
+      "trade": "Electrical",
+      "t12Gmv": 3368556,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwBKaAAM",
+      "sfdcId15": "0014x00000cwBKa",
+      "customer": "Florida Industrial Electric & All Electric Services",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 1588116,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwBl8AAE",
+      "sfdcId15": "0014x00000cwBl8",
+      "customer": "Yager Electric",
+      "annualRevenue": 6500000,
+      "trade": "Electrical",
+      "t12Gmv": 1503574,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwCieAAE",
+      "sfdcId15": "0014x00000cwCie",
+      "customer": "Empowered Electric",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 9546622,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwCivAAE",
+      "sfdcId15": "0014x00000cwCiv",
+      "customer": "Walter J Barnes Electric Co Inc",
+      "annualRevenue": 24000000,
+      "trade": "Electrical",
+      "t12Gmv": 7612806,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwCs4AAE",
+      "sfdcId15": "0014x00000cwCs4",
+      "customer": "Kaough & Jones Electric, Inc.",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 3200008,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwCwuAAE",
+      "sfdcId15": "0014x00000cwCwu",
+      "customer": "MD Electric Company",
+      "annualRevenue": 14000000,
+      "trade": "Electrical",
+      "t12Gmv": 3701585,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwD33AAE",
+      "sfdcId15": "0014x00000cwD33",
+      "customer": "Payne Electric Co., Inc.",
+      "annualRevenue": 40000000,
+      "trade": "Electrical",
+      "t12Gmv": 487607,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwD3JAAU",
+      "sfdcId15": "0014x00000cwD3J",
+      "customer": "MelKay",
+      "annualRevenue": 100000000,
+      "trade": "Electrical",
+      "t12Gmv": 13579485,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwDdrAAE",
+      "sfdcId15": "0014x00000cwDdr",
+      "customer": "Murphy Electric, Inc.",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 2559203,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwDeFAAU",
+      "sfdcId15": "0014x00000cwDeF",
+      "customer": "ADK Electric, Inc.",
+      "annualRevenue": 22000000,
+      "trade": "Electrical",
+      "t12Gmv": 7773281,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwDPvAAM",
+      "sfdcId15": "0014x00000cwDPv",
+      "customer": "C.M. Armitage Electrical Contracting Inc.",
+      "annualRevenue": 8000000,
+      "trade": "Electrical",
+      "t12Gmv": 244486,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwDQ1AAM",
+      "sfdcId15": "0014x00000cwDQ1",
+      "customer": "Connors - Haas, Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 1261514,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwEEfAAM",
+      "sfdcId15": "0014x00000cwEEf",
+      "customer": "Volta Systems Group",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 4232181,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwElVAAU",
+      "sfdcId15": "0014x00000cwElV",
+      "customer": "Innovolt Electric",
+      "annualRevenue": 6000000,
+      "trade": "Electrical",
+      "t12Gmv": 929561,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwEMsAAM",
+      "sfdcId15": "0014x00000cwEMs",
+      "customer": "C.B. Mills Electric",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 822168,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwENMAA2",
+      "sfdcId15": "0014x00000cwENM",
+      "customer": "Hage Electric & Construction Svcs., Inc.",
+      "annualRevenue": 3609000,
+      "trade": "Electrical",
+      "t12Gmv": 350850,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "0014x00000cwETGAA2",
+      "sfdcId15": "0014x00000cwETG",
+      "customer": "WB Moore Company",
+      "annualRevenue": 30000000,
+      "trade": "Electrical",
+      "t12Gmv": 6714220,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwF3GAAU",
+      "sfdcId15": "0014x00000cwF3G",
+      "customer": "Moonlite Electric & Construction, Inc.",
+      "annualRevenue": 17000000,
+      "trade": "Electrical",
+      "t12Gmv": 3125747,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000cwFauAAE",
+      "sfdcId15": "0014x00000cwFau",
+      "customer": "Bryan Electric Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 827484,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00000cwFKzAAM",
+      "sfdcId15": "0014x00000cwFKz",
+      "customer": "Chammings Electric, Inc.",
+      "annualRevenue": 12500000,
+      "trade": "Electrical",
+      "t12Gmv": 3403131,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwG1WAAU",
+      "sfdcId15": "0014x00000cwG1W",
+      "customer": "Liberty Integrated Solutions, Inc.",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 3792903,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwHqoAAE",
+      "sfdcId15": "0014x00000cwHqo",
+      "customer": "Arco Electric",
+      "annualRevenue": 15652000,
+      "trade": "Electrical",
+      "t12Gmv": 1044961,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000cwHvuAAE",
+      "sfdcId15": "0014x00000cwHvu",
+      "customer": "E. C. Tucker Electric, Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 2237327,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000cwHYiAAM",
+      "sfdcId15": "0014x00000cwHYi",
+      "customer": "Disher Electric, Inc.",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000cwIr6AAE",
+      "sfdcId15": "0014x00000cwIr6",
+      "customer": "Superior Electric of Lansing",
+      "annualRevenue": 25670200,
+      "trade": "Electrical",
+      "t12Gmv": 4285801,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000cwvu5AAA",
+      "sfdcId15": "0014x00000cwvu5",
+      "customer": "1901 Inc.",
+      "annualRevenue": 11962000,
+      "trade": "Mechanical",
+      "t12Gmv": 5808297.07,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwvu6AAA",
+      "sfdcId15": "0014x00000cwvu6",
+      "customer": "Coastal Electric Of Georgia, Inc. (Savannah)",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 2870228,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cww2WAAQ",
+      "sfdcId15": "0014x00000cww2W",
+      "customer": "Forte Construction",
+      "annualRevenue": 75000000,
+      "trade": "Electrical",
+      "t12Gmv": 12614150,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cwXz5AAE",
+      "sfdcId15": "0014x00000cwXz5",
+      "customer": "Harper Electric CIMS",
+      "annualRevenue": 40000000,
+      "trade": "Electrical",
+      "t12Gmv": 13281955,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000cxMVWAA2",
+      "sfdcId15": "0014x00000cxMVW",
+      "customer": "T.E.M. Group Inc.",
+      "annualRevenue": 16312000,
+      "trade": "Electrical",
+      "t12Gmv": 2112710,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cxMWGAA2",
+      "sfdcId15": "0014x00000cxMWG",
+      "customer": "A Tech Electric Enterprises",
+      "annualRevenue": 17379000,
+      "trade": "Electrical",
+      "t12Gmv": 3582149,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000cxYlkAAE",
+      "sfdcId15": "0014x00000cxYlk",
+      "customer": "Mountain Power Electrical Contractor, Inc.",
+      "annualRevenue": 6000000,
+      "trade": "Electrical",
+      "t12Gmv": 86527,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000D5CPSAA3",
+      "sfdcId15": "0014x00000D5CPS",
+      "customer": "Foster Electric Corp.",
+      "annualRevenue": 12200000,
+      "trade": "Electrical",
+      "t12Gmv": 298843,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000D8apTAAR",
+      "sfdcId15": "0014x00000D8apT",
+      "customer": "Team Kline",
+      "annualRevenue": 24060000,
+      "trade": "Electrical",
+      "t12Gmv": 21416421,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000D8aqHAAR",
+      "sfdcId15": "0014x00000D8aqH",
+      "customer": "Premier Service Company",
+      "annualRevenue": 25800000,
+      "trade": "Electrical",
+      "t12Gmv": 20420471,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000D8aqHAAR",
+      "sfdcId15": "0014x00000D8aqH",
+      "customer": "Premier Service Mechanical & Plumbing",
+      "annualRevenue": 25800000,
+      "trade": "Mechanical",
+      "t12Gmv": 7747007.13,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000D8d5zAAB",
+      "sfdcId15": "0014x00000D8d5z",
+      "customer": "R/S Electric Corp",
+      "annualRevenue": 68990722,
+      "trade": "Electrical",
+      "t12Gmv": 15028787,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000D8d6NAAR",
+      "sfdcId15": "0014x00000D8d6N",
+      "customer": "Lightning Electric Inc.",
+      "annualRevenue": 9408000,
+      "trade": "Electrical",
+      "t12Gmv": 430296,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000D8d6VAAR",
+      "sfdcId15": "0014x00000D8d6V",
+      "customer": "Billitier Electric, Inc.",
+      "annualRevenue": 27000000,
+      "trade": "Electrical",
+      "t12Gmv": 21837599,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000D8d7rAAB",
+      "sfdcId15": "0014x00000D8d7r",
+      "customer": "Cruiser Electric",
+      "annualRevenue": 7492000,
+      "trade": "Electrical",
+      "t12Gmv": 60347,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000D8d8nAAB",
+      "sfdcId15": "0014x00000D8d8n",
+      "customer": "Merit Electrical Co",
+      "annualRevenue": 50000000,
+      "trade": "Electrical",
+      "t12Gmv": 1242076,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000D8d8nAAB",
+      "sfdcId15": "0014x00000D8d8n",
+      "customer": "Merit Electrical, Inc.",
+      "annualRevenue": 50000000,
+      "trade": "Electrical",
+      "t12Gmv": 10994359,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000D8TwVAAV",
+      "sfdcId15": "0014x00000D8TwV",
+      "customer": "Excel Electric of Naples Inc",
+      "annualRevenue": 7804000,
+      "trade": "Electrical",
+      "t12Gmv": 194463,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x00000D8UR2AAN",
+      "sfdcId15": "0014x00000D8UR2",
+      "customer": "GSL Electric",
+      "annualRevenue": 71000000,
+      "trade": "Electrical",
+      "t12Gmv": 6281578,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRofhAAD",
+      "sfdcId15": "0014x00000FRofh",
+      "customer": "Gibson Electrical LLC",
+      "annualRevenue": 3000000,
+      "trade": "Electrical",
+      "t12Gmv": 444178,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x00000FRog7AAD",
+      "sfdcId15": "0014x00000FRog7",
+      "customer": "TEI Electrical Solutions",
+      "annualRevenue": 19000000,
+      "trade": "Electrical",
+      "t12Gmv": 1405770,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRohrAAD",
+      "sfdcId15": "0014x00000FRohr",
+      "customer": "Lumix Electrical, Inc.",
+      "annualRevenue": 6171000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000FRohuAAD",
+      "sfdcId15": "0014x00000FRohu",
+      "customer": "Lynn Electric & Communications",
+      "annualRevenue": 22500000,
+      "trade": "Electrical",
+      "t12Gmv": 7392267,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRohWAAT",
+      "sfdcId15": "0014x00000FRohW",
+      "customer": "Bogan & Assoc.",
+      "annualRevenue": 6500000,
+      "trade": "Electrical",
+      "t12Gmv": 1386950,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000FRoiTAAT",
+      "sfdcId15": "0014x00000FRoiT",
+      "customer": "Alterman, Inc.",
+      "annualRevenue": 374000000,
+      "trade": "Electrical",
+      "t12Gmv": 177236276,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRqpmAAD",
+      "sfdcId15": "0014x00000FRqpm",
+      "customer": "FusionTech Data & Electric",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 802899,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRr55AAD",
+      "sfdcId15": "0014x00000FRr55",
+      "customer": "Systems Electric - Mountain View",
+      "annualRevenue": 3000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000FRr5uAAD",
+      "sfdcId15": "0014x00000FRr5u",
+      "customer": "Clark Electric, Inc.",
+      "annualRevenue": 13000000,
+      "trade": "Electrical",
+      "t12Gmv": 30153,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000FRrirAAD",
+      "sfdcId15": "0014x00000FRrir",
+      "customer": "Petri Electric",
+      "annualRevenue": 27948000,
+      "trade": "Electrical",
+      "t12Gmv": 6268932,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000FRrizAAD",
+      "sfdcId15": "0014x00000FRriz",
+      "customer": "South - Fair Electric",
+      "annualRevenue": 72000000,
+      "trade": "Electrical",
+      "t12Gmv": 11188087,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRsDFAA1",
+      "sfdcId15": "0014x00000FRsDF",
+      "customer": "Electricians, Inc.",
+      "annualRevenue": 53817000,
+      "trade": "Electrical",
+      "t12Gmv": 5344470,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRsDHAA1",
+      "sfdcId15": "0014x00000FRsDH",
+      "customer": "Tri-City Electrical Contractors Inc.",
+      "annualRevenue": 400000000,
+      "trade": "Electrical",
+      "t12Gmv": 70943194,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRsDXAA1",
+      "sfdcId15": "0014x00000FRsDX",
+      "customer": "All Brite Electric, Inc.",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 736796,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRsDyAAL",
+      "sfdcId15": "0014x00000FRsDy",
+      "customer": "SWAN ELECTRIC COMPANY, INC.",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 5256443,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRsEEAA1",
+      "sfdcId15": "0014x00000FRsEE",
+      "customer": "Enertech Electrical",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 4947146,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00000FRsFzAAL",
+      "sfdcId15": "0014x00000FRsFz",
+      "customer": "Ireland Electric, Inc.",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 1389731,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRsG2AAL",
+      "sfdcId15": "0014x00000FRsG2",
+      "customer": "Hazzard Electrical LLC",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 2290996,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRsG6AAL",
+      "sfdcId15": "0014x00000FRsG6",
+      "customer": "BAR Electric Co., Inc",
+      "annualRevenue": 2000000,
+      "trade": "Electrical",
+      "t12Gmv": 249,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000FRsGVAA1",
+      "sfdcId15": "0014x00000FRsGV",
+      "customer": "Access Electric, Inc. - Tustin",
+      "annualRevenue": 6741000,
+      "trade": "Electrical",
+      "t12Gmv": 1926633,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000FRUtQAAX",
+      "sfdcId15": "0014x00000FRUtQ",
+      "customer": "Hays Electrical Services, Inc",
+      "annualRevenue": 100000000,
+      "trade": "Electrical",
+      "t12Gmv": 132475374,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUtuAAH",
+      "sfdcId15": "0014x00000FRUtu",
+      "customer": "Montgomery Electric",
+      "annualRevenue": 6500000,
+      "trade": "Electrical",
+      "t12Gmv": 3349322,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUVaAAP",
+      "sfdcId15": "0014x00000FRUVa",
+      "customer": "Deerfield Electric Construction Inc.",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 142180,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000FRUvAAAX",
+      "sfdcId15": "0014x00000FRUvA",
+      "customer": "Mike Hagen Electric",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000FRUvgAAH",
+      "sfdcId15": "0014x00000FRUvg",
+      "customer": "Staley Electric, LLC",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 6830081,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUvlAAH",
+      "sfdcId15": "0014x00000FRUvl",
+      "customer": "Mammoth Electric, Inc",
+      "annualRevenue": 50000000,
+      "trade": "Electrical",
+      "t12Gmv": 18627223,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUVrAAP",
+      "sfdcId15": "0014x00000FRUVr",
+      "customer": "Fortune Electrical Construction",
+      "annualRevenue": 30000000,
+      "trade": "Electrical",
+      "t12Gmv": 8778353,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUvUAAX",
+      "sfdcId15": "0014x00000FRUvU",
+      "customer": "Black Hawk Electric Co., Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 3075254,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUvvAAH",
+      "sfdcId15": "0014x00000FRUvv",
+      "customer": "Gillespie Electric, Inc.",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 865083,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUw7AAH",
+      "sfdcId15": "0014x00000FRUw7",
+      "customer": "US Electrical Corp.",
+      "annualRevenue": 58000000,
+      "trade": "Electrical",
+      "t12Gmv": 12112128,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUWGAA5",
+      "sfdcId15": "0014x00000FRUWG",
+      "customer": "Gerelco Electrical Contractors, Inc.",
+      "annualRevenue": 28000000,
+      "trade": "Electrical",
+      "t12Gmv": 2985370,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000FRUWOAA5",
+      "sfdcId15": "0014x00000FRUWO",
+      "customer": "Fountain Electric & Services LLC",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 16093821,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUWSAA5",
+      "sfdcId15": "0014x00000FRUWS",
+      "customer": "Bonus Electric Co.",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 19097018,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUXDAA5",
+      "sfdcId15": "0014x00000FRUXD",
+      "customer": "Pro 1 Electric, Inc.",
+      "annualRevenue": 10080000,
+      "trade": "Electrical",
+      "t12Gmv": 2777349,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUxvAAH",
+      "sfdcId15": "0014x00000FRUxv",
+      "customer": "Allan Briteway Electrical Contractors",
+      "annualRevenue": 100914000,
+      "trade": "Electrical",
+      "t12Gmv": 7702000,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUZaAAP",
+      "sfdcId15": "0014x00000FRUZa",
+      "customer": "Commonwealth Electrical Technologies",
+      "annualRevenue": 27828000,
+      "trade": "Electrical",
+      "t12Gmv": 15221341,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUZbAAP",
+      "sfdcId15": "0014x00000FRUZb",
+      "customer": "All Star Electric, Inc.",
+      "annualRevenue": 60269300,
+      "trade": "Electrical",
+      "t12Gmv": 7113726,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUZCAA5",
+      "sfdcId15": "0014x00000FRUZC",
+      "customer": "Daniel's Electric",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 6120333,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUZlAAP",
+      "sfdcId15": "0014x00000FRUZl",
+      "customer": "Giant Power Systems",
+      "annualRevenue": 4000000,
+      "trade": "Electrical",
+      "t12Gmv": 3470149,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FRUZOAA5",
+      "sfdcId15": "0014x00000FRUZO",
+      "customer": "JTE Electrical, Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000FSlPmAAL",
+      "sfdcId15": "0014x00000FSlPm",
+      "customer": "A-C Electric Company",
+      "annualRevenue": 232001000,
+      "trade": "Electrical",
+      "t12Gmv": 35410362,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FSmvxAAD",
+      "sfdcId15": "0014x00000FSmvx",
+      "customer": "Central Electric",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 1505105,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FSsBSAA1",
+      "sfdcId15": "0014x00000FSsBS",
+      "customer": "Ernest F Ferrari Electrical Contractors",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 4092245,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FSwDvAAL",
+      "sfdcId15": "0014x00000FSwDv",
+      "customer": "Bowne Electric, Inc.",
+      "annualRevenue": 10510000,
+      "trade": "Electrical",
+      "t12Gmv": 1295095,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FT1CGAA1",
+      "sfdcId15": "0014x00000FT1CG",
+      "customer": "Anderson & Howard Electric, Inc.",
+      "annualRevenue": 75000000,
+      "trade": "Electrical",
+      "t12Gmv": 7986381,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000FT3aKAAT",
+      "sfdcId15": "0014x00000FT3aK",
+      "customer": "Metro North Electric LLC",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 1003559,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FT7hjAAD",
+      "sfdcId15": "0014x00000FT7hj",
+      "customer": "R.K. Bass Electric III, LP",
+      "annualRevenue": 23447000,
+      "trade": "Electrical",
+      "t12Gmv": 5061789,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FTD6jAAH",
+      "sfdcId15": "0014x00000FTD6j",
+      "customer": "Valley Unique Electric",
+      "annualRevenue": 35000000,
+      "trade": "Electrical",
+      "t12Gmv": 188214,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000FUp8IAAT",
+      "sfdcId15": "0014x00000FUp8I",
+      "customer": "JFC Electric",
+      "annualRevenue": 4315000,
+      "trade": "Electrical",
+      "t12Gmv": 7604,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000gBAp3AAG",
+      "sfdcId15": "0014x00000gBAp3",
+      "customer": "Enterprise Electrical Co.",
+      "annualRevenue": 280000000,
+      "trade": "Electrical",
+      "t12Gmv": 55613112,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000gCDvSAAW",
+      "sfdcId15": "0014x00000gCDvS",
+      "customer": "Goforth Electric",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 1926784,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000gCF96AAG",
+      "sfdcId15": "0014x00000gCF96",
+      "customer": "GIAMPOLINI GROUP",
+      "annualRevenue": 35000000,
+      "trade": "Other",
+      "t12Gmv": 2802681.9399999995,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000gCFE9AAO",
+      "sfdcId15": "0014x00000gCFE9",
+      "customer": "Hewitt Young Electric - Rochester",
+      "annualRevenue": 70000000,
+      "trade": "Electrical",
+      "t12Gmv": 13482040,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000gCHy0AAG",
+      "sfdcId15": "0014x00000gCHy0",
+      "customer": "Empire Electric, Inc.",
+      "annualRevenue": 8800000,
+      "trade": "Electrical",
+      "t12Gmv": 1355682,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hka8xAAB",
+      "sfdcId15": "0014x00000Hka8x",
+      "customer": "Triangle Electric",
+      "annualRevenue": 26000000,
+      "trade": "Electrical",
+      "t12Gmv": 15086818,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hkx0JAAR",
+      "sfdcId15": "0014x00000Hkx0J",
+      "customer": "Syserco",
+      "annualRevenue": 60000000,
+      "trade": "Electrical",
+      "t12Gmv": 4694729,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HlVbnAAF",
+      "sfdcId15": "0014x00000HlVbn",
+      "customer": "Teknikor",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 824014,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hm5SXAAZ",
+      "sfdcId15": "0014x00000Hm5SX",
+      "customer": "Smith & Sons Electric, Inc.",
+      "annualRevenue": 6000000,
+      "trade": "Electrical",
+      "t12Gmv": 6737,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000HmBSmAAN",
+      "sfdcId15": "0014x00000HmBSm",
+      "customer": "Universal Electrical Service",
+      "annualRevenue": 11315000,
+      "trade": "Electrical",
+      "t12Gmv": 9426782,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000HmfrXAAR",
+      "sfdcId15": "0014x00000HmfrX",
+      "customer": "PowerWorks Electric",
+      "annualRevenue": 30000000,
+      "trade": "Electrical",
+      "t12Gmv": 8070050,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HmfsdAAB",
+      "sfdcId15": "0014x00000Hmfsd",
+      "customer": "Helix Electric",
+      "annualRevenue": 864000000,
+      "trade": "Electrical",
+      "t12Gmv": 93245573,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HmFSkAAN",
+      "sfdcId15": "0014x00000HmFSk",
+      "customer": "Nemmer Electric",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 4907240,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HmfsNAAR",
+      "sfdcId15": "0014x00000HmfsN",
+      "customer": "Radec Electric Corp.",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 1679083,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000HmMiaAAF",
+      "sfdcId15": "0014x00000HmMia",
+      "customer": "Austen Electric",
+      "annualRevenue": 16000000,
+      "trade": "Electrical",
+      "t12Gmv": 1007,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000HmMiGAAV",
+      "sfdcId15": "0014x00000HmMiG",
+      "customer": "Miller Electric Company",
+      "annualRevenue": 605987946,
+      "trade": "Electrical",
+      "t12Gmv": 3254,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000HmMiiAAF",
+      "sfdcId15": "0014x00000HmMii",
+      "customer": "Marathon Electrical Contractors",
+      "annualRevenue": 148300000,
+      "trade": "Electrical",
+      "t12Gmv": 53904263,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HmMikAAF",
+      "sfdcId15": "0014x00000HmMik",
+      "customer": "New Way Electric Inc.",
+      "annualRevenue": 13414000,
+      "trade": "Electrical",
+      "t12Gmv": 4025961,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HmpDfAAJ",
+      "sfdcId15": "0014x00000HmpDf",
+      "customer": "Fos Development Corp",
+      "annualRevenue": 12600000,
+      "trade": "Other",
+      "t12Gmv": 1767709.56,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HmqmhAAB",
+      "sfdcId15": "0014x00000Hmqmh",
+      "customer": "Team Electric",
+      "annualRevenue": 100000000,
+      "trade": "Electrical",
+      "t12Gmv": 23262431,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hn8jQAAR",
+      "sfdcId15": "0014x00000Hn8jQ",
+      "customer": "Nappa Electrical Contractors",
+      "annualRevenue": 17987000,
+      "trade": "Electrical",
+      "t12Gmv": 9937890,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnEXCAA3",
+      "sfdcId15": "0014x00000HnEXC",
+      "customer": "Forest Electric",
+      "annualRevenue": 40200000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000HnKRtAAN",
+      "sfdcId15": "0014x00000HnKRt",
+      "customer": "Serrano Electric, Inc.",
+      "annualRevenue": 30000000,
+      "trade": "Electrical",
+      "t12Gmv": 17727705,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnsl4AAB",
+      "sfdcId15": "0014x00000Hnsl4",
+      "customer": "West Electric, Inc. - Anderson",
+      "annualRevenue": 8000000,
+      "trade": "Electrical",
+      "t12Gmv": 567937,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000HnssUAAR",
+      "sfdcId15": "0014x00000HnssU",
+      "customer": "Kasselman Electric Co., Inc.",
+      "annualRevenue": 53441000,
+      "trade": "Electrical",
+      "t12Gmv": 1180820,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnstjAAB",
+      "sfdcId15": "0014x00000Hnstj",
+      "customer": "Streib Electric",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 7580031,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000HnstOAAR",
+      "sfdcId15": "0014x00000HnstO",
+      "customer": "D. Suehiro Electric, Inc.",
+      "annualRevenue": 10020000,
+      "trade": "Electrical",
+      "t12Gmv": 3676782,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnsv6AAB",
+      "sfdcId15": "0014x00000Hnsv6",
+      "customer": "D&D Electrical Contractors, Inc.",
+      "annualRevenue": 17000000,
+      "trade": "Electrical",
+      "t12Gmv": 24941373,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnsvKAAR",
+      "sfdcId15": "0014x00000HnsvK",
+      "customer": "Progressive Electric, Inc.",
+      "annualRevenue": 5729000,
+      "trade": "Electrical",
+      "t12Gmv": 6331764,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnsvxAAB",
+      "sfdcId15": "0014x00000Hnsvx",
+      "customer": "Blackwater Electric",
+      "annualRevenue": 40000000,
+      "trade": "Electrical",
+      "t12Gmv": 18657227,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnswdAAB",
+      "sfdcId15": "0014x00000Hnswd",
+      "customer": "Blocka Construction Inc.",
+      "annualRevenue": 35000000,
+      "trade": "Electrical",
+      "t12Gmv": 10277162,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnswFAAR",
+      "sfdcId15": "0014x00000HnswF",
+      "customer": "Acme Electric Company",
+      "annualRevenue": 80000000,
+      "trade": "Electrical",
+      "t12Gmv": 22975419,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnswiAAB",
+      "sfdcId15": "0014x00000Hnswi",
+      "customer": "Stansell Electric Co., Inc.",
+      "annualRevenue": 110000000,
+      "trade": "Electrical",
+      "t12Gmv": 14301399,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnswNAAR",
+      "sfdcId15": "0014x00000HnswN",
+      "customer": "Design Electric, Inc.",
+      "annualRevenue": 28000000,
+      "trade": "Electrical",
+      "t12Gmv": 8639936,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnswxAAB",
+      "sfdcId15": "0014x00000Hnswx",
+      "customer": "VanKirk Electric",
+      "annualRevenue": 125000000,
+      "trade": "Electrical",
+      "t12Gmv": 7937025,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnsx7AAB",
+      "sfdcId15": "0014x00000Hnsx7",
+      "customer": "Vantix Electric",
+      "annualRevenue": 17000000,
+      "trade": "Electrical",
+      "t12Gmv": 6157445,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000HnsxJAAR",
+      "sfdcId15": "0014x00000HnsxJ",
+      "customer": "MEC Electrical & Technologies, Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 7520558,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnsygAAB",
+      "sfdcId15": "0014x00000Hnsyg",
+      "customer": "HSI Electrical",
+      "annualRevenue": 8000000,
+      "trade": "Electrical",
+      "t12Gmv": 1951565,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnsyQAAR",
+      "sfdcId15": "0014x00000HnsyQ",
+      "customer": "Mill Plain Electric",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 3696849,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000HnsyrAAB",
+      "sfdcId15": "0014x00000Hnsyr",
+      "customer": "Arrow Electric Co.",
+      "annualRevenue": 150000000,
+      "trade": "Electrical",
+      "t12Gmv": 16475046,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnszHAAR",
+      "sfdcId15": "0014x00000HnszH",
+      "customer": "Votaw Electric",
+      "annualRevenue": 55000000,
+      "trade": "Electrical",
+      "t12Gmv": 19741660,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnszLAAR",
+      "sfdcId15": "0014x00000HnszL",
+      "customer": "Big State Electric",
+      "annualRevenue": 100000000,
+      "trade": "Electrical",
+      "t12Gmv": 46751769,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HnsznAAB",
+      "sfdcId15": "0014x00000Hnszn",
+      "customer": "Reyff Electric",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 6964199,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000HnszuAAB",
+      "sfdcId15": "0014x00000Hnszu",
+      "customer": "Farris Electric, Inc.",
+      "annualRevenue": 4000000,
+      "trade": "Electrical",
+      "t12Gmv": 44850,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000Hnt1jAAB",
+      "sfdcId15": "0014x00000Hnt1j",
+      "customer": "Modern Electric Co. - Clifton",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 6590373,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000Hnt22AAB",
+      "sfdcId15": "0014x00000Hnt22",
+      "customer": "Exceed Electrical Contracting",
+      "annualRevenue": 38000000,
+      "trade": "Electrical",
+      "t12Gmv": 14709255,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000Hnt22AAB",
+      "sfdcId15": "0014x00000Hnt22",
+      "customer": "Industrial Controls of Oklahoma",
+      "annualRevenue": 38000000,
+      "trade": "Electrical",
+      "t12Gmv": 8224,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000Hnt2KAAR",
+      "sfdcId15": "0014x00000Hnt2K",
+      "customer": "Miller Electrical Contractors, Inc.",
+      "annualRevenue": 103000000,
+      "trade": "Electrical",
+      "t12Gmv": 17261645,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000Hnt2qAAB",
+      "sfdcId15": "0014x00000Hnt2q",
+      "customer": "Vasko Electric, Inc.",
+      "annualRevenue": 27425000,
+      "trade": "Electrical",
+      "t12Gmv": 9160115,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnt3YAAR",
+      "sfdcId15": "0014x00000Hnt3Y",
+      "customer": "Mission Electric Company",
+      "annualRevenue": 16088000,
+      "trade": "Electrical",
+      "t12Gmv": 3007023,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnt4iAAB",
+      "sfdcId15": "0014x00000Hnt4i",
+      "customer": "Central Valley Electric, Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 2771908,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnt4KAAR",
+      "sfdcId15": "0014x00000Hnt4K",
+      "customer": "Telstar Instruments",
+      "annualRevenue": 100187000,
+      "trade": "Electrical",
+      "t12Gmv": 27263097,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnt5BAAR",
+      "sfdcId15": "0014x00000Hnt5B",
+      "customer": "Electrical Design Systems Corp.",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 2613037,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000Hnt5ZAAR",
+      "sfdcId15": "0014x00000Hnt5Z",
+      "customer": "JFK Electrical LLC",
+      "annualRevenue": 8458000,
+      "trade": "Electrical",
+      "t12Gmv": 1254075,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnt6EAAR",
+      "sfdcId15": "0014x00000Hnt6E",
+      "customer": "ALBD Electric & Cable",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 2781506,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnt6qAAB",
+      "sfdcId15": "0014x00000Hnt6q",
+      "customer": "United Electric Company",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 2037497,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnt7KAAR",
+      "sfdcId15": "0014x00000Hnt7K",
+      "customer": "Access Electrical Contractors, Inc.",
+      "annualRevenue": 25243000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000Hnt8iAAB",
+      "sfdcId15": "0014x00000Hnt8i",
+      "customer": "Holden Electric Co., Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 7957397,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Hnt8KAAR",
+      "sfdcId15": "0014x00000Hnt8K",
+      "customer": "Speelman Electric LLC",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 402062,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000Hnt8qAAB",
+      "sfdcId15": "0014x00000Hnt8q",
+      "customer": "Amptek Electric",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 1574616,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HntB3AAJ",
+      "sfdcId15": "0014x00000HntB3",
+      "customer": "Cascade Electrical",
+      "annualRevenue": 35000000,
+      "trade": "Electrical",
+      "t12Gmv": 13432243,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HntBBAAZ",
+      "sfdcId15": "0014x00000HntBB",
+      "customer": "DES Electric",
+      "annualRevenue": 5624000,
+      "trade": "Electrical",
+      "t12Gmv": 528854,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000HntBFAAZ",
+      "sfdcId15": "0014x00000HntBF",
+      "customer": "Roz-A-Lite Electric",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 23625076,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HntBjAAJ",
+      "sfdcId15": "0014x00000HntBj",
+      "customer": "Blue Sky Electric",
+      "annualRevenue": 100000000,
+      "trade": "Electrical",
+      "t12Gmv": 10217291,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HntC7AAJ",
+      "sfdcId15": "0014x00000HntC7",
+      "customer": "Jamar Power Systems",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 2526420,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HntCIAAZ",
+      "sfdcId15": "0014x00000HntCI",
+      "customer": "Schamber Electric",
+      "annualRevenue": 45000000,
+      "trade": "Electrical",
+      "t12Gmv": 306,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000HntDiAAJ",
+      "sfdcId15": "0014x00000HntDi",
+      "customer": "A.J. Kirkwood & Associates, Inc.",
+      "annualRevenue": 60490000,
+      "trade": "Electrical",
+      "t12Gmv": 10064235,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HntEPAAZ",
+      "sfdcId15": "0014x00000HntEP",
+      "customer": "Swartley Bros. Engineers, Inc.",
+      "annualRevenue": 32000000,
+      "trade": "Electrical",
+      "t12Gmv": 4043504,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HntErAAJ",
+      "sfdcId15": "0014x00000HntEr",
+      "customer": "Roehrenbeck Electric",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 7110670,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HntF1AAJ",
+      "sfdcId15": "0014x00000HntF1",
+      "customer": "Hy-Lang Electric California, Inc.",
+      "annualRevenue": 36236000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000HntF5AAJ",
+      "sfdcId15": "0014x00000HntF5",
+      "customer": "Napa Electric Shop",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 899095,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HntFwAAJ",
+      "sfdcId15": "0014x00000HntFw",
+      "customer": "Rowan Electric",
+      "annualRevenue": 26254000,
+      "trade": "Electrical",
+      "t12Gmv": 2287933,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000HntGIAAZ",
+      "sfdcId15": "0014x00000HntGI",
+      "customer": "Preferred Electric",
+      "annualRevenue": 50000000,
+      "trade": "Electrical",
+      "t12Gmv": 3096214,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000iNOfqAAG",
+      "sfdcId15": "0014x00000iNOfq",
+      "customer": "James D. Hinson Electrical Contracting Company Inc. EC0001588",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 6809817,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jRwtjAAC",
+      "sfdcId15": "0014x00000jRwtj",
+      "customer": "Pacific Power & Systems",
+      "annualRevenue": 185000000,
+      "trade": "Electrical",
+      "t12Gmv": 8896918,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jT93dAAC",
+      "sfdcId15": "0014x00000jT93d",
+      "customer": "Speer Mechanical",
+      "annualRevenue": 60000000,
+      "trade": "Mechanical",
+      "t12Gmv": 280043.72,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000jT93SAAS",
+      "sfdcId15": "0014x00000jT93S",
+      "customer": "Binsky & Snyder",
+      "annualRevenue": 225000000,
+      "trade": "Mechanical",
+      "t12Gmv": 8686010.79,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000jT941AAC",
+      "sfdcId15": "0014x00000jT941",
+      "customer": "Lawson Mechanical Contractors",
+      "annualRevenue": 70895000,
+      "trade": "Mechanical",
+      "t12Gmv": 3984170.1599999997,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jT947AAC",
+      "sfdcId15": "0014x00000jT947",
+      "customer": "Armistead Mechanical",
+      "annualRevenue": 23179000,
+      "trade": "Mechanical",
+      "t12Gmv": 5151582.609999999,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jT96UAAS",
+      "sfdcId15": "0014x00000jT96U",
+      "customer": "Monroe Piping & Sheet Metal",
+      "annualRevenue": 7958000,
+      "trade": "Mechanical",
+      "t12Gmv": 2400618.19,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jT97pAAC",
+      "sfdcId15": "0014x00000jT97p",
+      "customer": "Premier Mechanical",
+      "annualRevenue": 55000000,
+      "trade": "Mechanical",
+      "t12Gmv": 6451809.890000001,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000jT97XAAS",
+      "sfdcId15": "0014x00000jT97X",
+      "customer": "G.A. Rich & Sons, Inc.",
+      "annualRevenue": 45000000,
+      "trade": "Mechanical",
+      "t12Gmv": 14222445.88,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTLsmAAG",
+      "sfdcId15": "0014x00000jTLsm",
+      "customer": "Raven Mechanical, LP",
+      "annualRevenue": 50000000,
+      "trade": "Mechanical",
+      "t12Gmv": 37995026.84,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTLtVAAW",
+      "sfdcId15": "0014x00000jTLtV",
+      "customer": "Williams Plumbing",
+      "annualRevenue": 55118000,
+      "trade": "Mechanical",
+      "t12Gmv": 11383738.57,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTLxFAAW",
+      "sfdcId15": "0014x00000jTLxF",
+      "customer": "Interstate Mechanical Contractors",
+      "annualRevenue": 70000000,
+      "trade": "Mechanical",
+      "t12Gmv": 16665905.649999999,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTLxJAAW",
+      "sfdcId15": "0014x00000jTLxJ",
+      "customer": "Garden City Plumbing & Heating",
+      "annualRevenue": 12000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1904930.76,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTLyVAAW",
+      "sfdcId15": "0014x00000jTLyV",
+      "customer": "CHC Mechanical Contractors, Inc.",
+      "annualRevenue": 20219000,
+      "trade": "Mechanical",
+      "t12Gmv": 13112218.3,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTM0MAAW",
+      "sfdcId15": "0014x00000jTM0M",
+      "customer": "Botto Mechanical Corporation",
+      "annualRevenue": 13967000,
+      "trade": "Mechanical",
+      "t12Gmv": 2421978.3,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTM5LAAW",
+      "sfdcId15": "0014x00000jTM5L",
+      "customer": "Innovative Air, Inc.",
+      "annualRevenue": 5250000,
+      "trade": "Mechanical",
+      "t12Gmv": 836236.46,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMcMAAW",
+      "sfdcId15": "0014x00000jTMcM",
+      "customer": "Southwest Plumbing Services, Inc.",
+      "annualRevenue": 18000000,
+      "trade": "Mechanical",
+      "t12Gmv": 4407039.949999999,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000jTMgOAAW",
+      "sfdcId15": "0014x00000jTMgO",
+      "customer": "Gastonia Plumbing & Heating Co., Inc.",
+      "annualRevenue": 8750000,
+      "trade": "Mechanical",
+      "t12Gmv": 2834086.3600000003,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMhHAAW",
+      "sfdcId15": "0014x00000jTMhH",
+      "customer": "DCS Mechanical",
+      "annualRevenue": 20000000,
+      "trade": "Mechanical",
+      "t12Gmv": 180144.09999999998,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x00000jTMhMAAW",
+      "sfdcId15": "0014x00000jTMhM",
+      "customer": "R.G. & Sons Plumbing",
+      "annualRevenue": 13000000,
+      "trade": "Mechanical",
+      "t12Gmv": 676559.49,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000jTMq0AAG",
+      "sfdcId15": "0014x00000jTMq0",
+      "customer": "Ek Plumbing",
+      "annualRevenue": 8000000,
+      "trade": "Mechanical",
+      "t12Gmv": 4036650.05,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMQdAAO",
+      "sfdcId15": "0014x00000jTMQd",
+      "customer": "Jet Industries",
+      "annualRevenue": 80000000,
+      "trade": "Mechanical",
+      "t12Gmv": 21756959.700000003,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMRDAA4",
+      "sfdcId15": "0014x00000jTMRD",
+      "customer": "BCH Mechanical, LLC.",
+      "annualRevenue": 80000000,
+      "trade": "Mechanical",
+      "t12Gmv": 16612458.709999999,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMrrAAG",
+      "sfdcId15": "0014x00000jTMrr",
+      "customer": "O'Brien Mechanical, Inc. II",
+      "annualRevenue": 15000000,
+      "trade": "Mechanical",
+      "t12Gmv": 62.63,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000jTMRxAAO",
+      "sfdcId15": "0014x00000jTMRx",
+      "customer": "Warner Mechanical",
+      "annualRevenue": 42599000,
+      "trade": "Mechanical",
+      "t12Gmv": 761408.41,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "0014x00000jTMtQAAW",
+      "sfdcId15": "0014x00000jTMtQ",
+      "customer": "All Weather Contractors",
+      "annualRevenue": 45000000,
+      "trade": "Mechanical",
+      "t12Gmv": 8465461.440000001,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMuRAAW",
+      "sfdcId15": "0014x00000jTMuR",
+      "customer": "Circulating Air, Inc.",
+      "annualRevenue": 20189000,
+      "trade": "Mechanical",
+      "t12Gmv": 7828185.68,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMV1AAO",
+      "sfdcId15": "0014x00000jTMV1",
+      "customer": "Precision Plumbing",
+      "annualRevenue": 80000000,
+      "trade": "Mechanical",
+      "t12Gmv": 12053371.84,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMVqAAO",
+      "sfdcId15": "0014x00000jTMVq",
+      "customer": "TATRO",
+      "annualRevenue": 11508000,
+      "trade": "Mechanical",
+      "t12Gmv": 1700145.97,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMvzAAG",
+      "sfdcId15": "0014x00000jTMvz",
+      "customer": "Harry Grodsky & Co., Inc.",
+      "annualRevenue": 77901000,
+      "trade": "Mechanical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000jTMXGAA4",
+      "sfdcId15": "0014x00000jTMXG",
+      "customer": "Muir - Chase Plumbing Co., Inc.",
+      "annualRevenue": 50000000,
+      "trade": "Mechanical",
+      "t12Gmv": 434022.17,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000jTMxnAAG",
+      "sfdcId15": "0014x00000jTMxn",
+      "customer": "Anderson Mechanical Services, LLC d/b/a Vertical Mechanical Group",
+      "annualRevenue": 32000000,
+      "trade": "Mechanical",
+      "t12Gmv": 62682709.78999999,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMY4AAO",
+      "sfdcId15": "0014x00000jTMY4",
+      "customer": "Geiger Brothers, Inc.",
+      "annualRevenue": 150000000,
+      "trade": "Mechanical",
+      "t12Gmv": 18494635.14,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMyLAAW",
+      "sfdcId15": "0014x00000jTMyL",
+      "customer": "Ross Plumbing",
+      "annualRevenue": 9312000,
+      "trade": "Mechanical",
+      "t12Gmv": 2897430.05,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTMyxAAG",
+      "sfdcId15": "0014x00000jTMyx",
+      "customer": "Temp-Con, LLC.",
+      "annualRevenue": 35000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1175846.01,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x00000jTMZvAAO",
+      "sfdcId15": "0014x00000jTMZv",
+      "customer": "Stewart Mechanical",
+      "annualRevenue": 13000000,
+      "trade": "Mechanical",
+      "t12Gmv": 2339980.4299999997,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTN0IAAW",
+      "sfdcId15": "0014x00000jTN0I",
+      "customer": "Archer Mechanical & Maintenance",
+      "annualRevenue": 84000000,
+      "trade": "Mechanical",
+      "t12Gmv": 82172.33,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000jTN55AAG",
+      "sfdcId15": "0014x00000jTN55",
+      "customer": "JRT Mechanical",
+      "annualRevenue": 27000000,
+      "trade": "Mechanical",
+      "t12Gmv": 9387613.6,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTNDkAAO",
+      "sfdcId15": "0014x00000jTNDk",
+      "customer": "Derman Associates",
+      "annualRevenue": 7000000,
+      "trade": "Mechanical",
+      "t12Gmv": 3013976.72,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000jTNEKAA4",
+      "sfdcId15": "0014x00000jTNEK",
+      "customer": "Tharco Inc",
+      "annualRevenue": 10772000,
+      "trade": "Mechanical",
+      "t12Gmv": 63438.74,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000jTNEXAA4",
+      "sfdcId15": "0014x00000jTNEX",
+      "customer": "A. Hattersley & Sons, Inc.",
+      "annualRevenue": 5775000,
+      "trade": "Mechanical",
+      "t12Gmv": 5936509.92,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTNGSAA4",
+      "sfdcId15": "0014x00000jTNGS",
+      "customer": "Voss Plumbing & Heating of Paynesville Inc.",
+      "annualRevenue": 16124000,
+      "trade": "Mechanical",
+      "t12Gmv": 1263153.42,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000jTNIxAAO",
+      "sfdcId15": "0014x00000jTNIx",
+      "customer": "Davis Mechanical Systems",
+      "annualRevenue": 20000000,
+      "trade": "Mechanical",
+      "t12Gmv": 10623030.38,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000jTNMEAA4",
+      "sfdcId15": "0014x00000jTNME",
+      "customer": "Oliver Mechanical, Inc.",
+      "annualRevenue": 30000000,
+      "trade": "Mechanical",
+      "t12Gmv": 12074699.05,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000kmin2AAA",
+      "sfdcId15": "0014x00000kmin2",
+      "customer": "Aliso Electric",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 7254151,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KnGwmAAF",
+      "sfdcId15": "0014x00000KnGwm",
+      "customer": "Adams Electric Co.",
+      "annualRevenue": 55000000,
+      "trade": "Electrical",
+      "t12Gmv": 111214168,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpbENAAZ",
+      "sfdcId15": "0014x00000KpbEN",
+      "customer": "The Pace Companies",
+      "annualRevenue": 60266000,
+      "trade": "Mechanical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000KpfzvAAB",
+      "sfdcId15": "0014x00000Kpfzv",
+      "customer": "Cummings Electrical, LP",
+      "annualRevenue": 370000000,
+      "trade": "Electrical",
+      "t12Gmv": 238143772,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg2KAAR",
+      "sfdcId15": "0014x00000Kpg2K",
+      "customer": "Strategic Mechanical, Inc.",
+      "annualRevenue": 50922000,
+      "trade": "Mechanical",
+      "t12Gmv": 13558613.44,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg3bAAB",
+      "sfdcId15": "0014x00000Kpg3b",
+      "customer": "Mcinnis Systems",
+      "annualRevenue": 8000000,
+      "trade": "Electrical",
+      "t12Gmv": 2092817,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg4PAAR",
+      "sfdcId15": "0014x00000Kpg4P",
+      "customer": "ICS – Integrated Communication Systems",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 7226879,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg4YAAR",
+      "sfdcId15": "0014x00000Kpg4Y",
+      "customer": "Boys Electrical Contractors, LLC",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 9559933,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg5xAAB",
+      "sfdcId15": "0014x00000Kpg5x",
+      "customer": "Danny Davis Electrical Contrs., Inc.",
+      "annualRevenue": 6339000,
+      "trade": "Electrical",
+      "t12Gmv": 1295964,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg6eAAB",
+      "sfdcId15": "0014x00000Kpg6e",
+      "customer": "Delta Electrical, Inc.",
+      "annualRevenue": 19576000,
+      "trade": "Electrical",
+      "t12Gmv": 2863813,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg6yAAB",
+      "sfdcId15": "0014x00000Kpg6y",
+      "customer": "Ostrow Electrical Supply Co., Inc.",
+      "annualRevenue": 35000000,
+      "trade": "Electrical",
+      "t12Gmv": 796535,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg7WAAR",
+      "sfdcId15": "0014x00000Kpg7W",
+      "customer": "Safeway Electric",
+      "annualRevenue": 27000000,
+      "trade": "Electrical",
+      "t12Gmv": 10796271,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg8kAAB",
+      "sfdcId15": "0014x00000Kpg8k",
+      "customer": "Kleinberg Electric",
+      "annualRevenue": 28313000,
+      "trade": "Electrical",
+      "t12Gmv": 7360400,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg8VAAR",
+      "sfdcId15": "0014x00000Kpg8V",
+      "customer": "Dse Electric, Inc.",
+      "annualRevenue": 15891000,
+      "trade": "Electrical",
+      "t12Gmv": 1513900,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpg9QAAR",
+      "sfdcId15": "0014x00000Kpg9Q",
+      "customer": "MMR Group, Inc.",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 10852893,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000KpgASAAZ",
+      "sfdcId15": "0014x00000KpgAS",
+      "customer": "Fayette Electrical Service",
+      "annualRevenue": 7600000,
+      "trade": "Electrical",
+      "t12Gmv": 4246840,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgB1AAJ",
+      "sfdcId15": "0014x00000KpgB1",
+      "customer": "Tutor Electrical Service, Inc.",
+      "annualRevenue": 11000000,
+      "trade": "Electrical",
+      "t12Gmv": 2857128,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgB4AAJ",
+      "sfdcId15": "0014x00000KpgB4",
+      "customer": "Mills Electric Co - Bellingham",
+      "annualRevenue": 35000000,
+      "trade": "Electrical",
+      "t12Gmv": 8744400,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgB5AAJ",
+      "sfdcId15": "0014x00000KpgB5",
+      "customer": "Hunt Electric, Inc.",
+      "annualRevenue": 253458000,
+      "trade": "Electrical",
+      "t12Gmv": 19912541,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgCvAAJ",
+      "sfdcId15": "0014x00000KpgCv",
+      "customer": "Archiable Electric",
+      "annualRevenue": 11061620,
+      "trade": "Electrical",
+      "t12Gmv": 16694610,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgDDAAZ",
+      "sfdcId15": "0014x00000KpgDD",
+      "customer": "Electrical Contractors Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 4717104,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgDTAAZ",
+      "sfdcId15": "0014x00000KpgDT",
+      "customer": "Critical Electric Systems Group",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 6535793,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgEoAAJ",
+      "sfdcId15": "0014x00000KpgEo",
+      "customer": "Phillips Electric & Associates, Inc.",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 2936924,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgFDAAZ",
+      "sfdcId15": "0014x00000KpgFD",
+      "customer": "DP Electric",
+      "annualRevenue": 300000000,
+      "trade": "Electrical",
+      "t12Gmv": 91204637,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgG6AAJ",
+      "sfdcId15": "0014x00000KpgG6",
+      "customer": "TAP Electric",
+      "annualRevenue": 47200000,
+      "trade": "Electrical",
+      "t12Gmv": 8951039,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgGBAAZ",
+      "sfdcId15": "0014x00000KpgGB",
+      "customer": "All Tech Electric Texas",
+      "annualRevenue": 22000000,
+      "trade": "Electrical",
+      "t12Gmv": 1719762,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgGIAAZ",
+      "sfdcId15": "0014x00000KpgGI",
+      "customer": "Titan Electric",
+      "annualRevenue": 100000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000KpgHvAAJ",
+      "sfdcId15": "0014x00000KpgHv",
+      "customer": "Mark III Construction",
+      "annualRevenue": 110000000,
+      "trade": "Electrical",
+      "t12Gmv": 12134214,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00000KpgohAAB",
+      "sfdcId15": "0014x00000Kpgoh",
+      "customer": "Martin Electric",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 13337561,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpgoXAAR",
+      "sfdcId15": "0014x00000KpgoX",
+      "customer": "Corbins",
+      "annualRevenue": 444905000,
+      "trade": "Electrical",
+      "t12Gmv": 69326671,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpqVPAAZ",
+      "sfdcId15": "0014x00000KpqVP",
+      "customer": "Beacon Electric Company",
+      "annualRevenue": 40000000,
+      "trade": "Electrical",
+      "t12Gmv": 16196282,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpwiDAAR",
+      "sfdcId15": "0014x00000KpwiD",
+      "customer": "Power Design Inc.",
+      "annualRevenue": 1146000000,
+      "trade": "Electrical",
+      "t12Gmv": 338862688,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpy4pAAB",
+      "sfdcId15": "0014x00000Kpy4p",
+      "customer": "Apollo Group, Inc.",
+      "annualRevenue": 13500000,
+      "trade": "Electrical",
+      "t12Gmv": 2399974,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpy5hAAB",
+      "sfdcId15": "0014x00000Kpy5h",
+      "customer": "Bana Electric Corp.",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 6043,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000Kpy5hAAB",
+      "sfdcId15": "0014x00000Kpy5h",
+      "customer": "Bana Electric Testing",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000Kpy6EAAR",
+      "sfdcId15": "0014x00000Kpy6E",
+      "customer": "Young Electric",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 1111,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000Kpy78AAB",
+      "sfdcId15": "0014x00000Kpy78",
+      "customer": "Cheran Inc",
+      "annualRevenue": 12490000,
+      "trade": "Electrical",
+      "t12Gmv": 8464686,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpy7IAAR",
+      "sfdcId15": "0014x00000Kpy7I",
+      "customer": "Premise, Inc.",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 7884237,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpy8sAAB",
+      "sfdcId15": "0014x00000Kpy8s",
+      "customer": "Hill Electric",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 1688538,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpy9eAAB",
+      "sfdcId15": "0014x00000Kpy9e",
+      "customer": "Arcadia Electrical",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 4715730,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Kpy9QAAR",
+      "sfdcId15": "0014x00000Kpy9Q",
+      "customer": "Broadway Electric Service Company LLC",
+      "annualRevenue": 144947000,
+      "trade": "Electrical",
+      "t12Gmv": 12692149,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpyAhAAJ",
+      "sfdcId15": "0014x00000KpyAh",
+      "customer": "William A.J. Shaeffer & Sons, Inc.",
+      "annualRevenue": 22800000,
+      "trade": "Electrical",
+      "t12Gmv": 16916647,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpyAJAAZ",
+      "sfdcId15": "0014x00000KpyAJ",
+      "customer": "Gross Electric Inc.",
+      "annualRevenue": 22000000,
+      "trade": "Electrical",
+      "t12Gmv": 10503781,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpyAmAAJ",
+      "sfdcId15": "0014x00000KpyAm",
+      "customer": "Flex Electric",
+      "annualRevenue": 5187000,
+      "trade": "Electrical",
+      "t12Gmv": 779071,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpyAQAAZ",
+      "sfdcId15": "0014x00000KpyAQ",
+      "customer": "Egg Electric",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000KpyARAAZ",
+      "sfdcId15": "0014x00000KpyAR",
+      "customer": "Jewell Electric",
+      "annualRevenue": 4000000,
+      "trade": "Electrical",
+      "t12Gmv": 1921381,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000KpyEAAAZ",
+      "sfdcId15": "0014x00000KpyEA",
+      "customer": "Candela Systems Corporation",
+      "annualRevenue": 2000000,
+      "trade": "Electrical",
+      "t12Gmv": 8430,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000Kq2gnAAB",
+      "sfdcId15": "0014x00000Kq2gn",
+      "customer": "Rewald Electric Co.",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 6172,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000KqUWTAA3",
+      "sfdcId15": "0014x00000KqUWT",
+      "customer": "D/E/F Services Group, Ltd",
+      "annualRevenue": 16500000,
+      "trade": "Electrical",
+      "t12Gmv": 3474,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000l9sGaAAI",
+      "sfdcId15": "0014x00000l9sGa",
+      "customer": "ABCO South",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 180922,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000reD5PAAU",
+      "sfdcId15": "0014x00000reD5P",
+      "customer": "Stewart Electric Co., Inc.",
+      "annualRevenue": 14000000,
+      "trade": "Electrical",
+      "t12Gmv": 123754,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000rfL8xAAE",
+      "sfdcId15": "0014x00000rfL8x",
+      "customer": "Tesla Electric",
+      "annualRevenue": 6411000,
+      "trade": "Electrical",
+      "t12Gmv": 93725,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "0014x00000SF9U6AAL",
+      "sfdcId15": "0014x00000SF9U6",
+      "customer": "Delco Electrical Corp.",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 7191911,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000sGfylAAC",
+      "sfdcId15": "0014x00000sGfyl",
+      "customer": "JT Electric",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 4095308,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000shuBQAAY",
+      "sfdcId15": "0014x00000shuBQ",
+      "customer": "Premier Mechanical, LLC",
+      "annualRevenue": 15000000,
+      "trade": "Mechanical",
+      "t12Gmv": 2305663.95,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000shuTzAAI",
+      "sfdcId15": "0014x00000shuTz",
+      "customer": "V.O. Brothers Mechanical",
+      "annualRevenue": 40000000,
+      "trade": "Mechanical",
+      "t12Gmv": 7945742.720000001,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000shuUfAAI",
+      "sfdcId15": "0014x00000shuUf",
+      "customer": "Gallo Mechanical, LLC.",
+      "annualRevenue": 161481000,
+      "trade": "Mechanical",
+      "t12Gmv": 18420838.82,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000shuUYAAY",
+      "sfdcId15": "0014x00000shuUY",
+      "customer": "Herlocker Mechanical Systems, Inc.",
+      "annualRevenue": 30000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1205923.7199999997,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000si2eVAAQ",
+      "sfdcId15": "0014x00000si2eV",
+      "customer": "Ecker Mechanical Contractors",
+      "annualRevenue": 15000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1795561.19,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000sihpaAAA",
+      "sfdcId15": "0014x00000sihpa",
+      "customer": "Southern Electrical Services",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 9578788,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000sihtUAAQ",
+      "sfdcId15": "0014x00000sihtU",
+      "customer": "Ace Electric Co., Inc.",
+      "annualRevenue": 10190570,
+      "trade": "Electrical",
+      "t12Gmv": 421352,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000sihuoAAA",
+      "sfdcId15": "0014x00000sihuo",
+      "customer": "Centrim Electric, Inc.",
+      "annualRevenue": 45000000,
+      "trade": "Electrical",
+      "t12Gmv": 8981431,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000sihwFAAQ",
+      "sfdcId15": "0014x00000sihwF",
+      "customer": "Primary Power Electric, LLC",
+      "annualRevenue": 6062804,
+      "trade": "Electrical",
+      "t12Gmv": 3704807,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000simBlAAI",
+      "sfdcId15": "0014x00000simBl",
+      "customer": "Automation & Electronics, Inc.",
+      "annualRevenue": 80000000,
+      "trade": "Electrical",
+      "t12Gmv": 51687326,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000UESUmAAP",
+      "sfdcId15": "0014x00000UESUm",
+      "customer": "Enterprise Electrical Contractors, Inc",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 623118,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000uttrzAAA",
+      "sfdcId15": "0014x00000uttrz",
+      "customer": "Pacific Southwest Structures, Inc.",
+      "annualRevenue": 25000000,
+      "trade": "Other",
+      "t12Gmv": 10813.02,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "0014x00000UU2KWAA1",
+      "sfdcId15": "0014x00000UU2KW",
+      "customer": "McKee & Company Electric",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 684591,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000uuOpQAAU",
+      "sfdcId15": "0014x00000uuOpQ",
+      "customer": "High-Light Electric Inc.",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 7263565,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000uuOr5AAE",
+      "sfdcId15": "0014x00000uuOr5",
+      "customer": "Trammell Bell",
+      "annualRevenue": 5500000,
+      "trade": "Electrical",
+      "t12Gmv": 55922,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000vlGiiAAE",
+      "sfdcId15": "0014x00000vlGii",
+      "customer": "KRS Electric",
+      "annualRevenue": 5062000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000vs61UAAQ",
+      "sfdcId15": "0014x00000vs61U",
+      "customer": "D.V. Brown & Assoc., Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Mechanical",
+      "t12Gmv": 3431761.09,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000vs65KAAQ",
+      "sfdcId15": "0014x00000vs65K",
+      "customer": "AGC, Inc.",
+      "annualRevenue": 30000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1487353.7,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000vs69EAAQ",
+      "sfdcId15": "0014x00000vs69E",
+      "customer": "Feddon Mechanical LLC",
+      "annualRevenue": 5000000,
+      "trade": "Mechanical",
+      "t12Gmv": 402899.58999999997,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000vs6BBAAY",
+      "sfdcId15": "0014x00000vs6BB",
+      "customer": "MSI",
+      "annualRevenue": 100000000,
+      "trade": "Mechanical",
+      "t12Gmv": 8879376.77,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000vs6BNAAY",
+      "sfdcId15": "0014x00000vs6BN",
+      "customer": "TJW Industrial, Inc.",
+      "annualRevenue": 35000000,
+      "trade": "Mechanical",
+      "t12Gmv": 22094551.490000002,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000WeLy1AAF",
+      "sfdcId15": "0014x00000WeLy1",
+      "customer": "Portermatt Electric",
+      "annualRevenue": 19310100,
+      "trade": "Electrical",
+      "t12Gmv": 5994091,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000XggK0AAJ",
+      "sfdcId15": "0014x00000XggK0",
+      "customer": "Grassland Enterprises, Inc.",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 390659,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000XgoHKAAZ",
+      "sfdcId15": "0014x00000XgoHK",
+      "customer": "East-West Electric Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 1372283,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000XgowcAAB",
+      "sfdcId15": "0014x00000Xgowc",
+      "customer": "Inter-Bay Electric",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 4538959,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000xT0eqAAC",
+      "sfdcId15": "0014x00000xT0eq",
+      "customer": "Alliance Exterior Construction, Inc.",
+      "annualRevenue": 32000000,
+      "trade": "Other",
+      "t12Gmv": 21039377.91,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000xT0k4AAC",
+      "sfdcId15": "0014x00000xT0k4",
+      "customer": "Delta Innovative Services Inc.",
+      "annualRevenue": 18399000,
+      "trade": "Other",
+      "t12Gmv": 13151713.370000001,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Y0rfUAAR",
+      "sfdcId15": "0014x00000Y0rfU",
+      "customer": "5 Points Electrical (2025)",
+      "annualRevenue": 12500000,
+      "trade": "Electrical",
+      "t12Gmv": 6898353,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000Y0rfUAAR",
+      "sfdcId15": "0014x00000Y0rfU",
+      "customer": "5 Points Electrical Company",
+      "annualRevenue": 12500000,
+      "trade": "Electrical",
+      "t12Gmv": 28246,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000Y1MWeAAN",
+      "sfdcId15": "0014x00000Y1MWe",
+      "customer": "MK Electric & Design Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 1446970,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00000YjdMaAAJ",
+      "sfdcId15": "0014x00000YjdMa",
+      "customer": "ECON Electrical Contractors, Inc.",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 787835,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000YjedBAAR",
+      "sfdcId15": "0014x00000YjedB",
+      "customer": "Triangle Electric Company",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 14189825,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000YjmL2AAJ",
+      "sfdcId15": "0014x00000YjmL2",
+      "customer": "A.S.K Electrical Corp.",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 1237605,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000YkHAMAA3",
+      "sfdcId15": "0014x00000YkHAM",
+      "customer": "Zuni Electric Inc.",
+      "annualRevenue": 8000000,
+      "trade": "Electrical",
+      "t12Gmv": 1580928,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000YkPSoAAN",
+      "sfdcId15": "0014x00000YkPSo",
+      "customer": "Performance Electrical",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 752926,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x00000YnBM5AAN",
+      "sfdcId15": "0014x00000YnBM5",
+      "customer": "Southpaw Energy",
+      "annualRevenue": 9000000,
+      "trade": "Electrical",
+      "t12Gmv": 2982740,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000YnBrKAAV",
+      "sfdcId15": "0014x00000YnBrK",
+      "customer": "Moran Electrical Contracting",
+      "annualRevenue": 5094000,
+      "trade": "Electrical",
+      "t12Gmv": 1050793,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00000YnHMBAA3",
+      "sfdcId15": "0014x00000YnHMB",
+      "customer": "Empowercom Inc.",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 1010854,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000YNTMUAA5",
+      "sfdcId15": "0014x00000YNTMU",
+      "customer": "Thorne Electric",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 5212400,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000zzQvRAAU",
+      "sfdcId15": "0014x00000zzQvR",
+      "customer": "North Mechanical Contracting, Inc.",
+      "annualRevenue": 80000000,
+      "trade": "Mechanical",
+      "t12Gmv": 656972.5,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000zzsJCAAY",
+      "sfdcId15": "0014x00000zzsJC",
+      "customer": "JR & Co.",
+      "annualRevenue": 100000000,
+      "trade": "Other",
+      "t12Gmv": 888533.2499999999,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00000zzVs9AAE",
+      "sfdcId15": "0014x00000zzVs9",
+      "customer": "JRock Construction, LLC",
+      "annualRevenue": 33686000,
+      "trade": "Other",
+      "t12Gmv": 28142.02,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000zzWAsAAM",
+      "sfdcId15": "0014x00000zzWAs",
+      "customer": "Kaw Roofing & Sheet Metal, Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Other",
+      "t12Gmv": 4892462.720000001,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001005wTAAQ",
+      "sfdcId15": "0014x00001005wT",
+      "customer": "Diversified Interiors of El Paso, Inc.",
+      "annualRevenue": 142930000,
+      "trade": "Other",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00001005xDAAQ",
+      "sfdcId15": "0014x00001005xD",
+      "customer": "Best Interiors, Inc.",
+      "annualRevenue": 25999000,
+      "trade": "Other",
+      "t12Gmv": 2130490.58,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00001005z0AAA",
+      "sfdcId15": "0014x00001005z0",
+      "customer": "Hi-Tech Interiors",
+      "annualRevenue": 25000000,
+      "trade": "Other",
+      "t12Gmv": 2414356.4000000004,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x000010061eAAA",
+      "sfdcId15": "0014x000010061e",
+      "customer": "Alliance Companies, Inc.",
+      "annualRevenue": 17807000,
+      "trade": "Other",
+      "t12Gmv": 13656,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x000012OsgyAAC",
+      "sfdcId15": "0014x000012Osgy",
+      "customer": "AMPAM Parks Mechanical, Inc.",
+      "annualRevenue": 0,
+      "trade": "Mechanical",
+      "t12Gmv": 589886.92,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x000012Osh9AAC",
+      "sfdcId15": "0014x000012Osh9",
+      "customer": "Leed Electric",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 17582861,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000012Ot2nAAC",
+      "sfdcId15": "0014x000012Ot2n",
+      "customer": "Progressive Roofing - Phoenix",
+      "annualRevenue": 500000000,
+      "trade": "Other",
+      "t12Gmv": 80370368.32,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000012Ou3nAAC",
+      "sfdcId15": "0014x000012Ou3n",
+      "customer": "Alta Drywall",
+      "annualRevenue": 18000000,
+      "trade": "Other",
+      "t12Gmv": 3927200.83,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000012Ou5zAAC",
+      "sfdcId15": "0014x000012Ou5z",
+      "customer": "Hanlon Acoustical Ceilings Co.",
+      "annualRevenue": 9074000,
+      "trade": "Other",
+      "t12Gmv": 3820853.85,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x000012OuGwAAK",
+      "sfdcId15": "0014x000012OuGw",
+      "customer": "Diversified Interiors of Amarillo, Ltd.",
+      "annualRevenue": 15250000,
+      "trade": "Other",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x000012Q3lTAAS",
+      "sfdcId15": "0014x000012Q3lT",
+      "customer": "Ireland Electric Corp",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 4774618,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000012QBGFAA4",
+      "sfdcId15": "0014x000012QBGF",
+      "customer": "Electrical Service Professionals, Inc",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 16635,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x000012QBGFAA4",
+      "sfdcId15": "0014x000012QBGF",
+      "customer": "Electrical Service Professionals Co.",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x000012QBGHAA4",
+      "sfdcId15": "0014x000012QBGH",
+      "customer": "MJM Electric",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 11417,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x000012Qn37AAC",
+      "sfdcId15": "0014x000012Qn37",
+      "customer": "Next Level Energy Management Systems",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 3259990,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000013bXYIAA2",
+      "sfdcId15": "0014x000013bXYI",
+      "customer": "Stewart Electric LLC",
+      "annualRevenue": 1128000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x000013cdMtAAI",
+      "sfdcId15": "0014x000013cdMt",
+      "customer": "General Mechanical Contractors",
+      "annualRevenue": 70000000,
+      "trade": "Mechanical",
+      "t12Gmv": 21463624.25,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000014aHBCAA2",
+      "sfdcId15": "0014x000014aHBC",
+      "customer": "DECCO",
+      "annualRevenue": 60000000,
+      "trade": "Mechanical",
+      "t12Gmv": 28926.4,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x000014ZznBAAS",
+      "sfdcId15": "0014x000014ZznB",
+      "customer": "ColonialWebb Contractors",
+      "annualRevenue": 240000000,
+      "trade": "Mechanical",
+      "t12Gmv": 9566851.35,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000015Uzt5AAC",
+      "sfdcId15": "0014x000015Uzt5",
+      "customer": "Trademark Plumbing LLC",
+      "annualRevenue": 50000000,
+      "trade": "Mechanical",
+      "t12Gmv": 5049053.8,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000015VswoAAC",
+      "sfdcId15": "0014x000015Vswo",
+      "customer": "Custom Metalcrafters, Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Other",
+      "t12Gmv": 52458.78,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x000015WwWpAAK",
+      "sfdcId15": "0014x000015WwWp",
+      "customer": "Highlander Energy Products",
+      "annualRevenue": 14594000,
+      "trade": "Mechanical",
+      "t12Gmv": 1210388.13,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x000015X5HyAAK",
+      "sfdcId15": "0014x000015X5Hy",
+      "customer": "Climatemp Air Conditioning Co., Inc.",
+      "annualRevenue": 3000000,
+      "trade": "Mechanical",
+      "t12Gmv": 2680569.1,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x0000173Yo7AAE",
+      "sfdcId15": "0014x0000173Yo7",
+      "customer": "Vanalt Electrical Construction",
+      "annualRevenue": 22881000,
+      "trade": "Electrical",
+      "t12Gmv": 2348662,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x0000173YoDAAU",
+      "sfdcId15": "0014x0000173YoD",
+      "customer": "MG Electric Inc.",
+      "annualRevenue": 14964000,
+      "trade": "Electrical",
+      "t12Gmv": 4362525,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x000017mH5OAAU",
+      "sfdcId15": "0014x000017mH5O",
+      "customer": "Therma LLC",
+      "annualRevenue": 500000000,
+      "trade": "Electrical",
+      "t12Gmv": 51818217,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x000017Rpq1AAC",
+      "sfdcId15": "0014x000017Rpq1",
+      "customer": "SCE PowerPlus",
+      "annualRevenue": 80000000,
+      "trade": "Electrical",
+      "t12Gmv": 45992371,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000019S9nmAAC",
+      "sfdcId15": "0014x000019S9nm",
+      "customer": "Hicks & Ingle Corp.",
+      "annualRevenue": 6000000,
+      "trade": "Mechanical",
+      "t12Gmv": 883.92,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x000019SJpRAAW",
+      "sfdcId15": "0014x000019SJpR",
+      "customer": "Next Level Construction",
+      "annualRevenue": 21000000,
+      "trade": "Other",
+      "t12Gmv": 6180187.29,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001AMAgTAAX",
+      "sfdcId15": "0014x00001AMAgT",
+      "customer": "Fickling Brothers",
+      "annualRevenue": 19359000,
+      "trade": "Other",
+      "t12Gmv": 179325.37,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00001AMNfDAAX",
+      "sfdcId15": "0014x00001AMNfD",
+      "customer": "Miller Paneling Specialties",
+      "annualRevenue": 25000000,
+      "trade": "Other",
+      "t12Gmv": 3258343.12,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001ANmv0AAD",
+      "sfdcId15": "0014x00001ANmv0",
+      "customer": "Vollers, Inc.",
+      "annualRevenue": 100000000,
+      "trade": "Other",
+      "t12Gmv": 341475.23,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00001BI3CQAA1",
+      "sfdcId15": "0014x00001BI3CQ",
+      "customer": "Mielke Mechanical, Inc.",
+      "annualRevenue": 60000000,
+      "trade": "Mechanical",
+      "t12Gmv": 14039630.040000001,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001CeWaZAAV",
+      "sfdcId15": "0014x00001CeWaZ",
+      "customer": "A-1 Electrical Contractors, Inc.",
+      "annualRevenue": 18100000,
+      "trade": "Electrical",
+      "t12Gmv": 6415085,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001D5YPLAA3",
+      "sfdcId15": "0014x00001D5YPL",
+      "customer": "i.e. Smart Systems",
+      "annualRevenue": 50000000,
+      "trade": "Electrical",
+      "t12Gmv": 16979101,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001D5YQOAA3",
+      "sfdcId15": "0014x00001D5YQO",
+      "customer": "Atlas Mechanical Inc.",
+      "annualRevenue": 30000000,
+      "trade": "Mechanical",
+      "t12Gmv": 6137718.17,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x00001EfJbuAAF",
+      "sfdcId15": "0014x00001EfJbu",
+      "customer": "Ventura Integrated Systems",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 185307,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00001GP2SKAA1",
+      "sfdcId15": "0014x00001GP2SK",
+      "customer": "Primis Electric Corp",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 972766,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001GP5RHAA1",
+      "sfdcId15": "0014x00001GP5RH",
+      "customer": "Silver Slate Group",
+      "annualRevenue": 15000000,
+      "trade": "Other",
+      "t12Gmv": 4230,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00001GPeTRAA1",
+      "sfdcId15": "0014x00001GPeTR",
+      "customer": "Five Star Automatic Fire Protection",
+      "annualRevenue": 8000000,
+      "trade": "Other",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00001GPjOKAA1",
+      "sfdcId15": "0014x00001GPjOK",
+      "customer": "Sunsolar Solutions",
+      "annualRevenue": 70000000,
+      "trade": "Electrical",
+      "t12Gmv": 271180,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "0014x00001JVCWtAAP",
+      "sfdcId15": "0014x00001JVCWt",
+      "customer": "AmertechTowerServices",
+      "annualRevenue": 35000000,
+      "trade": "Other",
+      "t12Gmv": 24088082.84,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001miaeGAAQ",
+      "sfdcId15": "0014x00001miaeG",
+      "customer": "Stiles Renewables, LLC",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 234682,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00001miahJAAQ",
+      "sfdcId15": "0014x00001miahJ",
+      "customer": "BL Harbert Int'l",
+      "annualRevenue": 50000000,
+      "trade": "Other",
+      "t12Gmv": 2960597.77,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001NUGDsAAP",
+      "sfdcId15": "0014x00001NUGDs",
+      "customer": "DLC Electric",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 2910513,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00001oIcjVAAS",
+      "sfdcId15": "0014x00001oIcjV",
+      "customer": "Interior Plumbing & Heating LTD.",
+      "annualRevenue": 55437000,
+      "trade": "Mechanical",
+      "t12Gmv": 23118605.48,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001oLoMNAA0",
+      "sfdcId15": "0014x00001oLoMN",
+      "customer": "Tri Gen Electric",
+      "annualRevenue": 3000000,
+      "trade": "Electrical",
+      "t12Gmv": 571435,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001PHjv8AAD",
+      "sfdcId15": "0014x00001PHjv8",
+      "customer": "Barclay Mechanical",
+      "annualRevenue": 12000000,
+      "trade": "Mechanical",
+      "t12Gmv": 6535937.75,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00001PHwOcAAL",
+      "sfdcId15": "0014x00001PHwOc",
+      "customer": "Commercial Plumbing Inc.",
+      "annualRevenue": 60000000,
+      "trade": "Mechanical",
+      "t12Gmv": 224173.01,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00001q8o3sAAA",
+      "sfdcId15": "0014x00001q8o3s",
+      "customer": "Centerpoint Construction Corp",
+      "annualRevenue": 35000000,
+      "trade": "Other",
+      "t12Gmv": 235.63,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00001QA0kYAAT",
+      "sfdcId15": "0014x00001QA0kY",
+      "customer": "Oahu Plumbing and Sheet Metal Ltd",
+      "annualRevenue": 15000000,
+      "trade": "Mechanical",
+      "t12Gmv": 876199.56,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00001QA0o1AAD",
+      "sfdcId15": "0014x00001QA0o1",
+      "customer": "William F. Lynch Mechanical Contractors",
+      "annualRevenue": 7018000,
+      "trade": "Mechanical",
+      "t12Gmv": 3990529.4699999997,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001QPDouAAH",
+      "sfdcId15": "0014x00001QPDou",
+      "customer": "Alltek Energy Systems, Inc.",
+      "annualRevenue": 8000000,
+      "trade": "Mechanical",
+      "t12Gmv": 2227351.95,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001QPDuVAAX",
+      "sfdcId15": "0014x00001QPDuV",
+      "customer": "N.V. Heathorn Co.",
+      "annualRevenue": 45000000,
+      "trade": "Mechanical",
+      "t12Gmv": 2296110.1999999997,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001QQiehAAD",
+      "sfdcId15": "0014x00001QQieh",
+      "customer": "Burdick Painting - CA",
+      "annualRevenue": 25000000,
+      "trade": "Other",
+      "t12Gmv": 116549.07,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00001QQvqMAAT",
+      "sfdcId15": "0014x00001QQvqM",
+      "customer": "RoyalAire Mechanical Services",
+      "annualRevenue": 15343000,
+      "trade": "Mechanical",
+      "t12Gmv": 8467872.75,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001RHsigAAD",
+      "sfdcId15": "0014x00001RHsig",
+      "customer": "Ambar Technologies LLC",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 3469180,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001RIgGNAA1",
+      "sfdcId15": "0014x00001RIgGN",
+      "customer": "Commercial Electric, Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 6108413,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001RztO9AAJ",
+      "sfdcId15": "0014x00001RztO9",
+      "customer": "Gold Mechanical",
+      "annualRevenue": 29000000,
+      "trade": "Mechanical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00001sN4MeAAK",
+      "sfdcId15": "0014x00001sN4Me",
+      "customer": "Stanton Millworks",
+      "annualRevenue": 50000000,
+      "trade": "Other",
+      "t12Gmv": 429210.08,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001tzJ4cAAE",
+      "sfdcId15": "0014x00001tzJ4c",
+      "customer": "Colwill Enterprises",
+      "annualRevenue": 21931000,
+      "trade": "Mechanical",
+      "t12Gmv": 18023049.880000003,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "0014x00001u0OIPAA2",
+      "sfdcId15": "0014x00001u0OIP",
+      "customer": "Wallace Building Products",
+      "annualRevenue": 18000000,
+      "trade": "Other",
+      "t12Gmv": 4267441.0600000005,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001vXlN0AAK",
+      "sfdcId15": "0014x00001vXlN0",
+      "customer": "Syserco Midwest",
+      "annualRevenue": 60000000,
+      "trade": "Electrical",
+      "t12Gmv": 1083849,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001wOLtbAAG",
+      "sfdcId15": "0014x00001wOLtb",
+      "customer": "Maralex Electric Corp",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 109401,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "0014x00001xNASMAA4",
+      "sfdcId15": "0014x00001xNASM",
+      "customer": "Alphabet Construction LLC",
+      "annualRevenue": 4749000,
+      "trade": "Other",
+      "t12Gmv": 624615.41,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00001xPj7qAAC",
+      "sfdcId15": "0014x00001xPj7q",
+      "customer": "AirX LLC",
+      "annualRevenue": 8000000,
+      "trade": "Mechanical",
+      "t12Gmv": 898291.36,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00001zrtG7AAI",
+      "sfdcId15": "0014x00001zrtG7",
+      "customer": "RS Electric Utility",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 1311734,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "0014x00001zrtGGAAY",
+      "sfdcId15": "0014x00001zrtGG",
+      "customer": "Larkin Enterprises, Inc.",
+      "annualRevenue": 14398858,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00001ztW55AAE",
+      "sfdcId15": "0014x00001ztW55",
+      "customer": "Cardinal Civil Contracting",
+      "annualRevenue": 235000000,
+      "trade": "Mechanical",
+      "t12Gmv": 43061334.79,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000021ptC9AAI",
+      "sfdcId15": "0014x000021ptC9",
+      "customer": "Equity Plumbing & Heating Ltd.",
+      "annualRevenue": 18000000,
+      "trade": "Mechanical",
+      "t12Gmv": 15399439.51,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000021qEmtAAE",
+      "sfdcId15": "0014x000021qEmt",
+      "customer": "Apex Site Solutions",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 1931469,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000021rwsEAAQ",
+      "sfdcId15": "0014x000021rwsE",
+      "customer": "Eisen Group, LLC",
+      "annualRevenue": 10000000,
+      "trade": "Other",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x000021sehGAAQ",
+      "sfdcId15": "0014x000021sehG",
+      "customer": "A & M Warshaw Plumbing & Heating Inc.",
+      "annualRevenue": 8000000,
+      "trade": "Mechanical",
+      "t12Gmv": 2747414.3200000003,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x000021snOFAAY",
+      "sfdcId15": "0014x000021snOF",
+      "customer": "Gootee Construction, Inc.",
+      "annualRevenue": 50000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1795563.0199999998,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x000022ILY6AAO",
+      "sfdcId15": "0014x000022ILY6",
+      "customer": "Bruce Matson Company, Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Other",
+      "t12Gmv": 2279232.59,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "001Rk000000ft70IAA",
+      "sfdcId15": "001Rk000000ft70",
+      "customer": "Industrial - RS Electric Corp",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 6530393,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk000000iop8IAA",
+      "sfdcId15": "001Rk000000iop8",
+      "customer": "KASA Construction Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Other",
+      "t12Gmv": 3029102.06,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk000001AQ7hIAG",
+      "sfdcId15": "001Rk000001AQ7h",
+      "customer": "Gallo Mechanical Services LLC",
+      "annualRevenue": 1000000,
+      "trade": "Mechanical",
+      "t12Gmv": 84394.18000000001,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "001Rk000001AXSFIA4",
+      "sfdcId15": "001Rk000001AXSF",
+      "customer": "Sheet Metal Systems",
+      "annualRevenue": 10000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1112260.79,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk000001VeaOIAS",
+      "sfdcId15": "001Rk000001VeaO",
+      "customer": "DB2 Services Inc.",
+      "annualRevenue": 0,
+      "trade": "Other",
+      "t12Gmv": 2082299.8900000001,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk000002ElIIIA0",
+      "sfdcId15": "001Rk000002ElII",
+      "customer": "VEMAC, LLC",
+      "annualRevenue": 25834000,
+      "trade": "Other",
+      "t12Gmv": 39500490.3,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk000002LymPIAS",
+      "sfdcId15": "001Rk000002LymP",
+      "customer": "Doota Industrial America, LLC",
+      "annualRevenue": 5000000,
+      "trade": "Other",
+      "t12Gmv": 347914.69,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk000003EIVjIAO",
+      "sfdcId15": "001Rk000003EIVj",
+      "customer": "Nextech Electric Inc",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 1358922,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk000004difEIAQ",
+      "sfdcId15": "001Rk000004difE",
+      "customer": "Palman Electric, Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 10777289,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk000005h4VTIAY",
+      "sfdcId15": "001Rk000005h4VT",
+      "customer": "Cayman Mechanical Company",
+      "annualRevenue": 10000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1721873.2400000002,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk0000096kvwIAA",
+      "sfdcId15": "001Rk0000096kvw",
+      "customer": "Intelect Corporation",
+      "annualRevenue": 1800000,
+      "trade": "Other",
+      "t12Gmv": 772830.1299999999,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk000009yvHiIAI",
+      "sfdcId15": "001Rk000009yvHi",
+      "customer": "Kelco Electric",
+      "annualRevenue": 1000000,
+      "trade": "Electrical",
+      "t12Gmv": 168241,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "001Rk00000A4ngNIAR",
+      "sfdcId15": "001Rk00000A4ngN",
+      "customer": "MC4 CONSTRUCTION, LLC",
+      "annualRevenue": 12000000,
+      "trade": "Other",
+      "t12Gmv": 8877170.98,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000A4nhiIAB",
+      "sfdcId15": "001Rk00000A4nhi",
+      "customer": "OE Solar",
+      "annualRevenue": 5000000,
+      "trade": "Mechanical",
+      "t12Gmv": 959141.48,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000b1mgUIAQ",
+      "sfdcId15": "001Rk00000b1mgU",
+      "customer": "JRA Electrical Services",
+      "annualRevenue": 4000000,
+      "trade": "Electrical",
+      "t12Gmv": 74972,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "001Rk00000BDMYLIA5",
+      "sfdcId15": "001Rk00000BDMYL",
+      "customer": "ECNI Power Plus",
+      "annualRevenue": 3000000,
+      "trade": "Electrical",
+      "t12Gmv": 3212106,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000bqVvFIAU",
+      "sfdcId15": "001Rk00000bqVvF",
+      "customer": "S & F Electrical Service, Inc.",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 3295573,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "001Rk00000btGlQIAU",
+      "sfdcId15": "001Rk00000btGlQ",
+      "customer": "EPI Power LLC",
+      "annualRevenue": 230000000,
+      "trade": "Electrical",
+      "t12Gmv": 47462756,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "001Rk00000btGlQIAU",
+      "sfdcId15": "001Rk00000btGlQ",
+      "customer": "EPI Power Test Int. Account",
+      "annualRevenue": 230000000,
+      "trade": "Electrical",
+      "t12Gmv": 76366,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "001Rk00000bv8RlIAI",
+      "sfdcId15": "001Rk00000bv8Rl",
+      "customer": "Industrial Power Solutions",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 30358805,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "001Rk00000CINClIAP",
+      "sfdcId15": "001Rk00000CINCl",
+      "customer": "Shelton & Case Electric",
+      "annualRevenue": 100000,
+      "trade": "Electrical",
+      "t12Gmv": 708,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "001Rk00000couaeIAA",
+      "sfdcId15": "001Rk00000couae",
+      "customer": "J2 Company LLC",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "001Rk00000DbOU1IAN",
+      "sfdcId15": "001Rk00000DbOU1",
+      "customer": "Adkins Electric, Inc.",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 25416699,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "001Rk00000dCOCzIAO",
+      "sfdcId15": "001Rk00000dCOCz",
+      "customer": "Double L Management",
+      "annualRevenue": 118000000,
+      "trade": "Other",
+      "t12Gmv": 84750,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "001Rk00000DjIlWIAV",
+      "sfdcId15": "001Rk00000DjIlW",
+      "customer": "Annapurna Construction",
+      "annualRevenue": 7000000,
+      "trade": "Other",
+      "t12Gmv": 1456588.6099999999,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000e8RTuIAM",
+      "sfdcId15": "001Rk00000e8RTu",
+      "customer": "Threestones Alliance Inc.",
+      "annualRevenue": 8000000,
+      "trade": "Electrical",
+      "t12Gmv": 2371330,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000e9IW7IAM",
+      "sfdcId15": "001Rk00000e9IW7",
+      "customer": "Contech Control Services",
+      "annualRevenue": 135000000,
+      "trade": "Electrical",
+      "t12Gmv": 86083,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "001Rk00000eAVgDIAW",
+      "sfdcId15": "001Rk00000eAVgD",
+      "customer": "Blackstone Construction, LLC",
+      "annualRevenue": 17000000,
+      "trade": "Other",
+      "t12Gmv": 256264.86,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "001Rk00000Ee7BWIAZ",
+      "sfdcId15": "001Rk00000Ee7BW",
+      "customer": "ADS, LLC Concrete Placement Co.",
+      "annualRevenue": 25000000,
+      "trade": "Other",
+      "t12Gmv": 299696.87,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "001Rk00000ePjpMIAS",
+      "sfdcId15": "001Rk00000ePjpM",
+      "customer": "Alden Mechanical",
+      "annualRevenue": 15000000,
+      "trade": "Mechanical",
+      "t12Gmv": 4423960.73,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000escAwIAI",
+      "sfdcId15": "001Rk00000escAw",
+      "customer": "IWM3",
+      "annualRevenue": 10000000,
+      "trade": "Mechanical",
+      "t12Gmv": 179521.57,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "001Rk00000f4KYUIA2",
+      "sfdcId15": "001Rk00000f4KYU",
+      "customer": "Ray Johnson Mechanical",
+      "annualRevenue": 5000000,
+      "trade": "Mechanical",
+      "t12Gmv": 218145.41,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "001Rk00000f97yjIAA",
+      "sfdcId15": "001Rk00000f97yj",
+      "customer": "North American Fire Protection",
+      "annualRevenue": 22000000,
+      "trade": "Mechanical",
+      "t12Gmv": 3727724.88,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000f99KbIAI",
+      "sfdcId15": "001Rk00000f99Kb",
+      "customer": "Western Electric Contractors LLC",
+      "annualRevenue": 3000000,
+      "trade": "Electrical",
+      "t12Gmv": 2102,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "001Rk00000fHmlOIAS",
+      "sfdcId15": "001Rk00000fHmlO",
+      "customer": "Cardinal Civil Contracting - Charlotte",
+      "annualRevenue": 0,
+      "trade": "Mechanical",
+      "t12Gmv": 15709428.629999999,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000FlVRQIA3",
+      "sfdcId15": "001Rk00000FlVRQ",
+      "customer": "Greymane",
+      "annualRevenue": 7000000,
+      "trade": "Other",
+      "t12Gmv": 31676.02,
+      "monthsWithData": 9
+    },
+    {
+      "sfdcId18": "001Rk00000glepuIAA",
+      "sfdcId15": "001Rk00000glepu",
+      "customer": "Breig Electric & Consultants",
+      "annualRevenue": 4660000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "001Rk00000GqS7LIAV",
+      "sfdcId15": "001Rk00000GqS7L",
+      "customer": "Lawyer Mechanical Services",
+      "annualRevenue": 3000000,
+      "trade": "Mechanical",
+      "t12Gmv": 2155.02,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "001Rk00000hg5aPIAQ",
+      "sfdcId15": "001Rk00000hg5aP",
+      "customer": "Spring Homes Limited",
+      "annualRevenue": 2000000,
+      "trade": "Other",
+      "t12Gmv": 2956757.67,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "001Rk00000hGh9vIAC",
+      "sfdcId15": "001Rk00000hGh9v",
+      "customer": "TMG Wall Systems",
+      "annualRevenue": 15000000,
+      "trade": "Other",
+      "t12Gmv": 60147.51,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "001Rk00000HQG7mIAH",
+      "sfdcId15": "001Rk00000HQG7m",
+      "customer": "Wohali Builders",
+      "annualRevenue": 25000000,
+      "trade": "Other",
+      "t12Gmv": 82183.65,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "001Rk00000i4iHFIAY",
+      "sfdcId15": "001Rk00000i4iHF",
+      "customer": "Comfort Systems MidAtlantic",
+      "annualRevenue": 65000000,
+      "trade": "Mechanical",
+      "t12Gmv": 257.61,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "001Rk00000J3VoRIAV",
+      "sfdcId15": "001Rk00000J3VoR",
+      "customer": "West Coast Mechanical Insulation",
+      "annualRevenue": 3700000,
+      "trade": "Mechanical",
+      "t12Gmv": 95721,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "001Rk00000jpVmFIAU",
+      "sfdcId15": "001Rk00000jpVmF",
+      "customer": "Mechanical Systems Co.",
+      "annualRevenue": 13000000,
+      "trade": "Mechanical",
+      "t12Gmv": 46384.75,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "001Rk00000jz7dlIAA",
+      "sfdcId15": "001Rk00000jz7dl",
+      "customer": "Amplified Electric, LLC",
+      "annualRevenue": 5500000,
+      "trade": "Electrical",
+      "t12Gmv": 1627757,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000k4YgYIAU",
+      "sfdcId15": "001Rk00000k4YgY",
+      "customer": "Advantage Acoustical",
+      "annualRevenue": 7000000,
+      "trade": "Other",
+      "t12Gmv": 22700,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "001Rk00000kBoQUIA0",
+      "sfdcId15": "001Rk00000kBoQU",
+      "customer": "Air Controls, Inc.",
+      "annualRevenue": 2837000,
+      "trade": "Other",
+      "t12Gmv": 10866742.58,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "001Rk00000ke8pBIAQ",
+      "sfdcId15": "001Rk00000ke8pB",
+      "customer": "Texas Electrical Solutions",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 2939859,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000Kel8qIAB",
+      "sfdcId15": "001Rk00000Kel8q",
+      "customer": "Cherry Street Energy, LLC",
+      "annualRevenue": 35000000,
+      "trade": "Electrical",
+      "t12Gmv": 9526336,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000l2sDFIAY",
+      "sfdcId15": "001Rk00000l2sDF",
+      "customer": "Schultz Brothers Electric",
+      "annualRevenue": 4000000,
+      "trade": "Electrical",
+      "t12Gmv": 1848213,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000LoAzNIAV",
+      "sfdcId15": "001Rk00000LoAzN",
+      "customer": "Brigston Electric",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 1401,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "001Rk00000LwOG4IAN",
+      "sfdcId15": "001Rk00000LwOG4",
+      "customer": "MCI Wireless",
+      "annualRevenue": 3200000,
+      "trade": "Electrical",
+      "t12Gmv": 255843,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "001Rk00000McJfDIAV",
+      "sfdcId15": "001Rk00000McJfD",
+      "customer": "Victory Electrical Solutions",
+      "annualRevenue": 1000000,
+      "trade": "Electrical",
+      "t12Gmv": 206723,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "001Rk00000MtzvHIAR",
+      "sfdcId15": "001Rk00000MtzvH",
+      "customer": "RT Moore Mechanical",
+      "annualRevenue": 3109000,
+      "trade": "Mechanical",
+      "t12Gmv": 773594.67,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000NSejvIAD",
+      "sfdcId15": "001Rk00000NSejv",
+      "customer": "Paragon Roofing",
+      "annualRevenue": 0,
+      "trade": "Other",
+      "t12Gmv": 4662942.279999999,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "001Rk00000OOWgQIAX",
+      "sfdcId15": "001Rk00000OOWgQ",
+      "customer": "DKD Enterprises LLC",
+      "annualRevenue": 8000000,
+      "trade": "Other",
+      "t12Gmv": 7132136.609999999,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000OzjfzIAB",
+      "sfdcId15": "001Rk00000Ozjfz",
+      "customer": "Estructure Solutions",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "001Rk00000OzjfzIAB",
+      "sfdcId15": "001Rk00000Ozjfz",
+      "customer": "eMobility Business Unit",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 34938156,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000P0OZXIA3",
+      "sfdcId15": "001Rk00000P0OZX",
+      "customer": "Dig Tech",
+      "annualRevenue": 6250000,
+      "trade": "Electrical",
+      "t12Gmv": 1459806,
+      "monthsWithData": 11
+    },
+    {
+      "sfdcId18": "001Rk00000PCq7iIAD",
+      "sfdcId15": "001Rk00000PCq7i",
+      "customer": "A & M Warshaw Fire Protection",
+      "annualRevenue": 4455000,
+      "trade": "Mechanical",
+      "t12Gmv": 740158.22,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000Qc278IAB",
+      "sfdcId15": "001Rk00000Qc278",
+      "customer": "MSF Electric, Inc.",
+      "annualRevenue": 30000000,
+      "trade": "Electrical",
+      "t12Gmv": 2133,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "001Rk00000R8nOYIAZ",
+      "sfdcId15": "001Rk00000R8nOY",
+      "customer": "Lighthouse Electric - IL",
+      "annualRevenue": 1102000,
+      "trade": "Electrical",
+      "t12Gmv": 29409,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "001Rk00000S8KebIAF",
+      "sfdcId15": "001Rk00000S8Keb",
+      "customer": "Doyle Electric - TX",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 1445,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "001Rk00000TBz1LIAT",
+      "sfdcId15": "001Rk00000TBz1L",
+      "customer": "TTI / AEC",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 8802166,
+      "monthsWithData": 10
+    },
+    {
+      "sfdcId18": "001Rk00000TsIVpIAN",
+      "sfdcId15": "001Rk00000TsIVp",
+      "customer": "Pacific Hotel Electric",
+      "annualRevenue": 4497000,
+      "trade": "Electrical",
+      "t12Gmv": 64262,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "001Rk00000VpbBpIAJ",
+      "sfdcId15": "001Rk00000VpbBp",
+      "customer": "QPS Oregon",
+      "annualRevenue": 47797000,
+      "trade": "Electrical",
+      "t12Gmv": 2277132,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000VpMBPIA3",
+      "sfdcId15": "001Rk00000VpMBP",
+      "customer": "QPS Arizona",
+      "annualRevenue": 47797000,
+      "trade": "Electrical",
+      "t12Gmv": 1488998,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000VYHIXIA5",
+      "sfdcId15": "001Rk00000VYHIX",
+      "customer": "Merit Electrical",
+      "annualRevenue": 2000000,
+      "trade": "Electrical",
+      "t12Gmv": 260668,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000WNHpMIAX",
+      "sfdcId15": "001Rk00000WNHpM",
+      "customer": "Forte FOS JV",
+      "annualRevenue": 4000000,
+      "trade": "Electrical",
+      "t12Gmv": 1009628,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000WNktGIAT",
+      "sfdcId15": "001Rk00000WNktG",
+      "customer": "Kleinknecht Electric NJ Inc",
+      "annualRevenue": 900000,
+      "trade": "Electrical",
+      "t12Gmv": 46438,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "001Rk00000WNml7IAD",
+      "sfdcId15": "001Rk00000WNml7",
+      "customer": "Kleinknecht Electric Company",
+      "annualRevenue": 900000,
+      "trade": "Electrical",
+      "t12Gmv": 35283284,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "001Rk00000WNu0oIAD",
+      "sfdcId15": "001Rk00000WNu0o",
+      "customer": "Streib Systems",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 219913,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "001Rk00000WNXUKIA5",
+      "sfdcId15": "001Rk00000WNXUK",
+      "customer": "Forte Gramercy JV",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 3425834,
+      "monthsWithData": 12
+    },
+    {
+      "sfdcId18": "0014x00000FT1CGAA1",
+      "sfdcId15": "0014x00000FT1CG",
+      "customer": "A&H Communications Inc.",
+      "annualRevenue": 75000000,
+      "trade": "Electrical",
+      "t12Gmv": 6308320,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "001Rk00000piyCoIAI",
+      "sfdcId15": "001Rk00000piyCo",
+      "customer": "Seltrek Electric",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 6521425,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x00000jTNUaAAO",
+      "sfdcId15": "0014x00000jTNUa",
+      "customer": "Red Oak Commercial",
+      "annualRevenue": 15000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1705967.07,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x00000cwFraAAE",
+      "sfdcId15": "0014x00000cwFra",
+      "customer": "Kraft Mechanical LLC",
+      "annualRevenue": 55000000,
+      "trade": "Mechanical",
+      "t12Gmv": 6905887.93,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x00000FRsDYAA1",
+      "sfdcId15": "0014x00000FRsDY",
+      "customer": "BDI, Inc.",
+      "annualRevenue": 12000000,
+      "trade": "Electrical",
+      "t12Gmv": 71772,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000jTMRaAAO",
+      "sfdcId15": "0014x00000jTMRa",
+      "customer": "Lochridge-Priest, Inc.",
+      "annualRevenue": 76000000,
+      "trade": "Mechanical",
+      "t12Gmv": 525558.02,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "001Rk00000jFGfIIAW",
+      "sfdcId15": "001Rk00000jFGfI",
+      "customer": "J.M. Botto",
+      "annualRevenue": 100000,
+      "trade": "Mechanical",
+      "t12Gmv": 106378.32,
+      "monthsWithData": 8
+    },
+    {
+      "sfdcId18": "0014x00001oIcg6AAC",
+      "sfdcId15": "0014x00001oIcg6",
+      "customer": "United Group Services",
+      "annualRevenue": 140000000,
+      "trade": "Mechanical",
+      "t12Gmv": 3217,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000Kpy8xAAB",
+      "sfdcId15": "0014x00000Kpy8x",
+      "customer": "Legacy Electrical Services, Inc.",
+      "annualRevenue": 4000000,
+      "trade": "Electrical",
+      "t12Gmv": 1030,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "001Rk00000qLrubIAC",
+      "sfdcId15": "001Rk00000qLrub",
+      "customer": "CEBSA",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 18901,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00000FRUZlAAP",
+      "sfdcId15": "0014x00000FRUZl",
+      "customer": "Giant PowerComm",
+      "annualRevenue": 4000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000si2eVAAQ",
+      "sfdcId15": "0014x00000si2eV",
+      "customer": "Ecker Mechanical Contractors, Inc.",
+      "annualRevenue": 15000000,
+      "trade": "Mechanical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000YkPSoAAN",
+      "sfdcId15": "0014x00000YkPSo",
+      "customer": "Performance Electrical Contractors",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000BSs16AAD",
+      "sfdcId15": "0014x00000BSs16",
+      "customer": "W. Bradley Electric",
+      "annualRevenue": 112000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "001Rk00000TBz1LIAT",
+      "sfdcId15": "001Rk00000TBz1L",
+      "customer": "Tietjen Technologies, Inc.",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000BSs16AAD",
+      "sfdcId15": "0014x00000BSs16",
+      "customer": "W. Bradley Electric",
+      "annualRevenue": 112000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "001Rk00000TBz1LIAT",
+      "sfdcId15": "001Rk00000TBz1L",
+      "customer": "Tietjen Technologies, Inc.",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000YkPSoAAN",
+      "sfdcId15": "0014x00000YkPSo",
+      "customer": "Performance Electrical Contractors",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000si2eVAAQ",
+      "sfdcId15": "0014x00000si2eV",
+      "customer": "Ecker Mechanical Contractors, Inc.",
+      "annualRevenue": 15000000,
+      "trade": "Mechanical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "0014x00000si2eVAAQ",
+      "sfdcId15": "0014x00000si2eV",
+      "customer": "Ecker Mechanical Contractors, Inc.",
+      "annualRevenue": 15000000,
+      "trade": "Mechanical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "001Rk00000TBz1LIAT",
+      "sfdcId15": "001Rk00000TBz1L",
+      "customer": "Tietjen Technologies, Inc.",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 0,
+      "monthsWithData": 0
+    },
+    {
+      "sfdcId18": "001Rk00000k4YgYIAU",
+      "sfdcId15": "001Rk00000k4YgY",
+      "customer": "Advantage Acoustical, LLC",
+      "annualRevenue": 7000000,
+      "trade": "Other",
+      "t12Gmv": 1396051.96,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000jTMJnAAO",
+      "sfdcId15": "0014x00000jTMJn",
+      "customer": "All States Mechanical",
+      "annualRevenue": 4000000,
+      "trade": "Mechanical",
+      "t12Gmv": 616632,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000FRUacAAH",
+      "sfdcId15": "0014x00000FRUac",
+      "customer": "Birmingham Electrical Contractors, Inc.",
+      "annualRevenue": 5209000,
+      "trade": "Electrical",
+      "t12Gmv": 270700,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "001Rk00000rAGg7IAG",
+      "sfdcId15": "001Rk00000rAGg7",
+      "customer": "Bleuwave",
+      "annualRevenue": 4000000,
+      "trade": "Other",
+      "t12Gmv": 16882.2,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000YnBnrAAF",
+      "sfdcId15": "0014x00000YnBnr",
+      "customer": "Britain Electric Co.",
+      "annualRevenue": 22000000,
+      "trade": "Electrical",
+      "t12Gmv": 20,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "001Rk00000s134uIAA",
+      "sfdcId15": "001Rk00000s134u",
+      "customer": "Cardinal Civil Contracting-Triad",
+      "annualRevenue": 0,
+      "trade": "Other",
+      "t12Gmv": 7047905.28,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000cw97ZAAQ",
+      "sfdcId15": "0014x00000cw97Z",
+      "customer": "Crown Electric",
+      "annualRevenue": 50000000,
+      "trade": "Electrical",
+      "t12Gmv": 18147667,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x000014aHBCAA2",
+      "sfdcId15": "0014x000014aHBC",
+      "customer": "DECCO, INC",
+      "annualRevenue": 60000000,
+      "trade": "Mechanical",
+      "t12Gmv": 5125283.85,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "001Rk00000mit8PIAQ",
+      "sfdcId15": "001Rk00000mit8P",
+      "customer": "Dies Electric",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 198671,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000Kpg89AAB",
+      "sfdcId15": "0014x00000Kpg89",
+      "customer": "Dnesco Electric, Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 12769,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "0014x00000KpbgZAAR",
+      "sfdcId15": "0014x00000KpbgZ",
+      "customer": "Elk Electric Inc.",
+      "annualRevenue": 21000000,
+      "trade": "Electrical",
+      "t12Gmv": 3347,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00001005vXAAQ",
+      "sfdcId15": "0014x00001005vX",
+      "customer": "Grayhawk, LLC",
+      "annualRevenue": 20000000,
+      "trade": "Other",
+      "t12Gmv": 1,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x0000175PsuAAE",
+      "sfdcId15": "0014x0000175Psu",
+      "customer": "Gulf Coast Plumbing of Central Florida, Inc.",
+      "annualRevenue": 50000000,
+      "trade": "Mechanical",
+      "t12Gmv": 49338.36,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000jTMROAA4",
+      "sfdcId15": "0014x00000jTMRO",
+      "customer": "Hardy Corporation",
+      "annualRevenue": 40800000,
+      "trade": "Mechanical",
+      "t12Gmv": 283383.23,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00001miFuJAAU",
+      "sfdcId15": "0014x00001miFuJ",
+      "customer": "Herman Goldner Co., Inc.",
+      "annualRevenue": 40000000,
+      "trade": "Mechanical",
+      "t12Gmv": 3294.63,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000Hnt65AAB",
+      "sfdcId15": "0014x00000Hnt65",
+      "customer": "Jomar Electrical Contractors",
+      "annualRevenue": 80000000,
+      "trade": "Electrical",
+      "t12Gmv": 41111480,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x000011TfR2AAK",
+      "sfdcId15": "0014x000011TfR2",
+      "customer": "Kraun Electric",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 835048,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00000Kpg9QAAR",
+      "sfdcId15": "0014x00000Kpg9Q",
+      "customer": "MMR Constructors, Inc",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 4129069,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000jT96NAAS",
+      "sfdcId15": "0014x00000jT96N",
+      "customer": "Mann Mechanical Co.",
+      "annualRevenue": 100000000,
+      "trade": "Mechanical",
+      "t12Gmv": 14014992,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000jTMJnAAO",
+      "sfdcId15": "0014x00000jTMJn",
+      "customer": "Momentum Mechanical",
+      "annualRevenue": 4000000,
+      "trade": "Mechanical",
+      "t12Gmv": 765378,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000cvOX5AAM",
+      "sfdcId15": "0014x00000cvOX5",
+      "customer": "Raiden Electric LLC",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 4950934,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000cwIHMAA2",
+      "sfdcId15": "0014x00000cwIHM",
+      "customer": "Scotvale Electrical Systems",
+      "annualRevenue": 8000000,
+      "trade": "Electrical",
+      "t12Gmv": 689198,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000Hnt6TAAR",
+      "sfdcId15": "0014x00000Hnt6T",
+      "customer": "Sequoyah Electric",
+      "annualRevenue": 90635000,
+      "trade": "Electrical",
+      "t12Gmv": 96551,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00000FRriOAAT",
+      "sfdcId15": "0014x00000FRriO",
+      "customer": "Stryker Electrical Contracting, LLC",
+      "annualRevenue": 18000000,
+      "trade": "Electrical",
+      "t12Gmv": 4217747,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000Hnsx3AAB",
+      "sfdcId15": "0014x00000Hnsx3",
+      "customer": "VarcoMac",
+      "annualRevenue": 325000000,
+      "trade": "Electrical",
+      "t12Gmv": 53401516,
+      "monthsWithData": 7
+    },
+    {
+      "sfdcId18": "0014x00000cwBwZAAU",
+      "sfdcId15": "0014x00000cwBwZ",
+      "customer": "Weyer Electric",
+      "annualRevenue": 17000000,
+      "trade": "Electrical",
+      "t12Gmv": 5501,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000FRsEEAA1",
+      "sfdcId15": "0014x00000FRsEE",
+      "customer": "Enertech Electrical Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 2144107,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "001Rk00000sNcf0IAC",
+      "sfdcId15": "001Rk00000sNcf0",
+      "customer": "Seaside Waterproofing",
+      "annualRevenue": 6000000,
+      "trade": "Other",
+      "t12Gmv": 1035917,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00000cwBwZAAU",
+      "sfdcId15": "0014x00000cwBwZ",
+      "customer": "WSD, Inc.",
+      "annualRevenue": 17000000,
+      "trade": "Electrical",
+      "t12Gmv": 2537881,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00000HmsFVAAZ",
+      "sfdcId15": "0014x00000HmsFV",
+      "customer": "Evergreen Innovation Group, LLC",
+      "annualRevenue": 360000000,
+      "trade": "Electrical",
+      "t12Gmv": 57778,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000jTLz8AAG",
+      "sfdcId15": "0014x00000jTLz8",
+      "customer": "Legacy Mechanical Services LLC",
+      "annualRevenue": 10000000,
+      "trade": "Mechanical",
+      "t12Gmv": 10331,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "001Rk00000bGoWcIAK",
+      "sfdcId15": "001Rk00000bGoWc",
+      "customer": "S & R Mechanical",
+      "annualRevenue": 50000000,
+      "trade": "Mechanical",
+      "t12Gmv": 91100,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "001Rk00000r1PnSIAU",
+      "sfdcId15": "001Rk00000r1PnS",
+      "customer": "City Wye'd Electric Ltd",
+      "annualRevenue": 6000000,
+      "trade": "Electrical",
+      "t12Gmv": 116089,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00001005vXAAQ",
+      "sfdcId15": "0014x00001005vX",
+      "customer": "Grayhawk",
+      "annualRevenue": 20000000,
+      "trade": "Other",
+      "t12Gmv": 707,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000cw4bpAAA",
+      "sfdcId15": "0014x00000cw4bp",
+      "customer": "ASCC, Inc.",
+      "annualRevenue": 17000000,
+      "trade": "Electrical",
+      "t12Gmv": 3705513,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "001Rk00000tXQbyIAG",
+      "sfdcId15": "001Rk00000tXQby",
+      "customer": "Ackerman Plumbing",
+      "annualRevenue": 0,
+      "trade": "Mechanical",
+      "t12Gmv": 1392418,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "0014x00000cwEl6AAE",
+      "sfdcId15": "0014x00000cwEl6",
+      "customer": "Electriforce, Inc.",
+      "annualRevenue": 70000000,
+      "trade": "Electrical",
+      "t12Gmv": 154402,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "0014x00000FRsG1AAL",
+      "sfdcId15": "0014x00000FRsG1",
+      "customer": "Energy Electric Co., Inc.",
+      "annualRevenue": 40000000,
+      "trade": "Electrical",
+      "t12Gmv": 6888607,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "0014x00000Kpy9EAAR",
+      "sfdcId15": "0014x00000Kpy9E",
+      "customer": "Weber Electric, Inc.",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 9534482,
+      "monthsWithData": 6
+    },
+    {
+      "sfdcId18": "001Rk00000tneXkIAI",
+      "sfdcId15": "001Rk00000tneXk",
+      "customer": "JVF Plumbing",
+      "annualRevenue": 5000000,
+      "trade": "Other",
+      "t12Gmv": 822322,
+      "monthsWithData": 5
+    },
+    {
+      "sfdcId18": "0014x00001QRJgJAAX",
+      "sfdcId15": "0014x00001QRJgJ",
+      "customer": "Jasko Development, LLC",
+      "annualRevenue": 10000000,
+      "trade": "Other",
+      "t12Gmv": 458951,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00001miaj1AAA",
+      "sfdcId15": "0014x00001miaj1",
+      "customer": "KenMor Electric",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 1651938,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000FRUVhAAP",
+      "sfdcId15": "0014x00000FRUVh",
+      "customer": "Regency Electric (NLG)",
+      "annualRevenue": 32186000,
+      "trade": "Electrical",
+      "t12Gmv": 746318,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x000015V64sAAC",
+      "sfdcId15": "0014x000015V64s",
+      "customer": "SanDow Construction, Inc.",
+      "annualRevenue": 7000000,
+      "trade": "Electrical",
+      "t12Gmv": 82,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000D8d8bAAB",
+      "sfdcId15": "0014x00000D8d8b",
+      "customer": "Serve Electric",
+      "annualRevenue": 44000000,
+      "trade": "Electrical",
+      "t12Gmv": 16587,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00001oIcg6AAC",
+      "sfdcId15": "0014x00001oIcg6",
+      "customer": "United Group Services - old system",
+      "annualRevenue": 140000000,
+      "trade": "Mechanical",
+      "t12Gmv": 109628,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "001Rk00000oUqCVIA0",
+      "sfdcId15": "001Rk00000oUqCV",
+      "customer": "VR Mechanical Solutions Inc.",
+      "annualRevenue": 80000000,
+      "trade": "Mechanical",
+      "t12Gmv": 3514,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000KpgHqAAJ",
+      "sfdcId15": "0014x00000KpgHq",
+      "customer": "BMT Shared Services",
+      "annualRevenue": 730000000,
+      "trade": "Electrical",
+      "t12Gmv": 4698736,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000KpgHqAAJ",
+      "sfdcId15": "0014x00000KpgHq",
+      "customer": "Convergent Industrial",
+      "annualRevenue": 730000000,
+      "trade": "Electrical",
+      "t12Gmv": 30155,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00001QA0lnAAD",
+      "sfdcId15": "0014x00001QA0ln",
+      "customer": "F. G. Haggerty Co.",
+      "annualRevenue": 45000000,
+      "trade": "Mechanical",
+      "t12Gmv": 28267925,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000cxMW2AAM",
+      "sfdcId15": "0014x00000cxMW2",
+      "customer": "Fullford Electric",
+      "annualRevenue": 55000000,
+      "trade": "Electrical",
+      "t12Gmv": 229965,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000zzvKUAAY",
+      "sfdcId15": "0014x00000zzvKU",
+      "customer": "Intertech Commercial Flooring",
+      "annualRevenue": 15000000,
+      "trade": "Other",
+      "t12Gmv": 655271,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00001miaj1AAA",
+      "sfdcId15": "0014x00001miaj1",
+      "customer": "KenMor Electric Co.",
+      "annualRevenue": 0,
+      "trade": "Electrical",
+      "t12Gmv": 15131265,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "0014x00000KpgHqAAJ",
+      "sfdcId15": "0014x00000KpgHq",
+      "customer": "National",
+      "annualRevenue": 730000000,
+      "trade": "Electrical",
+      "t12Gmv": 15641385,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000KpgHqAAJ",
+      "sfdcId15": "0014x00000KpgHq",
+      "customer": "Newtron Martinez",
+      "annualRevenue": 730000000,
+      "trade": "Electrical",
+      "t12Gmv": 400902,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000KpgHqAAJ",
+      "sfdcId15": "0014x00000KpgHq",
+      "customer": "Newtron Reno",
+      "annualRevenue": 730000000,
+      "trade": "Electrical",
+      "t12Gmv": 18749302,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "001Rk00000gOo8MIAS",
+      "sfdcId15": "001Rk00000gOo8M",
+      "customer": "PPS",
+      "annualRevenue": 70000000,
+      "trade": "Mechanical",
+      "t12Gmv": 4643,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000FRUy3AAH",
+      "sfdcId15": "0014x00000FRUy3",
+      "customer": "Tirone Electric, Inc.",
+      "annualRevenue": 23000000,
+      "trade": "Electrical",
+      "t12Gmv": 90608,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000KpgHqAAJ",
+      "sfdcId15": "0014x00000KpgHq",
+      "customer": "Triad Baton Rouge",
+      "annualRevenue": 730000000,
+      "trade": "Electrical",
+      "t12Gmv": 7961929,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000KpgHqAAJ",
+      "sfdcId15": "0014x00000KpgHq",
+      "customer": "Triad Communications",
+      "annualRevenue": 730000000,
+      "trade": "Electrical",
+      "t12Gmv": 354444,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000KpgHqAAJ",
+      "sfdcId15": "0014x00000KpgHq",
+      "customer": "Triad Control Systems",
+      "annualRevenue": 730000000,
+      "trade": "Electrical",
+      "t12Gmv": 3818700,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000KpgHqAAJ",
+      "sfdcId15": "0014x00000KpgHq",
+      "customer": "Triad Houston",
+      "annualRevenue": 730000000,
+      "trade": "Electrical",
+      "t12Gmv": 4623767,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000KpgHqAAJ",
+      "sfdcId15": "0014x00000KpgHq",
+      "customer": "Triad Lake Charles",
+      "annualRevenue": 730000000,
+      "trade": "Electrical",
+      "t12Gmv": 683377,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "001Rk00000mmO1NIAU",
+      "sfdcId15": "001Rk00000mmO1N",
+      "customer": "Two Sigma Construction Group",
+      "annualRevenue": 5000000,
+      "trade": "Mechanical",
+      "t12Gmv": 350,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00001oIcg6AAC",
+      "sfdcId15": "0014x00001oIcg6",
+      "customer": "United Group Services Inc",
+      "annualRevenue": 140000000,
+      "trade": "Mechanical",
+      "t12Gmv": 5465558,
+      "monthsWithData": 4
+    },
+    {
+      "sfdcId18": "001Rk00000tXYo2IAG",
+      "sfdcId15": "001Rk00000tXYo2",
+      "customer": "Alliance Engineering & Construction Ltd.",
+      "annualRevenue": 30000000,
+      "trade": "Electrical",
+      "t12Gmv": 31080,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "001Rk0000072qQRIAY",
+      "sfdcId15": "001Rk0000072qQR",
+      "customer": "Art Plumbing Co.",
+      "annualRevenue": 75000000,
+      "trade": "Mechanical",
+      "t12Gmv": 787,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000Kpg4YAAR",
+      "sfdcId15": "0014x00000Kpg4Y",
+      "customer": "Boys Electrical Contractors, LLC - Procore",
+      "annualRevenue": 25000000,
+      "trade": "Electrical",
+      "t12Gmv": 243,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "001Rk00000WNiIsIAL",
+      "sfdcId15": "001Rk00000WNiIs",
+      "customer": "Fairfield Electric Inc",
+      "annualRevenue": 4000000,
+      "trade": "Electrical",
+      "t12Gmv": 1111050,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000gCDvSAAW",
+      "sfdcId15": "0014x00000gCDvS",
+      "customer": "Goforth Electric, Inc.",
+      "annualRevenue": 5000000,
+      "trade": "Electrical",
+      "t12Gmv": 188100,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "001Rk00000uEL17IAG",
+      "sfdcId15": "001Rk00000uEL17",
+      "customer": "Green Tanner Industrial Construction",
+      "annualRevenue": 80000000,
+      "trade": "Electrical",
+      "t12Gmv": 9438421,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000cwXz5AAE",
+      "sfdcId15": "0014x00000cwXz5",
+      "customer": "Harper Electric CIMS (OLD)",
+      "annualRevenue": 40000000,
+      "trade": "Electrical",
+      "t12Gmv": 900326,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000jTLwbAAG",
+      "sfdcId15": "0014x00000jTLwb",
+      "customer": "Humphrey Company Ltd.",
+      "annualRevenue": 75000000,
+      "trade": "Mechanical",
+      "t12Gmv": 2229,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "001Rk00000uggp6IAA",
+      "sfdcId15": "001Rk00000uggp6",
+      "customer": "Marks Clearing and Grading, Inc.",
+      "annualRevenue": 0,
+      "trade": "Other",
+      "t12Gmv": 3272182,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "001Rk00000lhbqsIAA",
+      "sfdcId15": "001Rk00000lhbqs",
+      "customer": "Maxi Power Electrical Services Inc.",
+      "annualRevenue": 10000000,
+      "trade": "Electrical",
+      "t12Gmv": 2108727,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000jTMUmAAO",
+      "sfdcId15": "0014x00000jTMUm",
+      "customer": "Mid - Atlantic Mechanical, Inc.",
+      "annualRevenue": 112000000,
+      "trade": "Mechanical",
+      "t12Gmv": 5381701,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000jRwtjAAC",
+      "sfdcId15": "0014x00000jRwtj",
+      "customer": "NLG",
+      "annualRevenue": 185000000,
+      "trade": "Electrical",
+      "t12Gmv": 16995001,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000D8d81AAB",
+      "sfdcId15": "0014x00000D8d81",
+      "customer": "Nardone Electrical Corp.",
+      "annualRevenue": 41000000,
+      "trade": "Electrical",
+      "t12Gmv": 428974,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000jTMcMAAW",
+      "sfdcId15": "0014x00000jTMcM",
+      "customer": "Southwest Plumbing Services",
+      "annualRevenue": 18000000,
+      "trade": "Mechanical",
+      "t12Gmv": 861059,
+      "monthsWithData": 3
+    },
+    {
+      "sfdcId18": "0014x00000sim9IAAQ",
+      "sfdcId15": "0014x00000sim9I",
+      "customer": "Brent Electric Co, Inc.",
+      "annualRevenue": 3114630,
+      "trade": "Electrical",
+      "t12Gmv": 3774,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00001oIci7AAC",
+      "sfdcId15": "0014x00001oIci7",
+      "customer": "Crestview Electric",
+      "annualRevenue": 21763350,
+      "trade": "Electrical",
+      "t12Gmv": 1068077,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000si4IGAAY",
+      "sfdcId15": "0014x00000si4IG",
+      "customer": "DMS Mechanical",
+      "annualRevenue": 25000000,
+      "trade": "Mechanical",
+      "t12Gmv": 2142381,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "001Rk00000FPezKIAT",
+      "sfdcId15": "001Rk00000FPezK",
+      "customer": "Donato PLMG Inc.",
+      "annualRevenue": 40000000,
+      "trade": "Mechanical",
+      "t12Gmv": 2231,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000cvNXUAA2",
+      "sfdcId15": "0014x00000cvNXU",
+      "customer": "Eagle Controls, LLC",
+      "annualRevenue": 1000000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00001zsxPoAAI",
+      "sfdcId15": "0014x00001zsxPo",
+      "customer": "Harry Pepper & Associates",
+      "annualRevenue": 40000000,
+      "trade": "Other",
+      "t12Gmv": 2554,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000cvNXUAA2",
+      "sfdcId15": "0014x00000cvNXU",
+      "customer": "Icon Mechanical Construction & Engineering, Llc.",
+      "annualRevenue": 1000000000,
+      "trade": "Mechanical",
+      "t12Gmv": 5001,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000jTMnNAAW",
+      "sfdcId15": "0014x00000jTMnN",
+      "customer": "JND Mechanical",
+      "annualRevenue": 25000000,
+      "trade": "Mechanical",
+      "t12Gmv": 261174,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000KpyDUAAZ",
+      "sfdcId15": "0014x00000KpyDU",
+      "customer": "Jakes Electric, LLC",
+      "annualRevenue": 45000000,
+      "trade": "Electrical",
+      "t12Gmv": 310,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000cvXAxAAM",
+      "sfdcId15": "0014x00000cvXAx",
+      "customer": "K & R Electric, Inc. - Branson",
+      "annualRevenue": 3500000,
+      "trade": "Electrical",
+      "t12Gmv": 1,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000jTMU5AAO",
+      "sfdcId15": "0014x00000jTMU5",
+      "customer": "Mechanical Systems Co. LLC",
+      "annualRevenue": 29000000,
+      "trade": "Mechanical",
+      "t12Gmv": 3319,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "001Rk00000vqeoXIAQ",
+      "sfdcId15": "001Rk00000vqeoX",
+      "customer": "Nebrasky HVAC / Service",
+      "annualRevenue": 7000000,
+      "trade": "Mechanical",
+      "t12Gmv": 46878,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "001Rk00000vqeoXIAQ",
+      "sfdcId15": "001Rk00000vqeoX",
+      "customer": "Nebrasky New Construction Plumbing",
+      "annualRevenue": 7000000,
+      "trade": "Mechanical",
+      "t12Gmv": 9600,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000jTLsKAAW",
+      "sfdcId15": "0014x00000jTLsK",
+      "customer": "Riddleberger Brothers, Inc.",
+      "annualRevenue": 95000000,
+      "trade": "Mechanical",
+      "t12Gmv": 309,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000FRUZqAAP",
+      "sfdcId15": "0014x00000FRUZq",
+      "customer": "Robert B. Samuels Inc.",
+      "annualRevenue": 60000000,
+      "trade": "Electrical",
+      "t12Gmv": 39820,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000uuOqtAAE",
+      "sfdcId15": "0014x00000uuOqt",
+      "customer": "Three Phase Electric, Llc.",
+      "annualRevenue": 8000000,
+      "trade": "Electrical",
+      "t12Gmv": 177055,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "001Rk00000mmO1NIAU",
+      "sfdcId15": "001Rk00000mmO1N",
+      "customer": "Two Sigma Construction Group, Inc.",
+      "annualRevenue": 5000000,
+      "trade": "Mechanical",
+      "t12Gmv": 20746,
+      "monthsWithData": 2
+    },
+    {
+      "sfdcId18": "0014x00000cvNXUAA2",
+      "sfdcId15": "0014x00000cvNXU",
+      "customer": "iENG, LLC",
+      "annualRevenue": 1000000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000cvNXUAA2",
+      "sfdcId15": "0014x00000cvNXU",
+      "customer": "iSuite, LLC",
+      "annualRevenue": 1000000000,
+      "trade": "Mechanical",
+      "t12Gmv": 1,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000jTMJnAAO",
+      "sfdcId15": "0014x00000jTMJn",
+      "customer": "All States Plumbing & Heating",
+      "annualRevenue": 4000000,
+      "trade": "Mechanical",
+      "t12Gmv": 16598,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "001Rk00000vpT7CIAU",
+      "sfdcId15": "001Rk00000vpT7C",
+      "customer": "Arcon Electric, LLC",
+      "annualRevenue": 1386000,
+      "trade": "Electrical",
+      "t12Gmv": 8199,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000cwGYZAA2",
+      "sfdcId15": "0014x00000cwGYZ",
+      "customer": "B.H. Inc.",
+      "annualRevenue": 250000000,
+      "trade": "Electrical",
+      "t12Gmv": 72,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x000015Vsy6AAC",
+      "sfdcId15": "0014x000015Vsy6",
+      "customer": "Berglund Construction Co.",
+      "annualRevenue": 40000000,
+      "trade": "Other",
+      "t12Gmv": 132,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000cwDwsAAE",
+      "sfdcId15": "0014x00000cwDws",
+      "customer": "CVM Electric, Inc.",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 1,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000FRsDFAA1",
+      "sfdcId15": "0014x00000FRsDF",
+      "customer": "Electricians, Inc. (OLD)",
+      "annualRevenue": 53817000,
+      "trade": "Electrical",
+      "t12Gmv": 11,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000jT95NAAS",
+      "sfdcId15": "0014x00000jT95N",
+      "customer": "Grunwald Mechanical Contractors & Engineers",
+      "annualRevenue": 40000000,
+      "trade": "Mechanical",
+      "t12Gmv": 52413,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x000019SJjBAAW",
+      "sfdcId15": "0014x000019SJjB",
+      "customer": "Hicks Lightning Live Company",
+      "annualRevenue": 70000000,
+      "trade": "Other",
+      "t12Gmv": 2,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000Hnt96AAB",
+      "sfdcId15": "0014x00000Hnt96",
+      "customer": "Omaha Electric Service, Inc.",
+      "annualRevenue": 20000000,
+      "trade": "Electrical",
+      "t12Gmv": 1,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00000HnssRAAR",
+      "sfdcId15": "0014x00000HnssR",
+      "customer": "Safari Electric, LLC",
+      "annualRevenue": 15000000,
+      "trade": "Electrical",
+      "t12Gmv": 57130,
+      "monthsWithData": 1
+    },
+    {
+      "sfdcId18": "0014x00001miabnAAA",
+      "sfdcId15": "0014x00001miabn",
+      "customer": "WDF Inc.",
+      "annualRevenue": 8000000,
+      "trade": "Mechanical",
+      "t12Gmv": 950,
+      "monthsWithData": 1
+    }
+  ]
+}

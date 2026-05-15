@@ -1,0 +1,278 @@
+{
+  "https://www.allproelectric.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website claims 40+ years in 'electrical construction' serving Commercial, Medical, Industrial, Educational sectors, but homepage emphasizes service department, 24/7 emergency response, and residential services equally with construction; portfolio/project examples are absent, making it unclear whether construction or service is primary revenue driver.",
+    "scraped_at": "2026-04-21T17:27:50.625110+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.ameelectrical.com": {
+    "category": "ICP Fit",
+    "evidence": "Commercial electrical contractor with explicit design-build, new construction, and tenant improvement expertise; portfolio includes commercial projects (AC Hotel Phoenix Downtown, Hyatt Place, FedEx Prescott, Justice Center); A17 electrical license with medium/high voltage installations; 40+ years in electrical construction industry; $30M+ revenue indicates substantial scale.",
+    "scraped_at": "2026-04-21T17:27:41.496447+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.apiplumbingaz.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:51.445463+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.austinelectric.com": {
+    "category": "Needs Human Review",
+    "evidence": "Thin/empty website",
+    "scraped_at": "2026-04-21T17:27:48.692315+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.bfrankjoy.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:47.733396+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.bpgdesigns.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:50.555756+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.brewercompanies.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Brewer Companies explicitly serves 'residential and commercial plumbing' with 'home builders and general contractors to businesses and homeowners' \u2014 the residential focus, Synergos family affiliation (known for residential tract MEP), and mission-driven language around 'support living' indicate this is primarily a residential service and new-home plumbing supplier, not a commercial MEP construction contractor.",
+    "scraped_at": "2026-04-21T17:27:48.867411+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.bunneys.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website returned only a default WordPress template with no business content; unable to assess whether Bunney's is an MEP construction contractor or service company.",
+    "scraped_at": "2026-04-21T17:27:47.096291+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.canyonstateelectric.com": {
+    "category": "ICP Fit",
+    "evidence": "Commercial electrical contractor specializing in design-build, VDC, prefabrication, and BIM modeling for industrial, healthcare, mission-critical data center, and commercial projects; named partner with Clayco; $50M revenue; employee-owned; established trade contractor since 1978.",
+    "scraped_at": "2026-04-21T17:27:40.524503+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.casteelair.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Website is entirely residential-focused with dominant consumer service language: '24/7 Emergency Services,' 'same-day service,' 'your home,' 'homeowners everywhere,' 30,000+ five-star reviews, financing for homeowners, and service offerings like water heater replacement, garbage disposal, ceiling fans, and drain cleaning\u2014all disqualifying indicators of a residential HVAC/plumbing service company, not a commercial MEP construction contractor.",
+    "scraped_at": "2026-04-21T17:28:27.151581+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.chasroberts.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Chas Roberts is a residential HVAC and plumbing service company (\"largest, and oldest, residential HVAC company in Arizona\") with 24/7 emergency repair focus, homeowner testimonials, and service-call-driven positioning \u2014 not a commercial MEP construction contractor.",
+    "scraped_at": "2026-04-21T17:27:53.657469+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.croppmetcalfe.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Homepage dominated by residential consumer language: '24/7 emergency service,' 'your home comfort,' '$99 drain cleaning special,' 'lease a system,' 'Maintenance+ membership,' and 'We serve over 800,000 homes' \u2014 classic residential HVAC/plumbing service company positioning, not commercial MEP construction.",
+    "scraped_at": "2026-04-21T17:28:02.283595+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.deganconstruction.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Degan Construction specializes in concrete, underground wet utilities, concrete rehab & coatings, and civil/municipal projects\u2014non-MEP trades explicitly outside Kojo's ICP; no mention of mechanical, electrical, or plumbing construction work.",
+    "scraped_at": "2026-04-21T17:27:50.923546+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.dpair.com": {
+    "category": "ICP Fit",
+    "evidence": "DP Air specializes in 'Data Center Design, Environmental Control, and Critical Power Solutions' with 30+ years serving Fortune 100 companies; critical environment cooling, chilled water systems, and commercial HVAC for mission-critical infrastructure align with industrial MEP construction scope.",
+    "scraped_at": "2026-04-21T17:27:44.113943+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.emcor-az.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:47.689448+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.escoelectricinc.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:47.092605+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.fhfurr.com": {
+    "category": "Unlikely ICP",
+    "evidence": "F.H. Furr is a classic residential service brand ('your home,' 'homeowners count on us,' '24/7 emergency repair,' '$69 cooling inspection,' 'same-day service,' financing offers, multiple service area locations targeting residential customers across DC/MD/VA/DE) with no construction, design-build, or commercial project portfolio\u2014it matches the residential disqualifier pattern exactly.",
+    "scraped_at": "2026-04-21T17:28:09.481537+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.firstqualityplumbing.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:36.893440+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.genzryan.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Homepage dominated by residential consumer language: '$26 BOGO Furnace & A/C Tune-Up', '24/7 emergency service', 'Same Day Service & Installation', 'your home comfort', 'family-owned since 1950', financing for homeowners, and service offerings (water heater installation, drain cleaning, ceiling fan installation) targeting residential customers; no construction projects, no commercial portfolio, no GC partnerships.",
+    "scraped_at": "2026-04-21T17:27:57.859134+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.globalefficientenergy.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Website is solar panel and roofing installation company focused on residential homeowners ('your home's special needs,' 'home energy assessment,' '80 percent of homes are under insulated'), not MEP construction contractor.",
+    "scraped_at": "2026-04-21T17:27:51.450090+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.gootee.net": {
+    "category": "Needs Human Review",
+    "evidence": "Thin/empty website",
+    "scraped_at": "2026-04-21T17:27:36.893027+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.haci.com": {
+    "category": "Needs Human Review",
+    "evidence": "Thin/empty website",
+    "scraped_at": "2026-04-21T17:27:36.931616+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.harveyhottel.com": {
+    "category": "ICP Fit",
+    "evidence": "Website emphasizes 'Commercial HVAC Services,' 'Design Build / Plan & Spec,' 'Mechanical Engineering Services,' and projects including 'Municipal & Government Institutions,' 'Office Buildings,' 'Religious Facilities,' 'Private Schools,' 'Residential Complexes,' and 'Research Laboratories'; mentions VRF systems, geothermal installations, LEED-certified contracting, and partnerships with Class A builders, positioning Harvey W. Hottel as a commercial MEP contractor.",
+    "scraped_at": "2026-04-21T17:27:47.735918+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.hawkeyeelectric.com": {
+    "category": "ICP Fit",
+    "evidence": "Website states 'HAWKEYE AVERAGES OVER $20MM ANNUALLY IN ELECTRICAL WORK ON GROUND-UP CONSTRUCTION PROJECTS' and explicitly mentions design-build, design-assist, and construction manager at risk delivery methods with REVIT BIM coordination, positioning them as a commercial electrical contractor serving new construction.",
+    "scraped_at": "2026-04-21T17:27:37.637147+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.hiltyselectric.com": {
+    "category": "Needs Human Review",
+    "evidence": "Thin/empty website",
+    "scraped_at": "2026-04-21T17:27:46.971055+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.jencoelectric.com": {
+    "category": "Needs Human Review",
+    "evidence": "Thin/empty website",
+    "scraped_at": "2026-04-21T17:27:41.032192+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.jonwayne.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Website is residential-focused with prominent 'same-day service', '$29 service call', 'homeowners', 'your home', 'financing for homeowners', and service offerings including 'garbage disposals', 'water heater installation', 'ceiling fan install', and 'drain cleaning' \u2014 classic consumer HVAC/plumbing service patterns, not commercial construction.",
+    "scraped_at": "2026-04-21T17:28:16.935833+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.kcorpaz.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:44.107624+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.kortmanelectric.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:41.489251+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.metrowaterproofing.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Metro Waterproofing is a waterproofing contractor specializing in 'below-grade waterproofing,' 'parking decks,' 'stadium waterproofing,' and 'building restoration'\u2014a non-MEP trade explicitly outside Kojo's target market.",
+    "scraped_at": "2026-04-21T17:28:19.871559+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.midstatemechanical.com": {
+    "category": "ICP Fit",
+    "evidence": "Commercial MEP contractor self-identified as 'Mechanical, Electrical, and Plumbing contracting services' with design-build delivery, fabrication capabilities, and portfolio of commercial projects including hotels, corporate headquarters, and municipal buildings across Arizona.",
+    "scraped_at": "2026-04-21T17:27:41.135949+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.morrisjenkins.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:28:01.955824+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.nagelbushmechanical.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:36.892793+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.nationalpowerline.com": {
+    "category": "Unlikely ICP",
+    "evidence": "National Powerline is a utility infrastructure contractor focused on electric transmission, natural gas pipelines, and grid infrastructure\u2014explicitly stated as 'Electric Infrastructure,' 'Natural Gas Infrastructure,' and 'transmission line construction up to 500 kV'\u2014not a commercial MEP (mechanical, electrical, plumbing) construction contractor that builds buildings.",
+    "scraped_at": "2026-04-21T17:27:51.537966+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.pipelinec-m.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:28:27.142785+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.rjkielty.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Website is residential-service focused with dominant consumer messaging ('Schedule A Service', '$50 off Plumbing Service', 'your home comfort', 'family-owned since 1973', service area maps for residential customers across Florida counties), heavy discount promotions for homeowners, and no portfolio of commercial construction projects, new construction work, or MEP contractor partnerships.",
+    "scraped_at": "2026-04-21T17:27:36.893183+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.rks-plumbing.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:44.111472+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.sunshinestateplumbing.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Website emphasizes 'Service & Repair' for 'homeowners' with 'fast, reliable plumbing service' and 'free quote' CTAs; testimonials section labeled 'What Jacksonville Homeowners Say About Us'; commercial and multifamily work mentioned but clearly secondary to residential service business model.",
+    "scraped_at": "2026-04-21T17:27:36.893328+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.superiorplumbing.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Homepage is residential-service focused with repeated calls for '24/7 emergency' appointments, drain cleaning, water heater installation, clogged toilets, and 'helping homeowners' across metro Atlanta; no commercial construction projects, new construction language, or MEP contractor self-identification despite $67M revenue.",
+    "scraped_at": "2026-04-21T17:27:53.093283+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.switchelectricllc.com": {
+    "category": "Needs Human Review",
+    "evidence": "Thin/empty website",
+    "scraped_at": "2026-04-21T17:27:40.974746+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.tempemechanical.com": {
+    "category": "ICP Fit",
+    "evidence": "Commercial mechanical contractor specializing in HVAC, plumbing, piping, and sheet metal fabrication with design-build capabilities and extensive portfolio of new construction and renovation projects across healthcare, industrial, hospitality, and education sectors.",
+    "scraped_at": "2026-04-21T17:27:41.106813+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.truesdellcorp.com": {
+    "category": "Unlikely ICP",
+    "evidence": "Truesdell specializes in concrete repair, bridge rehabilitation, and infrastructure restoration (overlays, epoxy injection, fiber wrap) \u2014 not MEP construction; the website contains no mention of mechanical, electrical, or plumbing contracting, design-build, or commercial building construction.",
+    "scraped_at": "2026-04-21T17:27:51.510349+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.ttconstructioncfl.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:51.535472+00:00",
+    "verification_method": "Website inaccessible"
+  },
+  "https://www.umec-az.com": {
+    "category": "ICP Fit",
+    "evidence": "EMCOR affiliate offering mechanical construction, plumbing, process piping, design-assist, BIM integration, prefabrication across higher education, healthcare, and technology markets with $40M revenue and three fabrication facilities.",
+    "scraped_at": "2026-04-21T17:27:37.326477+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.welchandrushe.com": {
+    "category": "ICP Fit",
+    "evidence": "Full-service mechanical company with construction division, 50 years experience, portfolio includes Pentagon and World War II Memorial, testimonials from EMCOR Government Service and Grunley Construction (GC partner), leadership credentials in heavy commercial construction and LEED projects, $30M revenue.",
+    "scraped_at": "2026-04-21T17:27:48.483331+00:00",
+    "verification_method": "Website scrape"
+  },
+  "https://www.wespacinc.com": {
+    "category": "Needs Human Review",
+    "evidence": "Website unreachable (DNS)",
+    "scraped_at": "2026-04-21T17:27:51.448272+00:00",
+    "verification_method": "Website inaccessible"
+  }
+}

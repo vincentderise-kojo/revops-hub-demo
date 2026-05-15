@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-05-11T20:30:00Z",
+  "source": "Endgame MCP (get_interaction_history + query_data), keyed against Pulse Google Sheet 18-char opp IDs",
+  "note": "v2 cache. Prioritizes opps with Discovery Date in last week (5/4-5/10) since that's the default Pulse Deals Created period. Top 5 open opps by amount. Phase 2 will automate this via Vercel cron and key against the live Pulse data source to avoid Endgame-BQ-vs-Sheet ID drift (the v1 cache hit that bug; only Caldwell matched).",
+  "priorityRule": "lastWeekTopByAmount",
+  "inspections": {
+    "006Rk00000bDTlFIAW": {
+      "oppId": "006Rk00000bDTlFIAW",
+      "oppName": "Walton & Co. - Inbound",
+      "accountName": "Walton & Co.",
+      "amount": 105000,
+      "stage": "Discovery",
+      "discoveryDate": "2026-05-06",
+      "owner": "Garrett McAnulla",
+      "grades": {
+        "champion":        { "grade": "yellow", "level": 2 },
+        "economicBuyer":   { "grade": "red",    "level": 1 },
+        "compellingEvent": { "grade": "red",    "level": 1 },
+        "decisionProcess": { "grade": "yellow", "level": 2 }
+      },
+      "engagement": { "meetings": 1, "incomingEmails": 2, "slackMentions": 0, "windowDays": 30 },
+      "latestSignal": {
+        "date": "2026-05-11",
+        "speaker": "Perry Patton (Director IT)",
+        "quote": "We are reviewing some additional options right now. I will be in touch in the next few weeks to schedule a full demo."
+      },
+      "twoThings": [
+        "Two well-positioned contacts: Perry Patton (Director of IT, role started March 2026) and Terry McCandless (32 years, runs purchasing and warehousing). Perry explicitly considered building it themselves before deciding to evaluate.",
+        "Today's 5/11 email is a yellow flag: 'reviewing additional options' + 'in touch in the next few weeks.' Soft on momentum, deal could drift while they shop."
+      ],
+      "coachTheRep": [
+        "Ask Perry: 'Who else are you evaluating, and what would make a difference between options?' Get the competitive set on paper.",
+        "Pin the next demo to a date within 14 days. 'A few weeks' from a new IT director with no compelling event is how Q2 becomes Q3."
+      ],
+      "forecastRead": "Pipeline"
+    },
+    "006Rk00000bG8sLIAS": {
+      "oppId": "006Rk00000bG8sLIAS",
+      "oppName": "Nor-Well - Mechanical",
+      "accountName": "Nor-Well",
+      "amount": 98600,
+      "stage": "Discovery",
+      "discoveryDate": "2026-05-07",
+      "owner": "Marty Phelan",
+      "grades": {
+        "champion":        { "grade": "yellow", "level": 2 },
+        "economicBuyer":   { "grade": "red",    "level": 1 },
+        "compellingEvent": { "grade": "red",    "level": 1 },
+        "decisionProcess": { "grade": "yellow", "level": 2 }
+      },
+      "engagement": { "meetings": 10, "incomingEmails": 1, "slackMentions": 0, "windowDays": 60 },
+      "latestSignal": {
+        "date": "2026-05-07",
+        "speaker": "Seth Sherman (Warehouse Manager)",
+        "quote": "Our owner is very much a 'how much is it going to cost me, how much is it going to save me' kind of guy. Things like this are typically a very long process."
+      },
+      "twoThings": [
+        "10 meetings since March, but most are cold dials with Samuel Shanks (gatekeeper) or VP Sandy Nave's quick brush-offs. Seth Sherman is the one real conversation — Warehouse Manager, not EB.",
+        "Seth himself flagged that the owner is cost-focused and the decision cycle is long. Pricing positioned mid-to-high five figures with a 10x ROI claim — but no quantified ROI for Nor-Well specifically yet."
+      ],
+      "coachTheRep": [
+        "Ask Seth: 'What does our path to the owner look like? Can you set up a 15-min intro?'",
+        "Build the prospect-specific ROI for Nor-Well before the next demo — generic 10x claims won't survive a cost-focused owner conversation."
+      ],
+      "forecastRead": "Pipeline"
+    },
+    "006Rk00000bBIltIAG": {
+      "oppId": "006Rk00000bBIltIAG",
+      "oppName": "Lee Industrial Contracting",
+      "accountName": "Lee Industrial Contracting",
+      "amount": 98618,
+      "stage": "Discovery",
+      "discoveryDate": "2026-05-05",
+      "owner": "Michael Anastos",
+      "grades": {
+        "champion":        { "grade": "yellow", "level": 3 },
+        "economicBuyer":   { "grade": "yellow", "level": 3 },
+        "compellingEvent": { "grade": "red",    "level": 1 },
+        "decisionProcess": { "grade": "yellow", "level": 3 }
+      },
+      "engagement": { "meetings": 2, "incomingEmails": 0, "slackMentions": 0, "windowDays": 45 },
+      "latestSignal": {
+        "date": "2026-05-08",
+        "speaker": "McKenna Roy (Lee)",
+        "quote": "I'll just forward it to the rest of them, OK? [referring to 8 people on the deep-dive demo invite list]"
+      },
+      "twoThings": [
+        "Strongest deal of the lastWeek cohort. ABC Convention origin, Ted Brown (Chief Sales Officer) and Andrew Keilman (Sr Manager Ops) both on the 5/5 intro. CSO presence on a $99K opp is unusually senior for this size.",
+        "Group demo with 8 people being scheduled for next week (per McKenna Roy on 5/8). When 8 stakeholders show up to a deep dive, the right move is to lock the decision sequence before the demo, not after."
+      ],
+      "coachTheRep": [
+        "Before the 8-person demo: ask Ted Brown 'If this lands well, who else needs to weigh in and what's the next step on your side?'",
+        "Confirm whether this is one decision or several. Materials Buyer (Scott Waple), COA (Krista Fish), CSO, Sr Ops Mgr — different functions, possibly different criteria."
+      ],
+      "forecastRead": "Best Case"
+    },
+    "006Rk00000asKZjIAM": {
+      "oppId": "006Rk00000asKZjIAM",
+      "oppName": "Schwob Energy Services - Inbound",
+      "accountName": "Schwob Energy Services",
+      "amount": 54000,
+      "stage": "Discovery",
+      "discoveryDate": "2026-05-06",
+      "owner": "Sam Ramos",
+      "grades": {
+        "champion":        { "grade": "yellow", "level": 3 },
+        "economicBuyer":   { "grade": "yellow", "level": 2 },
+        "compellingEvent": { "grade": "yellow", "level": 3 },
+        "decisionProcess": { "grade": "yellow", "level": 3 }
+      },
+      "engagement": { "meetings": 2, "incomingEmails": 5, "slackMentions": 0, "windowDays": 30 },
+      "latestSignal": {
+        "date": "2026-05-06",
+        "speaker": "Igor Fuentes",
+        "quote": "I wanted to come back to the C suite with a little bit more information around what else is available besides what we're looking at right now. You'll hear from me — yay/nay or next steps — probably within a week."
+      },
+      "twoThings": [
+        "Trimble Materials displacement play. SFDC NextStep confirms it: 'mid implementation with Trimble and it's going poorly.' Igor Fuentes shared $90M revenue / $30M material spend / 2,600 POs/year — real numbers, real diligence.",
+        "Igor is acting like a buyer (asking pricing, API docs, PowerBI integration) AND naming the C-suite as the decision body. 'Decision within a week' is a soft compelling event we should sharpen."
+      ],
+      "coachTheRep": [
+        "Ask Igor: 'When you bring this back to the C-suite, who specifically is on that call, and what would tip them to yes vs no?' Get the EB named before the team demo next week.",
+        "Position the Trimble switching cost: what does Schwob lose if they keep going down the failing implementation? Quantify the cost of inaction."
+      ],
+      "forecastRead": "Best Case"
+    },
+    "006Rk00000bFp6XIAS": {
+      "oppId": "006Rk00000bFp6XIAS",
+      "oppName": "K&W Electric Inc. - Electrical",
+      "accountName": "K&W Electric Inc.",
+      "amount": 42800,
+      "stage": "Discovery",
+      "discoveryDate": "2026-05-07",
+      "owner": "Marty Phelan",
+      "grades": {
+        "champion":        { "grade": "yellow", "level": 2 },
+        "economicBuyer":   { "grade": "red",    "level": 1 },
+        "compellingEvent": { "grade": "red",    "level": 1 },
+        "decisionProcess": { "grade": "yellow", "level": 2 }
+      },
+      "engagement": { "meetings": 8, "incomingEmails": 2, "slackMentions": 0, "windowDays": 60 },
+      "latestSignal": {
+        "date": "2026-05-06",
+        "speaker": "Brett Steinkamp (K&W)",
+        "quote": "The biggest question they're going to ask me is OK, looks good. How much does it cost?"
+      },
+      "twoThings": [
+        "Foundation ERP integration confirmed — that's the technical green light. Brett Steinkamp is engaged and openly relaying his upper management's questions, which is champion-coded behavior.",
+        "But Brett has flagged that price is the make-or-break question for the people above him, and we don't know those people. Marty is preparing ROI and pricing — that's the right work but it lands cold without an EB intro."
+      ],
+      "coachTheRep": [
+        "Ask Brett: 'Who specifically signs off on a $40-50K SaaS tool? Can I be in the room when you present the pricing, or send a one-pager you can hand them?'",
+        "K&W is $28M annual revenue — frame ROI as $/foreman/year and material waste avoided, not generic 2-5%."
+      ],
+      "forecastRead": "Pipeline"
+    }
+  }
+}

@@ -1,0 +1,420 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0f1729;
+  --card: #1a2332;
+  --border: #2a3a4d;
+  --text: #e2e8f0;
+  --muted: #8899aa;
+  --charcoal: #2D2D2D;
+  --kojo-yellow: #FFE500;
+  --teal: #4ecdc4;
+  --green: #22c55e;
+  --yellow: #f59e0b;
+  --red: #ef4444;
+  --blue: #3b82f6;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", -apple-system, system-ui, sans-serif;
+}
+
+/* Card */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 14px;
+}
+
+/* Label */
+.label {
+  font-size: 10px;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.badge-red { background: #ef444422; color: var(--red); }
+.badge-yellow { background: #f59e0b22; color: var(--yellow); }
+.badge-green { background: #22c55e22; color: var(--green); }
+.badge-blue { background: #3b82f622; color: var(--blue); }
+.badge-teal { background: #4ecdc422; color: var(--teal); }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; font-size: 11px; }
+th {
+  padding: 6px 8px;
+  text-align: right;
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+}
+th:first-child { text-align: left; }
+td {
+  padding: 7px 8px;
+  text-align: right;
+  border-bottom: 1px solid #2a3a4d22;
+}
+td:first-child { text-align: left; }
+
+/* Progress bars */
+.bar-bg {
+  height: 6px;
+  background: var(--bg);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+/* Tabs */
+.tab-btn {
+  padding: 7px 16px;
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  font-family: inherit;
+}
+.tab-btn.active {
+  color: var(--kojo-yellow);
+  border-bottom-color: var(--kojo-yellow);
+  font-weight: 600;
+}
+
+/* Callouts */
+.callout {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+.callout-red { background: #ef444411; border: 1px solid #ef444433; }
+.callout-yellow { background: #f59e0b11; border: 1px solid #f59e0b33; }
+.callout-green { background: #22c55e11; border: 1px solid #22c55e33; }
+
+/* Source cards */
+.source-card {
+  flex: 1;
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+/* Side by side grid */
+.side-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 768px) {
+  .side-by-side { grid-template-columns: 1fr; }
+}
+
+/* Formula box */
+.formula-box {
+  padding: 12px 14px;
+  background: var(--bg);
+  border-radius: 8px;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+/* Definition items */
+.def-item {
+  padding: 6px 12px;
+  background: var(--bg);
+  border-radius: 6px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.seg-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Kojo header bar */
+.kojo-header {
+  background: var(--charcoal);
+  border-bottom: 1px solid #3a3a3a;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Pulse dot animation */
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5); }
+  70% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  display: inline-block;
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+/* ── Architecture Page ── */
+.arch-layout {
+  display: flex;
+  min-height: calc(100vh - 45px);
+}
+
+.arch-sidebar {
+  width: 180px;
+  flex-shrink: 0;
+  background: var(--card);
+  border-right: 1px solid var(--border);
+  padding: 20px 12px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.arch-sidebar-link {
+  display: block;
+  padding: 6px 10px;
+  font-size: 11px;
+  color: var(--muted);
+  text-decoration: none;
+  border-radius: 6px;
+  border-left: 2px solid transparent;
+  transition: all 0.15s;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  text-align: left;
+  width: 100%;
+}
+.arch-sidebar-link:hover {
+  color: var(--text);
+}
+.arch-sidebar-link.active {
+  color: var(--kojo-yellow);
+  background: #FFE50011;
+  border-left: 2px solid var(--kojo-yellow);
+  font-weight: 600;
+}
+
+.arch-main {
+  flex: 1;
+  padding: 32px 40px;
+  max-width: 960px;
+}
+
+.arch-section {
+  margin-bottom: 48px;
+}
+
+.arch-section-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.arch-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.arch-section-desc {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.arch-row {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.arch-row-header {
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arch-row-body {
+  padding: 0 14px 14px;
+  border-top: 1px solid var(--border);
+}
+
+.arch-row-planned {
+  background: rgba(26, 35, 50, 0.53);
+  border-style: dashed;
+}
+.arch-row-planned .arch-row-header {
+  border-left: 3px dashed var(--muted);
+}
+.arch-row-planned .arch-row-body {
+  border-top-style: dashed;
+}
+
+.arch-tag {
+  font-size: 9px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.arch-stat-grid {
+  display: flex;
+  gap: 16px;
+}
+.arch-stat-box {
+  flex: 1;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+}
+.arch-stat-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+.arch-stat-value {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.arch-flow {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 8px;
+}
+.arch-flow-node {
+  flex: 1;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-align: center;
+}
+.arch-flow-node.highlight {
+  border-color: #FFE50066;
+}
+.arch-flow-arrow {
+  padding: 0 8px;
+  font-size: 16px;
+}
+.arch-flow-explainer {
+  background: var(--card);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.arch-vis-cards {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+.arch-vis-card {
+  flex: 1;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+.arch-vis-arrow {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.arch-legend {
+  margin-top: 20px;
+  padding: 12px;
+  background: var(--card);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* Responsive: sidebar collapse */
+@media (max-width: 768px) {
+  .arch-layout { flex-direction: column; }
+  .arch-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    gap: 4px;
+    padding: 12px;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .arch-sidebar-link {
+    white-space: nowrap;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+  .arch-sidebar-link.active {
+    border-left: none;
+    border-bottom-color: var(--kojo-yellow);
+  }
+  .arch-main { padding: 20px 16px; }
+  .arch-stat-grid { flex-direction: column; }
+  .arch-flow { flex-direction: column; }
+  .arch-flow-arrow { transform: rotate(90deg); padding: 4px 0; }
+  .arch-vis-cards { flex-direction: column; }
+  .arch-vis-arrow { transform: rotate(90deg); padding: 4px 0; justify-content: center; }
+}

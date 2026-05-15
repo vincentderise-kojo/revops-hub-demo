@@ -1,0 +1,8 @@
+{
+  "crons": [
+    { "path": "/api/cron/monday-pulse", "schedule": "30 13 * * 1" },
+    { "path": "/api/cron/monday-pulse", "schedule": "30 14 * * 1" },
+    { "path": "/api/cron/refresh-inspections", "schedule": "0 11 * * 1" },
+    { "path": "/api/cron/cw-spotcheck", "schedule": "0 14 * * *" }
+  ]
+}

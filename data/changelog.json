@@ -1,0 +1,599 @@
+{
+  "entries": [
+    {
+      "date": "2026-05-15",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Coverage Math \u2014 Jul 26 Perf Marketing commit lands at $1.0M",
+      "description": "Perf Marketing committed $1.0M for July '26. The Jul 26 preview row in the Coverage Math methodology table flips Perf from TBD to $1.0M, matching the styling of Field's $290K commit. BDR Outbound stays TBD pending Sadie's commit; Total / AE 10% / Coverage also stay TBD until the third number lands. Intentionally not promoted into MONTHLY_PIPELINE_GOALS yet \u2014 doing so without BDR would silence the mid-June Q3 rollover banner and produce an incomplete weekly target. Promotion happens after Sadie commits."
+    },
+    {
+      "date": "2026-05-15",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Upsell Signals \u2014 \"Contract ACR\" renamed to \"Stated ACR\" with per-cell source tag",
+      "description": "The column previously labeled Contract ACR was technically misleading on the 71% of rows where the PDF parse fell back to the SFDC Quote.Annual_Construction_Revenue__c field \u2014 an AE-entered number that may not match what was signed. Renamed the column to Stated ACR across the view, CSV export, and Methodology copy. Added a small (PDF) / (Quote) source tag below each value cell so CSMs can tell at a glance which source backs the number. Methodology section now explains the two sources and the authority difference: PDF = high confidence, Quote = medium confidence with no contract cross-check. Values render unchanged \u2014 only the label and source attribution are honest now."
+    },
+    {
+      "date": "2026-05-14",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Upsell Signals \u2014 Contract ACR as 3rd Size signal input + audit dimension",
+      "description": "New Contract ACR column on the Upsell Signals tab. For every customer family with a signed contract (~239 accounts), the snapshot captures TWO sources of Annual Construction Revenue from the latest signed Order Form: the structured Quote.Annual_Construction_Revenue__c field AND the value parsed from the signed PDF (regex on the 'Annual Construction Revenue:' line; Claude fallback for older templates). Primary statedAcr = PDF when present, else Quote field. Contract ACR delta vs SFDC AR rolls into the existing Size signal alongside ENR delta and GMV/AR band via a 3-input maxStrength(). Audit dimension flags 28 rows where the Quote field and PDF disagree by >5% \u2014 these are SFDC data hygiene signals (post-signing field edits or PDFs generated from earlier Quote revisions). Expand drawer shows both source values, signed date, source PDF link, parser method, raw excerpt, and a yellow-bordered audit callout when the mismatch is fired. Methodology tab updated with the 3rd input documentation and a CSM-phrasing caveat: Contract ACR is customer-self-stated, not ground truth \u2014 frame mismatches as conversation starters, not confrontations. Refresh runs manually via the new /snapshot-contract-acr Claude Code skill; reuses the JWT auth + ContentVersion download pattern already shipped in lib/cw-spotcheck/sfdc.ts. No new SFDC env vars."
+    },
+    {
+      "date": "2026-05-14",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Coverage Math card \u2014 July preview row + sheet hyperlink",
+      "description": "Methodology card additions on the Pulse dashboard. (1) Added a Jul 26 preview row at the bottom of the Coverage Math table showing Field's committed $290k goal; BDR / Perf / Total / AE 10% / Coverage all render as TBD until Sadie and Ali land their commits. Rendered at 75% opacity so it reads as partial. (2) Hyperlinked 'Q2'26 board-committed pipeline plan' in the opening paragraph to the live board sheet. (3) Added a source-of-truth footnote line below the AE 10% adoption note that links the same sheet and calls out that monthly goals are hardcoded in the app today, updated by hand as commits land. Deliberately did not add July to MONTHLY_PIPELINE_GOALS \u2014 doing so would have computed a bogus $67k/wk July weekly target and silenced the mid-June rollover banner."
+    },
+    {
+      "date": "2026-05-13",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "SDR Performance polish \u2014 hide Lookback badges, points-based KPI tiles, last-week labels, roster cleanup",
+      "description": "Follow-up pass on the SDR Performance tab. (1) Hides the three Weekly Lookback header badges (% TO WEEKLY GOAL, WEEKLY GAP, MTD TO GO) on every tab except Weekly Lookback \u2014 they were misleading on the SDR tab. (2) Hero tiles now show SAO Points (Meeting Held Date) to match Rep Detail and the exec summary \u2014 no more apples-to-oranges between the headline number and the table below it. (3) All time-window copy on the tab updated from 'this week' to 'last week' since the focus week is the last complete Mon\u2013Sun. KPI labels are now 'SAO Points Last Week', 'Pipeline $ Last Week', 'Meetings Set Last Week', 'Conversion Rate Last Week'. (4) Exec summary headline now renders red when below pace (was always green). (5) Roster filter drops anyone with quota=0 in the active month \u2014 auto-removes Marcus Baker (departed) and Valeria Maldonado (moved to RevOps team lead under Vincent). Slider math preserved at 48 quota since both contributed 0."
+    },
+    {
+      "date": "2026-05-13",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "SDR Performance \u2014 Sadie monthly attainment slider + points-based realignment",
+      "description": "New attainment bar at the top of the SDR Performance tab: sum of SAO Points Calculation on sdrSets where Meeting Held Date is in the current month, over the sum of monthly quotas across Sadie's full roster (dynamic from the quotas tab). May 2026 lands at 8.25 / 48 = 17.19%. Realigned the rest of the tab so everything that compares to quota is apples-to-apples: heatmap row status (On Pace / At Risk / Behind), Rep Detail's This Wk / Avg/Wk / QTD / Gap / Pace %, and the exec summary headline all now use SAO Points anchored on Meeting Held Date. Heatmap weekly cells, KPI cards, and the funnel stay in opp counts as the volume view. Required two new gsheet columns on the sdrSets tab (gid 1054512915): \"SAO Points Calculation\" and \"Meeting Held Date\"."
+    },
+    {
+      "date": "2026-05-12",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Endgame inspection auto-refresh \u2014 Vercel cron + MCP-over-HTTPS + Blob cache",
+      "description": "Phase 2 of the Endgame inspection chip. New Vercel cron (Mondays 11:00 UTC) pulls last-week open opps from the live Pulse Sheet, queries Endgame MCP-over-HTTPS at app.endgame.io/api/v1/mcp via @modelcontextprotocol/sdk for engagement on each, runs Claude Opus 4.7 with adaptive thinking + prompt-cached leader_deal_inspection skill to synthesize the inspection JSON, writes the cache to Vercel Blob at inspections/latest.json. Pulse page server-fetches from Blob with 5-min revalidate, falls back to committed data/inspections.json if Blob is empty or unreachable \u2014 zero regression for renders if env vars aren't set yet. Removes the manual session-trigger from v1 cache. Required Vercel env vars: BLOB_READ_WRITE_TOKEN (auto from Blob store provisioning), ENDGAME_API_TOKEN, CRON_SECRET (already set). Manual trigger: curl -H \"Authorization: Bearer $CRON_SECRET\" /api/cron/refresh-inspections."
+    },
+    {
+      "date": "2026-05-12",
+      "app": "CW Spot-Check",
+      "status": "shipped",
+      "title": "CW Spot-Check daily cron \u2014 Opp/Quote/Contract reconciliation",
+      "description": "New automation: each day, for any New Business opp closed-won in the last 24h, pull Opportunity + Quote + line items + stage history + signed contract PDF from SFDC (JWT bearer via ECA), send to Claude to run a 14-item check catalog against Kojo conventions, post Block Kit summary to Slack. Catches: term/end-date mismatches, line-item drift, rushed-pipeline backfills, stale contract-template language, and missing DocuSign/renewal data on the Quote."
+    },
+    {
+      "date": "2026-05-11",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Endgame inspection cache v2 \u2014 repriotized to last-week opps, fixes ID drift",
+      "description": "v1 cache hit a snapshot drift between Endgame's BQ warehouse and the Pulse Google Sheet: of the 5 cached opps, only Caldwell Tanks had matching 18-char IDs across both. v2 reverses the lookup direction: pull last-week (5/4-5/10) open opps from the Pulse Sheet first, then query Endgame for engagement on those exact IDs. Reprioritizes the cache to lastWeek deals per product direction. New inspections: Walton & Co. ($105K), Nor-Well Mechanical ($98.6K), Lee Industrial Contracting ($98.6K), Schwob Energy Services ($54K, Trimble displacement play), K&W Electric ($42.8K). All 5 chips now show on the default Pulse Deals Created Last Week view."
+    },
+    {
+      "date": "2026-05-11",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Endgame inspection chip on the Deals Created table",
+      "description": "Pulse's Deals Created table gets a new Endgame column with an Inspect \u26a1 chip on rows that have a precomputed inspection in data/inspections.json. Click opens the existing DealInsightPanel drawer with a new Endgame Inspection section between Deal Snapshot and Slack Intel: 4 MEDDPICCCR dim bars (Champion / Economic Buyer / Compelling Event / Decision Process), engagement stats, italic pull-quote signal, 'The Two Things', 'Coach the Rep' bullets, and a forecast read pill (Pipeline / Best Case / Commit / Remove). v1 cache covers 5 top new-pipeline opps from Apr 27 \u2013 May 11; rows outside the cache show \u2014 instead of a chip. Source-of-truth skill committed at pipeline-pulse-app/skills/leader_deal_inspection.md. Notion plan 346ae6b4-\u2026 revised: Phase 1 narrowed to this scope, Phase 6 (forecast confidence) removed. Cache regeneration + Vercel cron is Phase 2."
+    },
+    {
+      "date": "2026-05-06",
+      "app": "Revenue & Funnel",
+      "status": "shipped",
+      "title": "Funnel header stats \u00d7 3, global Industry filter, Funnel Deals table, click-to-filter",
+      "description": "Funnel Conversion header now shows three neutral stat boxes side by side: Discovery \u2192 Closed Won, Discovery \u2192 Closed Lost (combines Closed Lost + Unable to Qualify), and Discovery \u2192 Still Open. They sum to 100% of cohort. Industry filter is now visible on every tab \u2014 Industry hydrated onto each CW opp at parse time by matching the closedWon sheet's 15-char Opportunity ID against the pipeline tab's 18-char IDs (164/192 \u2248 85% hit). New Funnel Deals card at the bottom of the Funnel Conversion tab listing every cohort opp with sortable columns: Opportunity (linked to SFDC), Stage, Max Reached, Discovery Date, Industry, Segment, Source, Set Type, Amount, Owner. Click any stage bar in the static funnel chart to filter the Funnel Deals table to opps currently in that stage; the active bar stays bright while the others dim, and a teal pill in the table header shows the active filter with a clear button. Plumbing: added name + oppId to PipelineOppForRevenue, exposed reachedStage and added maxStageReached helper from process-revenue.ts."
+    },
+    {
+      "date": "2026-05-06",
+      "app": "Revenue & Funnel",
+      "status": "shipped",
+      "title": "Funnel Conversion polish \u2014 pyramid layout, monotonic fix, snapshots, overall stat",
+      "description": "Iteration round on the Funnel Conversion tab. (1) Replaced the trapezoid funnel with a pyramid layout \u2014 stage label fixed left, centered bar with reach count inside, conversion % rendered between rows. No more clipped text. (2) Forced funnel monotonicity: an opp now counts as reaching a stage if EITHER the stage-entry date is populated OR its current Stage is downstream. Fixed a real Q1 2026 anomaly where Final Approvals (21) appeared larger than Contracts/Negotiation (13) \u2014 root cause was reps skipping the Negotiation Date field for fast-moving deals; flagged as a SFDC hygiene issue. (3) Heat-gradient palette: Discovery blue \u2192 Evaluation teal \u2192 Contracts yellow \u2192 Final Approvals kojo-yellow \u2192 Closed Won green, so the eye reads the funnel narrowing toward winning. Trend chart lines colored by destination stage to match. (4) New Quarterly Funnel Snapshots card \u2014 small-multiples view, one mini-funnel per quarter (FY2025+) so the full funnel shape can be compared side-by-side; addresses Micah's 'snapshots of the past four quarters' framing more directly than the trend line alone. (5) Surfaced overall Discovery \u2192 Closed Won conversion as a prominent stat in the funnel header AND as a 5th red line on the trend chart. (6) Neutralized the headline stat coloring so the number doesn't read as positive."
+    },
+    {
+      "date": "2026-05-06",
+      "app": "Revenue & Funnel",
+      "status": "shipped",
+      "title": "Funnel Conversion tab \u2014 static funnel + stage-conversion trend",
+      "description": "Third tab on /revenue covering Micah's separate ask from this morning's thread. Top chart: static funnel showing Discovery \u2192 Evaluation \u2192 Contracts/Negotiation \u2192 Final Approvals \u2192 Closed Won, with reach counts and conversion % between adjacent stages. Cohort = opps with Discovery Date in the selected period. Bottom chart: multi-line stage-conversion trend, one line per adjacent transition (4 lines), x = quarter, y = conversion %, FY2025 onward, in-flight quarter dashed. Both charts respect segment toggle, dimension filters, and a new Industry filter (visible only on this tab \u2014 CW opps don't carry Industry). Static funnel responds to period selector; trend ignores it (always full FY2025+). Max stage reached for each opp inferred from stage-entry dates (Discovery Date / Evaluation Date / Negotiation Date) plus current Stage. Final Approvals reach is read from current Stage = Final Approvals or Closed Won \u2014 Closed Lost opps that died at Final Approvals undercount slightly; flagged on the chart."
+    },
+    {
+      "date": "2026-05-06",
+      "app": "Revenue & Funnel",
+      "status": "shipped",
+      "title": "V2 reshape \u2014 Snapshot/Trend tabs, segment-mix bars, SFDC links, page rename",
+      "description": "Same-day iteration cycle on Revenue Breakdown (now renamed Revenue & Funnel) for tomorrow's Battery Ventures meeting. Wins by Origination Channel rebuilt to group by raw SFDC Opportunity Source so totals reconcile to legacy tables; CS Source-Expansion added as 4th parent (CS Sourced + Expansion + Customer Referral). Per-row Segment Mix bar (MM/ENT split with hover $ + %). Segment Snapshot redesigned \u2014 single stacked-bar hero on the left, MM-vs-ENT comparison rows on the right (Avg Deal Size, Win Rate, CCWR, Pipeline Generated). New Trend tab with quarterly Recurring ARR line chart by parent group from FY2025 onward \u2014 partial latest quarter rendered as dashed segment with footnote. Period selector hidden on Trend tab; segment toggle and dimension filters apply to both tabs. Vs-prior deltas suppressed on Last 12 months and Last FY (prior windows pre-FY2025 produced misleading values). Opportunity names in All CW Deals now hyperlink to SFDC via name+closeDate match against the pipeline tab (~90% hit rate). Period option All time renamed Since FY2025; data-scope footnote added to header. Hub card and Architecture entry updated to reflect new name."
+    },
+    {
+      "date": "2026-05-01",
+      "app": "Pricing Calculator",
+      "status": "shipped",
+      "title": "Rename Spec Agent SKU \u2192 Material Project Management",
+      "description": "Product display name updated on the calculator to match the rolled-out SKU rename. Internal identifier and BPS schedule unchanged."
+    },
+    {
+      "date": "2026-05-01",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "GMV methodology copy \u2014 reflect Kojo_Annual_GMV_T12__c is populated",
+      "description": "Nick Kim confirmed via DM that the durable SFDC field Kojo_Annual_GMV_T12__c is now populated on all customer Account records (DS-878). Updated the Methodology tab and the Upsell Signals snapshot callout to use the correct field name (was stale Kojo_Annual_GMV__c) and to note that the field is live, with the dashboard data-source swap pending the Coefficient column add and update-cadence confirmation. No logic or data-pipeline changes \u2014 the dashboard still reads customer-gmv-snapshot.json."
+    },
+    {
+      "date": "2026-04-30",
+      "app": "ICP Classifier",
+      "status": "shipped",
+      "title": "Bulk-update CSV adds Evidence column + comprehensive master xlsx",
+      "description": "build_sfdc_update.py now emits ICP_Classification_Evidence__c (sourced from Website Evidence) on the slim Data Loader CSV \u2014 4 fields total. Also always writes outputs/master_results_<ts>.xlsx: 26,181 rows \u00d7 28 cols consolidating SFDC enrichment (owner, type, AR, billing, parent, last activity, NAICS), classifier output (category, evidence, verification method, scrape ts), territory (marquee territory, AE territory, distance, closest marquee), and per-account flags (OpCo?, Active <14d?, Has Active Owner?). Created OPEN_QUESTIONS.md to track Marty + Minneapolis-Louisville coverage decisions."
+    },
+    {
+      "date": "2026-04-28",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "AE Performance tab \u2014 QA iteration (Day 2)",
+      "description": "Smoke-test pass with Vincent. Section 1 cohort fix \u2014 metrics now span both qualification + pipeline tabs (was survivorship-biased to laggards only). Renamed 'Unqualified Follow-Up' \u2192 'Inbound & Event Follow-Up' to reflect the all-stages cohort. Added inline expansion: click an AE name to expand their section-scoped opps under the row (no scroll-to-bottom needed). New columns: # Opps, # Open, Annual Revenue, Close Date, Stage Duration, First Touch (color-coded vs SLA), Source (qualified-only). Percentage cells now show denominator: '67% (4/6)'. Tooltips on every column header. % Within SLA renamed to '% Within First-Touch SLA'. % Advanced labeled with '(7d+)' eligibility rule. Bug fix on qualified row tagging \u2014 open-but-not-stale opps were missing from the inline expansion."
+    },
+    {
+      "date": "2026-04-27",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "AE Performance tab",
+      "description": "Per-AE follow-up speed/persistence on Inbound + Event opps, qualified pipeline staleness, and self-set MTD volume. Exception-based management view for Micah/Jared. Section 1 (Unqualified) renders a placeholder until the qualification tab is added to the Coefficient sync."
+    },
+    {
+      "date": "2026-04-27",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Channel filter fast-follows \u2014 Scoreboard hero follows the filter + clearer header badges",
+      "description": "Two refinements on top of today's channel filter ship. (1) The Scoreboard's blended hero row now follows the channel filter \u2014 soloing a chip swaps the big bar to that channel's weekly target/created/% hit (e.g., solo BDR Outbound \u2192 hero shows BDR's weekly target). AE-only mode shows the AE 10% stretch as the hero. (2) Page-header badges now read 'TO WEEKLY GOAL' and 'WEEKLY GAP' (clarifying the metric), and the MTD badge flips to green '+$X PAST GOAL' when MTD has eclipsed the monthly target."
+    },
+    {
+      "date": "2026-04-27",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Channel filter across MTD + Scoreboard + DealList; AE 10% stretch target",
+      "description": "Click a Scoreboard chip to focus on one channel \u2014 pills in MTD and DealList sync, page-header MTD: $X TO GO badge updates to match. AE Self-Set now has a 10%-indexed stretch target derived from the monthly board plan (BDR + Field + Perf), surfaced on the Scoreboard AE card, in the MTD headline as upside, and documented in Sources & Methodology. AE never enters board-plan numerator/denominator/gap math \u2014 it's purely upside on top."
+    },
+    {
+      "date": "2026-04-27",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Fix TZ display bug + clearer header label across Pulse, Coverage, Scenarios, Hub",
+      "description": "The 'Data through {date}' label was rendering UTC-midnight timestamps in the browser's local TZ, shifting Apr 24 \u2192 Apr 23 for ET viewers. Added timeZone:'UTC' to all four toLocaleDateString sites (dashboard, coverage, scenarios, hub). Replaced the single label with two stacked lines on the three dashboards \u2014 'Latest disco: {date}' (what's the freshest opp activity in the data) and 'Refreshed: {time} ET' (when the page rendered) \u2014 so the freshness signal is no longer conflated with the latest-activity signal. Hub cards keep a single-line 'Latest disco' label."
+    },
+    {
+      "date": "2026-04-27",
+      "app": "Pricing Calculator",
+      "status": "shipped",
+      "title": "Pricing Calculator v1.1 \u2014 Spec Agent SKU, ROM \u00b1$10k, References rail, Procurement floor $8k",
+      "description": "Five updates from Sam Ramos's V2 list. (1) New Spec Agent SKU (formerly 'Major POs') added between PreFab and ProCore, default-checked, $2k floor, BPS by tier 0.023% \u2192 0.005%. (2) ROM range now anchored to whole-deal BPS list price \u00b1$10k (replaces the prior annual-floor \u2192 discounted-ACV range). (3) Collapsible References rail on the left, fixed position with toggle, seeded with the Implementation Fee SPIF ($500 bonus on $5k+ implementation). (4) 'Prospect Spend' table column renamed to 'Current Solution' with hover tooltip explaining what AEs should enter. (5) Procurement annual floor raised from $3k to $8k."
+    },
+    {
+      "date": "2026-04-23",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Upsell Signals: GMV Phase 1 \u2014 GMV/AR ratio + Reprice/Wallet Share motions",
+      "description": "Wired Luke's Customer Summary T12 GMV snapshot (625 customers, T12 ending 3/31/2026, 470 families matched) into the Upsell Signals tab. New T12 GMV and GMV/AR columns next to the existing Rev Delta. Size signal now fires on the max of ENR delta and distance from Micah's 25\u201335% GMV/AR band, and the row carries a Reprice or Wallet Share pill when outside the band. Expand panel adds a 2\u00d72 quadrant tile (GMV/AR \u00d7 ENR delta) with the right-sized band shaded. Static-snapshot callout flags manual refresh until the durable SFDC field (Kojo_Annual_GMV__c) ships. Methodology updated with the band definition and motion semantics. Spot-check: Adams Electric = 202% Reprice, Besko = 9% Wallet Share."
+    },
+    {
+      "date": "2026-04-23",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Methodology: correct pricing formula (BPS \u00d7 Annual Revenue)",
+      "description": "The Methodology tab was showing the stale Zoom-notes paraphrase 'Pricing = ACV \u00d7 Basis Points \u00d7 (1 - Discount)' which inverts the chain \u2014 ACV is an output, not an input. Replaced with the correct three-line formula: Procurement List Price = BPS \u00d7 Annual Revenue; ACV = (BPS \u00d7 AR) + Add-Ons; Final Price = ACV \u00d7 (1 \u2212 Discount). Added CPQ V6 (Nov 2025) note that add-ons now also key off Annual Revenue via BPS revenue-band scale, so every line item uses the same AR input. No code change \u2014 only the methodology copy was wrong. Signal logic (ENR delta, BPS compression) was already keyed to the correct formula."
+    },
+    {
+      "date": "2026-04-23",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Upsell Signals: reformat How to Use as numbered steps",
+      "description": "The paragraph-format How to Use callout on the Upsell Signals tab is now a 5-item ordered list \u2014 scan-friendly for new users learning the view. Content preserved as-is."
+    },
+    {
+      "date": "2026-04-23",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Flip signal + rev delta colors to encode upsell opportunity",
+      "description": "Colors were encoding financial risk (big delta = red, strong signal = red) on a dashboard whose whole point is surfacing upsell opportunity \u2014 exact inversion. Adams Electric Co (SFDC $55M, ENR $278M, -80%) was flagged red when it's actually a strong signal they're bigger than we think. Flipped the palette across both tabs: Signal Badge now Strong = green, Moderate = yellow, Weak = muted gray, No Data = muted gray italic. Rev Delta now colors only the negative side (SFDC < ENR = upsell signal): < -30% green, < -15% yellow, anything else muted. Applies to both the Upsell Signals tab and the ENR Top 600 tab. BPS Delta left as-is for now (separate semantic \u2014 pricing compression)."
+    },
+    {
+      "date": "2026-04-23",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "ENR Top 600: SFDC account name links to Salesforce",
+      "description": "SFDC Account column on the ENR Top 600 tab now renders as a hyperlink to the matched account in Salesforce (opens in a new tab). Same treatment already on the Upsell Signals tab. One-click jump from ENR row to the SFDC record \u2014 speeds up investigating false matches, state mismatches, and revenue deltas."
+    },
+    {
+      "date": "2026-04-23",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "ENR Top 600: YoY rank movement + SFDC State vs ENR State",
+      "description": "Two visual additions to the ENR Top 600 tab. (1) Rank cell now shows 2025 rank as primary plus YoY movement \u2014 \u25b2N green when the firm moved up the list, \u25bcN red when it moved down, NEW yellow when there's no 2024 rank, and '(was #X)' for context. (2) Replaced the single State column with two labeled columns \u2014 SFDC State and ENR State \u2014 so mismatches are visible at a glance. When they differ (normalized comparison, so 'California' vs 'CA' don't false-flag), both cells go red/bold with a hover title explaining the difference. CSV export now includes 2024 Rank, Rank Change, and a State Mismatch flag."
+    },
+    {
+      "date": "2026-04-23",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Filter-aware hero stats + State column on Upsell Signals",
+      "description": "Two visual improvements to the Upsell Signals tab. (1) Hero stats (Customers Analyzed, Strong Signals, ARR w/ Strong Signal, etc.) now reflect active filters \u2014 e.g., filter Account Owner to Shank Singh and the numbers only reflect his book. Moved hero computation into the view and recompute from the filtered array. (2) Added a State column next to Customer / Parent \u2014 parent row shows the parent account's billing state, child rows show each child's state. Makes cross-state mismatches (the signal that surfaced the Besko / Broadway Electric Inc false match) immediately visible. State column also included in the CSV export."
+    },
+    {
+      "date": "2026-04-23",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Fix ENR cross-state false match + parent-as-child duplicate render",
+      "description": "Two data-quality fixes on the Upsell Signals tab surfaced by Broadway Electric Service Company (Besko). (1) ENR Top 600 rank 169 ('BROADWAY ELECTRIC INC.' in Illinois) was matching to Besko (Tennessee) because the fallback substring matcher accepted 'broadway electric' \u2282 'broadway electric service' and then took the first candidate even when state didn't match. Tightened the fallback to require state match when both sides have state \u2014 no state corroboration now means no match. (2) Besko appeared both as the family header row and as a child when the toggle expanded because the family's members array includes the parent account itself. Now identifying the parent by name match and filtering it out of the child list; count badge switched from '(N total)' to '(+N)' to reflect child count."
+    },
+    {
+      "date": "2026-04-22",
+      "app": "Revenue Breakdown",
+      "status": "shipped",
+      "title": "Rename Win Rate (Cohort) \u2192 CCWR, align math with /ccwr",
+      "description": "The Cohort variant was labeled 'cohort' but used a resolved-rate formula: wins \u00f7 (wins + losses). The /ccwr dashboard uses the absolute rate: wins \u00f7 total cohort (denominator includes open opps). Renamed the hero card and every breakdown column header to CCWR, updated the subtitle/tooltip formula to 'Wins \u00f7 Total Cohort \u00b7 created in period', and swapped the denominator so the two dashboards now match. Added a footnote explaining the rate will trend low for recent periods until opps close. Win Rate (Closed) unchanged \u2014 still resolved rate on close date in period."
+    },
+    {
+      "date": "2026-04-22",
+      "app": "Revenue Breakdown",
+      "status": "shipped",
+      "title": "Split Win Rate into Closed vs Cohort",
+      "description": "Single Win Rate was too easy to misread \u2014 a young quarter showed 0% for Event because no Q2-discovered Event opps had closed yet, even though Satterlee Plumbing was a Q2 CW. Now two metrics: Win Rate (Closed) uses Close Date in period for both numerator and denominator (the intuitive 'what's my Q2 win rate' number), Win Rate (Cohort) keeps the created-in-period definition for trending. Both render as separate hero cards with formula subtitles + POP deltas, and as separate columns in every breakdown table. Empty cells show '\u2014' when no opps have closed in the cohort yet."
+    },
+    {
+      "date": "2026-04-22",
+      "app": "RevOps Hub",
+      "status": "shipped",
+      "title": "Architecture page: per-tab Coefficient cadence",
+      "description": "Corrected the Data Pipeline section to reflect that only the pipeline tab syncs hourly \u2014 other Google Sheets tabs run on daily or manual schedules set per-tab in Coefficient. Resolved a stale 'daily \u2192 hourly' correction that had overgeneralized to all tabs."
+    },
+    {
+      "date": "2026-04-22",
+      "app": "Revenue Breakdown",
+      "status": "shipped",
+      "title": "Win Rate clarity, Accelerated ARR hero, period-over-period deltas",
+      "description": "Relabeled CW Rate to Win Rate across hero and breakdown tables with an italic formula subtitle (Wins \u00f7 (Wins + Losses) \u00b7 created in period) so the metric's cohort definition is transparent. Added Accelerated ARR as a 7th hero stat alongside Recurring ARR. Added period-over-period delta chips under every numeric hero (\u25b2 green when up, \u25bc red when down, grayed out for All Time). Prior-period window matches the current selection exactly \u2014 e.g., 'Last quarter' compares to the quarter before. Refactored the inlined period-filter logic into a shared getPeriodRange helper so current + prior windows use identical math. No data-model change, no denominator change to Win Rate \u2014 the label now matches the formula."
+    },
+    {
+      "date": "2026-04-22",
+      "app": "ICP Classifier",
+      "status": "shipped",
+      "title": "ICP Classifier Phase A \u2014 website-scrape reclassification of 4,628 MM prospects",
+      "description": "Python CLI that scrapes account websites and classifies each as ICP Fit / Needs Human Review / Unlikely ICP via Claude Haiku 4.5. Full 11-territory production run on Kojo MEP Prospects All Territories v3.xlsx reclassified 2,411 accounts off the prior NAICS-only ICP Fit list (79% overcount removed). Final split: 645 ICP Fit / 1,635 Needs Review / 2,348 Unlikely. Output is a 6-sheet territory-planning report (Summary with density verdict, Changes, Target Accounts, Proxy Samples with reviewer pre-assignments, All Accounts, Methodology). One-shot wrapper (run-icp.sh) for future re-runs. Phase A unblocks the MM Territory 5/1 launch by giving the team a web-verified target list + proxy-sample assignments for Friday EOD validation. Phase B.1 (TypeScript port + /classify-icp skill) and B.2 (Hub view) tracked as separate future specs."
+    },
+    {
+      "date": "2026-04-20",
+      "app": "RevOps Hub",
+      "status": "shipped",
+      "title": "Architecture page reflects hourly Coefficient sync",
+      "description": "Updated the Data Pipeline section on /architecture to read 'hourly Coefficient sync' (was 'daily' in two spots) after today's schedule fix that restored the sheet-side refresh cadence."
+    },
+    {
+      "date": "2026-04-20",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Monday Slack post links to Initiatives Tracker",
+      "description": "Added a second button \u2014 'Weekly Pipeline Review \u2014 Initiatives Tracker' \u2014 next to the existing 'View Dashboard' button at the bottom of the Monday Pipeline Pulse Slack post. One-click access from Slack to the channel projects/owners/next steps sheet."
+    },
+    {
+      "date": "2026-04-20",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Initiatives Tracker link + combined pacing chart fixes",
+      "description": "Follow-ups from the first weekly pipeline review. Linked the Weekly Pipeline Review \u2014 Initiatives Tracker Google Sheet from the bottom of the Weekly Pipeline Creation section. On the Q2'26 Pacing > Combined chart: AE upside now stacks on top of the board plan line (gap between the two lines = AE contribution) instead of reading as a line below it. Also widened the chart's viewBox so labels and tick values no longer look horizontally stretched at full container width."
+    },
+    {
+      "date": "2026-04-20",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Pacing revamp: MTD hero, combined-channel pacing tab, section hierarchy",
+      "description": "Action items from the first weekly pipeline review meeting. Added an MTD hero (MTD created / monthly goal + % and weeks remain) to the Month-to-Date section. Added a By Channel / Combined tab to the Q2 pacing section \u2014 Combined view shows BDR+Field+Perf summed actual vs target with AE upside as an overlay line. Fixed a math bug where the in-progress week counted as completed, making the MTD callout show 0.3 weeks remaining instead of ~1.3. Removed the Projected End stat because its straight-line projection contradicted the Pace status under a back-loaded quarter plan. Reworded the Q2 footer from 'board plan' to 'pipeline generated'. Added large section headings (Executive Summary, Weekly Pipeline Creation, Month-to-Date Pipeline Creation, Q2'26 Pacing) above each card."
+    },
+    {
+      "date": "2026-04-20",
+      "app": "RevOps Hub",
+      "status": "shipped",
+      "title": "Security hardening after Vercel 4/19 incident",
+      "description": "Rotated SLACK_BOT_TOKEN, CRON_SECRET, and the dashboard passcode (kojo2026 \u2192 kojo-hub-042026) in response to Vercel's 4/19 Context.ai OAuth breach. Marked both secrets as sensitive in Vercel so they'd be encrypted going forward. Deleted unused kojorevopshub env var. Reviewed Vercel activity log (clean) and rotated the GitHub integration's stale tokens via disconnect/reconnect. No Notion API tokens to rotate \u2014 we run through the Notion MCP, not a stored token."
+    },
+    {
+      "date": "2026-04-20",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Fix idempotency marker to match Slack's text fallback",
+      "description": "Found during post-breach verification: the Monday Pulse idempotency check was searching for '\ud83d\udcca Pipeline Pulse \u2014 Week of X' but Slack's conversations.history returns each message's plain-text fallback, which doesn't include the emoji. Marker silently never matched, meaning prior-post detection always returned false. Would have caused double-posts once Vercel Pro fires the cron reliably. Marker now matches the text field; unit tests updated to mirror real Slack responses."
+    },
+    {
+      "date": "2026-04-17",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Monday Slack auto-post to #weekly-pipeline-review",
+      "description": "Vercel Cron fires every Monday at 9:30am ET (DST-aware, both 13:30 and 14:30 UTC with an ET gate) and posts a Block Kit exec summary of last week's pipeline creation \u2014 blended headline vs target, 4 owner-group fields (BDR Outbound / Field Marketing / Perf Marketing / AE Self-Set upside), an MTD pacing paragraph, and a View Dashboard button. Reuses the dashboard's data pipeline so Slack and the live page can't drift. Idempotency via Slack-history marker; sanity gate DMs Vincent on stale or outlier data; retry only on transient Slack errors. Manual ?force=1 trigger available behind CRON_SECRET for smoke tests and missed-run recovery."
+    },
+    {
+      "date": "2026-04-16",
+      "app": "MM SDR Outbound",
+      "status": "shipped",
+      "title": "MM SDR Outbound dashboard with weekly review export",
+      "description": "New standalone view at /mm-sdr tracking mid-market SDR outbound performance. 5 sections: North Star Metrics, SDR Activity, Account Targeting, SAO Acceptance/Rejection, and SAO Quality. Includes .docx export for weekly Tuesday review meeting."
+    },
+    {
+      "date": "2026-04-16",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Pipeline Pulse polish pass \u2014 deal list fix, MTD improvements, pacing tweaks",
+      "description": "Fixed deal list period filtering (timezone-safe YYYY-MM-DD string comparison instead of timestamp math). Updated MTD copy from legacy '100% quota attainment' to board plan framing. Added summary row to MTD tables. Added current in-progress week to MTD table. Removed confusing $0 and redundant target from projection row. Reordered MTD before Q2 pacing. Pacing chart tags now show actual/target instead of gap."
+    },
+    {
+      "date": "2026-04-15",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Pacing quarter target now exactly matches the board plan",
+      "description": "Fixed an accumulation rounding error in the Q2'26 Pacing section. Per-week targets are now allocated as (monthly goal / # of pacing weeks that resolve to that month), not (monthly goal / 4.33). Because the quarter splits 5+4+4 weeks across Apr/May/Jun but 4.33 is a flat average, cumulative target was drifting ~$160k short of the $7,849k board plan total. New math produces an exact match at the end of each month and the quarter. Scoreboard keeps using 4.33 for its flat per-week display (that's the right math for 'what's the average weekly rate')."
+    },
+    {
+      "date": "2026-04-15",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Pacing chart hover + deal list group filter + pace math fix",
+      "description": "Batch of Weekly Lookback polish: (1) Q2'26 Pacing charts are now hoverable \u2014 mouse over any chart to see a vertical indicator, enlarged data-point dot, and a tooltip showing week label + cumulative actual + target + opp count. Solves the 'Perf Marketing looks like $0 but I know there are opps' readability problem. (2) Deal list gains a Group filter (All Groups / BDR Outbound / Field Marketing / Perf Marketing / AE Self-Set) alongside the Period filter. (3) Source column renders as colored pills matching the owner-group palette (green SDR / blue Marketing / yellow Demand Gen / teal Sales). (4) Methodology tab adds a 'Segment split note' paragraph explaining that the board report doesn't break goals down by segment and that the MM/ENT toggle applies the live quota ratio to keep the split apples-to-apples with how the board apportions segment capacity. (5) Pace status math fix: weeks now resolve to their month via Thursday midpoint instead of Monday, so Q2 week 1 (Mon Mar 30 \u2013 Sun Apr 5) correctly rolls to April's goal. Previously it fell into March and had a $0 target, making actuals appear 'Ahead' against a missing bar."
+    },
+    {
+      "date": "2026-04-15",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Segment toggle (All / MM / ENT) on Weekly Lookback",
+      "description": "Added an All / MidMarket / Enterprise segment toggle in a slim control bar below the tab buttons. Every module on the Weekly Lookback tab respects the toggle: app-header badges, implied coverage diagnostic, ExecSummary narrative, Scoreboard (blended + 4 mini-cards), Q2'26 Pacing (4 cumulative charts), MTD Tracker, and Deal List. Targets are scaled by the segment's share of monthly AE quota (e.g., April MM share = mmQuota/totalQuota = 43.8%); actuals are segment-filtered. Sources & Methodology and SDR Performance tabs stay segment-invariant. Server pre-computes all three segment views so the toggle is instant (no client recompute). Also fixes segmentation: removed Jared Moor from MANAGER_SEGMENT_MAP (he's VP Sales, not an MM manager)."
+    },
+    {
+      "date": "2026-04-15",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Board-plan-driven targets \u2014 Q2'26 replaces 5.8\u00d7 model",
+      "description": "Pipeline Pulse now tracks against the Q2'26 board-committed pipeline plan instead of the static 5.8x coverage multiple. Scoreboard redesigned: blended hero (BDR + Field + Perf) plus four owner-group mini-cards \u2014 BDR Outbound, Field Marketing, Perf Marketing, and AE Self-Set as 'UPSIDE' (tracked separately, no target). Source Gap section replaced by a Q2'26 Pacing view: four cumulative actual-vs-target line charts per owner group with a quarter summary strip showing pipeline-to-date, weeks elapsed, projected end, and pace status. Implied coverage (3.53x Apr / 4.95x May / 5.85x Jun, Q2 avg 4.77x) surfaced as a live diagnostic above the scoreboard and in the methodology tab \u2014 derived from live AE quotas in the quotas sheet. Quarterly rollover banner guards against silent fallback to 5.8x on July 1. Scope contained to Pipeline Pulse; Coverage, Scenarios, and CCWR views unchanged."
+    },
+    {
+      "date": "2026-04-15",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Regrouped 6sense/Warmly under SDR owner group",
+      "description": "Moved 6sense/Warmly from Demand Gen (Ali) to SDR (Sadie) in OWNER_GROUPS. Source gap stacked bar chart and owner attribution now reflect that 6sense intent drives SDR outbound motion. Win rate (13.9%) and CW share (14.4%) on the source itself unchanged."
+    },
+    {
+      "date": "2026-04-15",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Export PNG button on Pipeline Pulse + Coverage",
+      "description": "Added a small Export PNG button in the top-right of both Pipeline Pulse and Pipeline Coverage dashboards. Captures the full scrollable page at 2x scale via html2canvas and downloads as {view}-{YYYY-MM-DD}.png. html2canvas is dynamically imported so it doesn't bloat the initial bundle."
+    },
+    {
+      "date": "2026-04-15",
+      "app": "Pipeline Coverage",
+      "status": "shipped",
+      "title": "Export PNG button on Pipeline Pulse + Coverage",
+      "description": "Added a small Export PNG button in the top-right of both Pipeline Pulse and Pipeline Coverage dashboards. Captures the full scrollable page at 2x scale via html2canvas and downloads as {view}-{YYYY-MM-DD}.png. html2canvas is dynamically imported so it doesn't bloat the initial bundle."
+    },
+    {
+      "date": "2026-04-15",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Upsell Signals \u2014 BPS pricing compression columns",
+      "description": "Added Products, List BPS, Actual BPS, and BPS Delta columns to the discount vector. Active Assets from the customer account map to pricing config products; list BPS sums product BPS at the family's revenue tier; actual BPS comes from the New Business opp's Opportunity BPS field. Delta surfaces pricing compression in concrete basis points \u2014 a direct complement to the discount percentage. For Jomar: Products PROCUREMENT+AP, List 8.4 bps, Actual 5.6 bps, \u0394 -33%."
+    },
+    {
+      "date": "2026-04-15",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Upsell Signals \u2014 Recently Upsold dampener",
+      "description": "When a closed-won Upsell lands in the last 12 months, the family is flagged 'Recently Upsold' (green badge) and the discount/billing signals are dampened. The CSM already did the work \u2014 pricing is locked until renewal, so these families don't crowd the top of the list ahead of truly actionable accounts. Action items shift to 'monitor \u2014 pricing locked until renewal' instead of suggesting further outreach."
+    },
+    {
+      "date": "2026-04-15",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Upsell Signals \u2014 renewals & upsells data source integration",
+      "description": "Added a second data source (GID 931327785) for Renewal and Upsell opps. Original ARR now derives from the first closed-won New Business opp on the pipeline sheet (fixes accounts like Jomar where the Original ARR field on the account was $0). Discount signal anchors to the New Business discount so upsell premium pricing (negative discounts) doesn't distort it. Families with open renewal opps get a 'Renewal Pending' badge \u2014 action item is to bundle upsell asks into the renewal conversation. CSV export includes Original ARR Source, Captured Upsell ARR, Renewal Pending, and Renewal Close Date."
+    },
+    {
+      "date": "2026-04-14",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Upsell Signals tab \u2014 post-demo refinements",
+      "description": "SFDC links on account names, expandable parent/child rows with per-account discount and billing data, owner filter restricted to active customer accounts only, parent hierarchy fix (ID-chain accounts now fold into name-based families), removed vintage column, added Original ARR vs Current ARR comparison with upsold flag."
+    },
+    {
+      "date": "2026-04-14",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Upsell Signals tab \u2014 systematic renewal pricing analysis",
+      "description": "New 4th tab surfaces upsell opportunities across three vectors: company size correction via ENR revenue delta, discount normalization by contract vintage, and billing cadence optimization via invoice frequency. Includes signal strength scoring, filterable table, and CSV export with action items."
+    },
+    {
+      "date": "2026-04-13",
+      "app": "Created Cohort Win Rate",
+      "status": "shipped",
+      "title": "Fix timezone bug shifting first-of-month opps to prior cohort",
+      "description": "Discovery dates on the 1st of any month (e.g. 10/1/2025) were silently sliding into the prior month's cohort because the server (UTC) stored ISO midnight and the client (ET) re-parsed it as the previous evening. Switched CCWR to store dates as YYYY-MM-DD calendar strings and assign cohorts via string slice \u2014 no Date math, no timezone drift. Oct-25 cohort gained 5 opps (108 \u2192 113), Sep-25 lost the same 5 (102 \u2192 97). Same correction applies to every month boundary historically. Added scripts/verify-ccwr-tz.mjs as a regression check."
+    },
+    {
+      "date": "2026-04-09",
+      "app": "Pricing Calculator",
+      "status": "shipped",
+      "title": "Hide BPS column, auto-apply term discounts, add implementation services",
+      "description": "BPS column hidden from on-screen table and CSV export (still drives calculations). 2-Year term auto-applies 3% discount, 3-Year auto-applies 5%. Added 'Onsite Implementation Services' ($7k default) and 'Virtual Implementation Services' ($5k default) as one-time fees \u2014 excluded from ARR/ACV and discount math, added once to TCV. Revenue field relabeled to 'Annual Construction Revenue'."
+    },
+    {
+      "date": "2026-04-08",
+      "app": "Created Cohort Win Rate",
+      "status": "shipped",
+      "title": "Dollar mode switched to Amount/Amount per Luke's feedback",
+      "description": "Simplified dollar mode to use Amount for both numerator and denominator (was Recurring ARR / Amount). Methodology tab updated. Data reconciled against Luke's FY26 Sales Planning spreadsheet \u2014 12 of 15 months match exactly."
+    },
+    {
+      "date": "2026-04-08",
+      "app": "Account Intelligence",
+      "status": "shipped",
+      "title": "Account Intelligence app with ENR Top 600 and Top Customers views",
+      "description": "New 3-tab app: ENR Top 600 matching against SFDC with revenue delta analysis, Top Customers ranked by parent-level revenue with expandable families, and Methodology tab. Includes fuzzy matching, ICP classification, CSV export with action items."
+    },
+    {
+      "date": "2026-04-08",
+      "app": "Created Cohort Win Rate",
+      "status": "shipped",
+      "title": "Raw T6M metric and Data Cleansing tab",
+      "description": "Raw T6M CCWR shown alongside adjusted T6M (includes maturing cohorts to match Luke's 8% figure). New Data Cleansing tab showing opps missing Discovery Date, Source, Industry, Set Type, or Amount."
+    },
+    {
+      "date": "2026-04-08",
+      "app": "Created Cohort Win Rate",
+      "status": "shipped",
+      "title": "Pipeline creation by channel \u2014 hero stats, chart bars, and breakdown column",
+      "description": "Added Pipeline Created and CW ARR hero stats, pipeline creation volume bars behind CCWR chart (dual-axis), renamed breakdown table column to Created. All reactive to mode toggle and filters."
+    },
+    {
+      "date": "2026-04-07",
+      "app": "Created Cohort Win Rate",
+      "status": "shipped",
+      "title": "CCWR dashboard \u2014 cohort win rate analysis with trend chart and breakdowns",
+      "description": "New /ccwr page with monthly cohort table, CCWR-over-time chart, T3M/T6M/T12M trailing averages, dimension breakdowns by set type/source/segment/industry, count/dollar mode toggle, 6 filters, and Sources & Methodology tab."
+    },
+    {
+      "date": "2026-04-06",
+      "app": "Revenue Breakdown",
+      "status": "shipped",
+      "title": "Revenue Breakdown page \u2014 CW revenue by source, set type, and segment",
+      "description": "New /revenue page with 7 time period options, multi-select filters for set type, source, owner, and SDR, plus summary stats and proportional bar charts."
+    },
+    {
+      "date": "2026-04-06",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Historical source mix chart with Focus Week / Historical toggle",
+      "description": "100% stacked bar chart showing weekly pipeline creation by owner group with period selector, goal pacing indicators, and hit rate summary."
+    },
+    {
+      "date": "2026-04-06",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Dynamic methodology tab \u2014 Q2 quota-aware",
+      "description": "Methodology tab now derives all values from live Google Sheets quotas instead of hardcoded March 2026 numbers."
+    },
+    {
+      "date": "2026-04-03",
+      "app": "RevOps Hub",
+      "status": "shipped",
+      "title": "System Architecture page",
+      "description": "Full system manual at /architecture \u2014 maps operator, core engine, MCP servers, plugins, skills, deployed apps, data pipeline, and visibility system with interactive expand/collapse and sticky sidebar nav."
+    },
+    {
+      "date": "2026-04-01",
+      "app": "Pipeline Coverage",
+      "status": "shipped",
+      "title": "Rename MOJO section to Weekly Pipeline Flow",
+      "description": "Renamed MOJO branding to Weekly Pipeline Flow throughout the UI, Fresh Total to Active Pipeline, and added This Week date range label above summary cards."
+    },
+    {
+      "date": "2026-04-01",
+      "app": "Pipeline Coverage",
+      "status": "shipped",
+      "title": "Scoreboard responds to segment filter",
+      "description": "Pipeline, quota, coverage multiple, and opp count on the scoreboard now react to the MM/ENT segment toggle."
+    },
+    {
+      "date": "2026-04-01",
+      "app": "Pipeline Coverage",
+      "status": "shipped",
+      "title": "Deal drill-in panel with Slack context and Claude forecast",
+      "description": "Click any row in Top Deals to open a side panel showing deal snapshot, recent Slack mentions, and an AI-generated forecast. Backed by a new /api/deal-insight route."
+    },
+    {
+      "date": "2026-04-01",
+      "app": "Pipeline Coverage",
+      "status": "shipped",
+      "title": "Top Deals table: sortable columns, segment filter, Last Touch rename",
+      "description": "Added sortable column headers, segment-aware filtering, renamed ageDays to inactiveDays computed from lastActivityDate, and renamed column to Last Touch."
+    },
+    {
+      "date": "2026-04-01",
+      "app": "RevOps Hub",
+      "status": "shipped",
+      "title": "Wire live quota data from Google Sheets into all views",
+      "description": "Replaced hardcoded quotas with live fetch from Google Sheets. Fixed manager rollup exclusion and passed live values through to the coverage client component."
+    },
+    {
+      "date": "2026-03-31",
+      "app": "Pricing Calculator",
+      "status": "shipped",
+      "title": "Ship Pricing Calculator v1",
+      "description": "Full pricing calculator with BPS fee matrix, product config, ROM range output, and Slack share. Registered on Hub page."
+    },
+    {
+      "date": "2026-03-31",
+      "app": "Pricing Calculator",
+      "status": "shipped",
+      "title": "Fix annual price floor and tier boundary display",
+      "description": "Applied floor logic to annual price instead of monthly, and corrected ROM range display order and tier boundary gaps."
+    },
+    {
+      "date": "2026-03-31",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Fix SDR roster filtering and SAO attribution",
+      "description": "Excluded SDR managers by ownerManager relationship, counted SAOs across all sources not just SDR Outbound, and corrected the Owner Manager column mapping."
+    },
+    {
+      "date": "2026-03-30",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Ship SDR Performance tab",
+      "description": "New third tab on Pipeline Pulse with KPI cards, toggleable heatmap (SAO count / Pipeline $), conversion funnel, and rep detail table with segment grouping and pace bars."
+    },
+    {
+      "date": "2026-03-30",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "SDR data pipeline and processor",
+      "description": "Added SDR meeting data loader, quota loader with Google Sheets fetch + fallback, SDR performance processor, and new type definitions for SDR and quota data."
+    },
+    {
+      "date": "2026-03-30",
+      "app": "Pipeline Pulse",
+      "status": "shipped",
+      "title": "Fix SDR focus week alignment and roster edge cases",
+      "description": "Aligned SDR tab focus week with Pipeline Pulse (last complete Mon-Sun), excluded transitioned SDR-to-AE reps, and used today's date instead of latest data date."
+    },
+    {
+      "date": "2026-03-30",
+      "app": "RevOps Hub",
+      "status": "shipped",
+      "title": "Shared spreadsheet config across views",
+      "description": "Refactored coverage and scenarios pages to use shared SPREADSHEET_ID and SHEET_GIDS constants."
+    },
+    {
+      "date": "2026-03-27",
+      "app": "RevOps Support",
+      "status": "shipped",
+      "title": "Ship RevOps Support dashboard",
+      "description": "Queue tab with summary cards and ticket table, Analytics tab with KPIs, volume chart, category breakdown, and top requesters. Registered on Hub page."
+    },
+    {
+      "date": "2026-03-27",
+      "app": "RevOps Support",
+      "status": "shipped",
+      "title": "Slack-based ticket ingestion pipeline",
+      "description": "Added Slack Web API client for channel history and thread replies, plus a ticket parser with message parsing and status detection."
+    },
+    {
+      "date": "2026-03-27",
+      "app": "Pipeline Coverage",
+      "status": "shipped",
+      "title": "MOJO chart enhancements: split bars, tooltips, info icons",
+      "description": "Split stacked bar into side-by-side CW (teal) and CL (red) bars, added hover tooltips to bars and net change dots, and wired InfoTooltip into headers and summary cards."
+    },
+    {
+      "date": "2026-03-27",
+      "app": "Pipeline Coverage",
+      "status": "shipped",
+      "title": "Fix React hooks ordering in MOJO component",
+      "description": "Moved useEffect above early return to prevent conditional hook call violation."
+    },
+    {
+      "date": "2026-03-26",
+      "app": "RevOps Hub",
+      "status": "shipped",
+      "title": "Initial launch: Pipeline Pulse app + RevOps Hub",
+      "description": "First deploy of the Next.js app with Pipeline Pulse weekly view, Coverage view, Scenarios backtest, and Hub landing page."
+    }
+  ]
+}

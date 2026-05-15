@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noUnusedLocals": false,
+    "noImplicitAny": false,
+    "outDir": "/tmp/acr-compiled"
+  },
+  "include": [
+    "scripts/snapshot-contract-acr.ts",
+    "lib/cw-spotcheck/**/*.ts",
+    "lib/contract-acr/**/*.ts",
+    "lib/types-account-intelligence.ts"
+  ],
+  "exclude": ["node_modules"]
+}

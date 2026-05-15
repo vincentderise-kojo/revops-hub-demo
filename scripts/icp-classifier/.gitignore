@@ -1,0 +1,21 @@
+.env.local
+.venv/
+__pycache__/
+*.pyc
+cache.json
+cache.json.bak*
+# Output xlsx files — never commit classified account data
+*.xlsx
+!fixtures/*.xlsx
+# Run artifacts
+runs/
+# Inputs (master account lists, marquee CSVs — contain SFDC data).
+# Ignore everything in inputs/ EXCEPT the territory mapping (configuration, no SFDC data).
+inputs/*
+inputs/marquees/
+inputs/runs/
+!inputs/territory_mapping.csv
+!inputs/ae_territory_mapping.csv
+# Outputs folder is fully ignored (generated artifacts only)
+outputs/
+.pytest_cache/

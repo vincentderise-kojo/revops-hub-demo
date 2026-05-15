@@ -1,0 +1,3 @@
+# Account-level data stays out of git — belongs in SFDC / Google Drive / local disk
+*.xlsx
+*.csv
