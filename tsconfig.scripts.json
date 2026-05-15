@@ -16,8 +16,6 @@
     "outDir": "/tmp/acr-compiled"
   },
   "include": [
-    "scripts/snapshot-contract-acr.ts",
-    "lib/cw-spotcheck/**/*.ts",
     "lib/contract-acr/**/*.ts",
     "lib/types-account-intelligence.ts"
   ],

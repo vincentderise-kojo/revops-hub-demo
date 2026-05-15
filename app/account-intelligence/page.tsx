@@ -16,7 +16,6 @@ import type {
   ContractAcrSnapshot,
 } from "@/lib/types-account-intelligence";
 import AccountIntelligenceDashboard from "@/components/account-intelligence-dashboard";
-import { getInstanceUrl } from "@/lib/cw-spotcheck/sfdc";
 
 import enrData from "@/data/enr-top-600-2025.json";
 import overrides from "@/data/enr-sfdc-overrides.json";
@@ -66,14 +65,8 @@ export default async function AccountIntelligencePage() {
   const customerAccounts = rawCustomers.map(parseCustomerAccount);
   const hierarchyAccounts = rawHierarchy.map(parseHierarchyAccount);
 
-  // Best-effort SFDC instance URL for building Contract Reference source PDF links.
-  // Local dev without .env.local gets a null URL — expand panel shows non-anchored cells.
-  let sfdcInstanceUrl: string | null = null;
-  try {
-    sfdcInstanceUrl = await getInstanceUrl();
-  } catch (err) {
-    console.warn("[Account Intelligence] SFDC instance URL unavailable:", err);
-  }
+  // SFDC instance URL unavailable in portfolio demo — expand panel shows non-anchored cells.
+  const sfdcInstanceUrl: string | null = null;
 
   const data = processAccountIntelligence(
     enrData as EnrFirm[],
