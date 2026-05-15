@@ -58,10 +58,10 @@ export function getQuotasForMonth(records: QuotaRecord[], monthKey: string): Quo
 
 // ── Manager-level rollups to exclude from quota aggregation ──
 const QUOTA_EXCLUDED_OWNERS = [
-  "Jeremy Taylor",
+  "Kevin Brand",
   "Will Olson",
-  "Sean Coyle",
-  "Jared Moor",
+  "Patrick Yu",
+  "Marcus Halloran",
   "Garrett Ackard",
 ];
 
@@ -87,7 +87,7 @@ export function buildMonthlyQuotaFromRecords(records: QuotaRecord[], monthKey: s
 
   for (const rec of aeRecords) {
     const mgr = rec.ownerManager;
-    if (mgr === "Sean Coyle") {
+    if (mgr === "Patrick Yu") {
       entQuota += rec.quotaAmount;
     } else {
       mmQuota += rec.quotaAmount;

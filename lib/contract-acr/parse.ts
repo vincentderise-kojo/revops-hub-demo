@@ -1,8 +1,8 @@
 // Contract ACR extraction.
 //
 // Primary path: regex against the structured `Annual Construction Revenue: $X,XXX,XXX.XX`
-// line on the current Kojo Order Form template. Validated against All Weather Contractors
-// signed contract ($28M). See memory `reference-kojo-contract-acr-location`.
+// line on the current Order Form template. Validated against All Weather Contractors
+// signed contract ($28M).
 //
 // Fallback path (older templates that lack the structured label): Claude PDF parse,
 // invoked from parseContractAcr() in this same module — kept here so the parser is one
@@ -70,10 +70,10 @@ import pdfParse from "pdf-parse/lib/pdf-parse.js";
 
 const CLAUDE_MODEL = "claude-opus-4-7";
 
-const CLAUDE_PROMPT = `You are extracting one specific value from a signed Kojo Order Form PDF.
+const CLAUDE_PROMPT = `You are extracting one specific value from a signed Order Form PDF.
 
 Find the customer's stated "Annual Construction Revenue" — the company's annual construction revenue
-disclosed at signing. On the current Kojo template this appears under the "Products" section header
+disclosed at signing. On the current template this appears under the "Products" section header
 as a labeled line. Older templates may use different formatting.
 
 Return JSON with exactly these fields:
@@ -129,7 +129,7 @@ async function claudeAcrExtract(buffer: Buffer): Promise<{ statedAcr: number | n
 }
 
 /**
- * Extract Annual Construction Revenue from a signed Kojo Order Form PDF buffer.
+ * Extract Annual Construction Revenue from a signed Order Form PDF buffer.
  * Tries regex first (free, fast, deterministic); falls back to Claude PDF parse only when
  * the structured label is absent (older templates).
  */

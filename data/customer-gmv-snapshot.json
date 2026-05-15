@@ -1,7 +1,7 @@
 {
   "windowEnd": "2026-03-31",
   "generatedAt": "2026-04-23T17:35:37.817Z",
-  "source": "Luke Brown 2025_09 GMV Backup.xlsx · Customer Summary",
+  "source": "Finance 2025_09 GMV Backup · Customer Summary",
   "recordCount": 625,
   "records": [
     {
@@ -2266,7 +2266,7 @@
     {
       "sfdcId18": "0014x00000KnGwmAAF",
       "sfdcId15": "0014x00000KnGwm",
-      "customer": "Adams Electric Co.",
+      "customer": "Whitestone Electric Co.",
       "annualRevenue": 55000000,
       "trade": "Electrical",
       "t12Gmv": 111214168,

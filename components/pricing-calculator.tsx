@@ -141,7 +141,7 @@ export default function PricingCalculator() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `kojo-pricing-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.download = `crestline-pricing-${new Date().toISOString().slice(0, 10)}.csv`;
     a.click();
     URL.revokeObjectURL(url);
   }
@@ -162,7 +162,7 @@ export default function PricingCalculator() {
       format: [canvas.width, canvas.height],
     });
     pdf.addImage(imgData, "PNG", 0, 0, canvas.width, canvas.height);
-    pdf.save(`kojo-pricing-${new Date().toISOString().slice(0, 10)}.pdf`);
+    pdf.save(`crestline-pricing-${new Date().toISOString().slice(0, 10)}.pdf`);
   }
 
   // ── Export: Screenshot ──
@@ -174,7 +174,7 @@ export default function PricingCalculator() {
       scale: 2,
     });
     const link = document.createElement("a");
-    link.download = `kojo-pricing-${new Date().toISOString().slice(0, 10)}.png`;
+    link.download = `crestline-pricing-${new Date().toISOString().slice(0, 10)}.png`;
     link.href = canvas.toDataURL("image/png");
     link.click();
   }
@@ -217,7 +217,7 @@ export default function PricingCalculator() {
 
   return (
     <>
-      {/* Kojo header */}
+      {/* Crestline header */}
       <div className="kojo-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <a
@@ -230,7 +230,7 @@ export default function PricingCalculator() {
               textDecoration: "none",
             }}
           >
-            KOJO
+            CRESTLINE
           </a>
           <span
             style={{
@@ -650,7 +650,7 @@ export default function PricingCalculator() {
                 <th>Floor</th>
                 <th>
                   <span
-                    title="Monthly cost of the tool the prospect is using today (e.g., Excel, custom app, competitor) — used to show savings vs. Kojo"
+                    title="Monthly cost of the tool the prospect is using today (e.g., Excel, custom app, competitor) — used to show savings vs. Crestline"
                     style={{
                       cursor: "help",
                       borderBottom: "1px dotted var(--muted)",

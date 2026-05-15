@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Pipeline Pulse — Source-Adjusted Coverage",
-  description: "Weekly pipeline creation lookback dashboard for Kojo GTM leadership",
+  description: "Weekly pipeline creation lookback dashboard for Crestline GTM leadership",
 };
 
 export default function RootLayout({

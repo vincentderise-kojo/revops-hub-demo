@@ -301,7 +301,7 @@ export default function UpsellSignalsView({ data }: Props) {
       {/* Hero Stats — filter-aware */}
       <UpsellHeroStatsBar stats={filteredHeroStats} />
 
-      {/* GMV snapshot callout — Phase 1 static feed from Luke's Customer Summary sheet */}
+      {/* GMV snapshot callout — static snapshot from Customer Summary */}
       {data.gmvSnapshot && (
         <div
           style={{
@@ -317,11 +317,11 @@ export default function UpsellSignalsView({ data }: Props) {
             color: "var(--muted)",
           }}
         >
-          <span style={{ color: "var(--kojo-yellow)", fontWeight: 600 }}>GMV snapshot (static)</span>
+          <span style={{ color: "var(--yellow)", fontWeight: 600 }}>GMV snapshot (static)</span>
           <span>
             T12 window through <strong style={{ color: "var(--text)" }}>{data.gmvSnapshot.windowEnd}</strong>.
             Matched <strong style={{ color: "var(--text)" }}>{data.gmvSnapshot.matchedFamilies}</strong> of{" "}
-            {data.upsellSignals.length} families. Source: {data.gmvSnapshot.source}. SFDC field <code style={{ color: "var(--text)" }}>Kojo_Annual_GMV_T12__c</code> now populated via DS-878; dashboard swap pending Coefficient column add and cadence confirmation.
+            {data.upsellSignals.length} families. Demo build — sourced from synthetic data generator.
           </span>
         </div>
       )}
@@ -1240,7 +1240,7 @@ function GmvMotionPill({ signal: s }: { signal: UpsellSignal }) {
   const ratioPct = s.gmvToArRatio !== null ? `${Math.round(s.gmvToArRatio * 100)}%` : "";
   const title = isReprice
     ? `GMV ${ratioPct} of AR — customer spends like a bigger company than SFDC shows. Investigate whether AR is stale before repricing.`
-    : `GMV ${ratioPct} of AR — low Kojo penetration in a large customer. Wallet-share expansion opportunity.`;
+    : `GMV ${ratioPct} of AR — low platform penetration in a large customer. Wallet-share expansion opportunity.`;
   return (
     <span
       title={title}
@@ -1332,7 +1332,7 @@ function ExpandPanelQuadrantTile({ signal: s }: { signal: UpsellSignal }) {
           </div>
         )}
         <div style={{ fontSize: 10, marginTop: 2 }}>
-          Band {Math.round(GMV_CONFIG.lowerBand * 100)}–{Math.round(GMV_CONFIG.upperBand * 100)}% anchors to Micah&apos;s 30% heuristic. Outside the band fires Size with the ENR delta via max().
+          Band {Math.round(GMV_CONFIG.lowerBand * 100)}–{Math.round(GMV_CONFIG.upperBand * 100)}% anchors to the 30% GMV/AR heuristic. Outside the band fires Size with the ENR delta via max().
         </div>
       </div>
     </div>
@@ -1371,7 +1371,7 @@ function getActionNeeded(s: UpsellSignal): string {
   if (s.gmvMotion === "reprice" && s.gmvToArRatio !== null) {
     actions.push(`Reprice — GMV ${Math.round(s.gmvToArRatio * 100)}% of AR; investigate AR and pricing`);
   } else if (s.gmvMotion === "wallet-share" && s.gmvToArRatio !== null) {
-    actions.push(`Wallet Share — GMV ${Math.round(s.gmvToArRatio * 100)}% of AR; low Kojo penetration`);
+    actions.push(`Wallet Share — GMV ${Math.round(s.gmvToArRatio * 100)}% of AR; low platform penetration`);
   }
   if (s.sizeSignal === "strong" && s.gmvMotion !== "reprice" && s.gmvMotion !== "wallet-share") {
     actions.push("Update SFDC Revenue (delta >30%)");

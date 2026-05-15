@@ -131,7 +131,7 @@ export interface GmvRecord {
 export interface GmvSnapshot {
   windowEnd: string;          // e.g. "2026-03-31"
   generatedAt: string;        // ISO timestamp from the extract script
-  source: string;             // e.g. "Luke Brown 2025_09 GMV Backup.xlsx · Customer Summary"
+  source: string;             // e.g. "Finance 2025_09 GMV Backup · Customer Summary"
   recordCount: number;
   records: GmvRecord[];
 }

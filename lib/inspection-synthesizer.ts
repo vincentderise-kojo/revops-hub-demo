@@ -148,7 +148,7 @@ export async function synthesizeInspection(
   const anthropic = new Anthropic();
   const { text: engagementText, stats } = summarizeEngagement(engagement, windowDays);
 
-  const userContent = `Inspect this Kojo deal using the leader_deal_inspection skill loaded in the system prompt.
+  const userContent = `Inspect this deal using the leader_deal_inspection skill loaded in the system prompt.
 
 OPPORTUNITY
 - Name: ${opp.opportunityName}
@@ -177,7 +177,7 @@ Be terse. Grade on evidence, not claims.`;
     system: [
       {
         type: "text",
-        text: "You apply the leader_deal_inspection skill loaded below to inspect a single deal for Kojo's RevOps team. Respond only via the structured JSON output. Grade on evidence, not claims. Distinguish what the rep says from what the data shows.",
+        text: "You apply the leader_deal_inspection skill loaded below to inspect a single deal for the RevOps team. Respond only via the structured JSON output. Grade on evidence, not claims. Distinguish what the rep says from what the data shows.",
       },
       {
         type: "text",

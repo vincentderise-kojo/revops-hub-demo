@@ -165,7 +165,7 @@ export default function EnrView({ data }: Props) {
 
     // Build CSV
     const headers = [
-      "2025 Rank", "2024 Rank", "Rank Change", "ENR Firm", "Firm Type", "ENR Rev ($M)", "Kojo Status",
+      "2025 Rank", "2024 Rank", "Rank Change", "ENR Firm", "Firm Type", "ENR Rev ($M)", "CRM Status",
       "Match Confidence", "SFDC Account", "SFDC Revenue", "Revenue Delta %",
       "SFDC ARR", "SFDC State", "ENR State", "State Mismatch", "Trade Designation", "ENR Tag", "Family", "Action Needed",
     ];
@@ -274,7 +274,7 @@ export default function EnrView({ data }: Props) {
           }}
           style={filterSelectStyle}
         >
-          <option value="">Kojo Status</option>
+          <option value="">CRM Status</option>
           {[...STATUS_OPTIONS, "Not in SFDC - ICP", "Not in SFDC - Non-ICP"].map(
             (s) => (
               <option key={s} value={s}>
@@ -417,7 +417,7 @@ export default function EnrView({ data }: Props) {
               <SortHeader label="ENR Firm" sortKeyVal="firmName" />
               <SortHeader label="Type" sortKeyVal="firmType" />
               <SortHeader label="ENR Rev ($M)" sortKeyVal="enrRev" align="right" />
-              <SortHeader label="Kojo Status" sortKeyVal="status" align="center" />
+              <SortHeader label="CRM Status" sortKeyVal="status" align="center" />
               <th style={thStyle}>Match</th>
               <th style={thStyle}>SFDC Account</th>
               <SortHeader label="SFDC Rev" sortKeyVal="sfdcRev" align="right" />

@@ -16,27 +16,27 @@ export default function AccountMethodology() {
             ["ENR Top 600", "Static JSON in repo", "600", "Annual (~October)"],
             [
               "Customer Accounts",
-              "Google Sheet (GID 1925406595)",
+              "Synthetic CSV (data/demo/)",
               "~985",
-              "Coefficient daily sync",
+              "Hardcoded in the app for the demo build",
             ],
             [
               "Hierarchy / Prospects",
-              "Google Sheet (GID 1703881391)",
+              "Synthetic CSV (data/demo/)",
               "~840",
-              "Coefficient daily sync",
+              "Hardcoded in the app for the demo build",
             ],
             [
               "Pipeline Opps (New Business)",
-              "Google Sheet (GID 1815244803)",
+              "Synthetic CSV (data/demo/pipeline.csv)",
               "Shared with Pipeline Pulse",
-              "Coefficient hourly sync",
+              "Hardcoded in the app for the demo build",
             ],
             [
               "Renewals & Upsells",
-              "Google Sheet (GID 931327785)",
+              "Synthetic CSV (data/demo/)",
               "~1,615",
-              "Coefficient daily sync",
+              "Hardcoded in the app for the demo build",
             ],
           ]}
         />
@@ -67,11 +67,11 @@ export default function AccountMethodology() {
         </ol>
       </Section>
 
-      <Section title="Kojo Status Assignment">
+      <Section title="CRM Status Assignment">
         <Table
           headers={["Status", "Condition"]}
           rows={[
-            ["Customer", 'Matched account Type = "Customer - Active"'],
+            ["Customer", "Matched account Type = \"Customer - Active\""],
             ["Former", "Matched account Type contains Churned or Cancelled"],
             ["Active Opp", "Open pipeline opportunity found for firm (Discovery, Evaluation, Contracts/Negotiation, Final Approvals)"],
             ["Not in SFDC", "No match found in customer accounts or pipeline"],
@@ -181,9 +181,9 @@ Final Price            = ACV × (1 − Discount %)`}
       <Section title="Vector 1: Size Correction">
         <p>
           Three inputs, fired via <code style={codeStyle}>max()</code>: the existing ENR
-          revenue delta, the GMV / AR ratio pulled from Luke&apos;s Customer Summary sheet,
+          revenue delta, the GMV / AR ratio pulled from the Customer Summary sheet,
           and the customer&apos;s self-stated <em>Annual Construction Revenue</em> tied to their
-          latest signed Kojo Order Form (Stated ACR). Any one is enough to fire Size; when
+          latest signed Order Form (Stated ACR). Any one is enough to fire Size; when
           multiple point the same direction the evidence is stronger. Strong usually means
           the deal was priced off stale Annual Revenue — validate real size before renewal.
         </p>
@@ -196,7 +196,7 @@ Final Price            = ACV × (1 − Discount %)`}
           ]}
         />
         <p style={{ marginTop: 12 }}>
-          <strong>GMV / AR motions.</strong> Anchored to Micah&apos;s heuristic that GMV
+          <strong>GMV / AR motions.</strong> Anchored to the heuristic that GMV
           ≈ 30% of Annual Construction Revenue when a customer is right-sized. Outside
           the 25–35% band we surface one of two motions on the row (pill next to the
           customer name, dot on the quadrant tile in the expand panel):
@@ -206,21 +206,18 @@ Final Price            = ACV × (1 − Discount %)`}
           rows={[
             ["Reprice", "GMV / AR > 35%", "Customer spends like a bigger company than SFDC shows — investigate AR before repricing"],
             ["Right-sized", "GMV / AR 25–35%", "No GMV-driven motion; Size signal falls back to ENR delta alone"],
-            ["Wallet Share", "GMV / AR < 25%", "Low Kojo penetration in a large customer — sell more / expand product footprint"],
+            ["Wallet Share", "GMV / AR < 25%", "Low platform penetration in a large customer — sell more / expand product footprint"],
           ]}
         />
         <p style={{ marginTop: 12, fontSize: 11, color: "var(--muted)" }}>
-          The 25–35% band is Micah&apos;s 30% anchor with a ±5% tolerance, not an
-          industry standard — tunable once we see distribution. GMV today is a static
-          snapshot from <code style={codeStyle}>2025_09 GMV Backup.xlsx · Customer Summary</code>{" "}
-          (T12 through 3/31/2026). The durable SFDC field{" "}
-          <code style={codeStyle}>Kojo_Annual_GMV_T12__c</code> is now populated by Nick&apos;s
-          pipeline (DS-878); dashboard swap pending Coefficient column add and cadence
-          confirmation.
+          The 25–35% band is a 30% anchor with a ±5% tolerance, not an
+          industry standard — tunable once distribution is observed. GMV data in this demo
+          is synthetic; in production it is sourced from the durable SFDC T12 GMV field
+          populated via the data engineering pipeline.
         </p>
         <p style={{ marginTop: 16 }}>
           <strong>Stated ACR.</strong> The customer-stated Annual Construction Revenue tied to their
-          latest signed Kojo Order Form. Pulled from two sources per Quote: the structured SFDC
+          latest signed Order Form. Pulled from two sources per Quote: the structured SFDC
           field <code style={codeStyle}>Quote.Annual_Construction_Revenue__c</code> and the value
           parsed directly from the signed PDF (regex on the &ldquo;Annual Construction Revenue:&rdquo;
           line; Claude fallback for older templates). The PDF value takes precedence when present;
@@ -233,7 +230,7 @@ Final Price            = ACV × (1 − Discount %)`}
           style={{
             background: "var(--bg)",
             border: "1px solid var(--border)",
-            borderLeft: "3px solid var(--kojo-yellow)",
+            borderLeft: "3px solid var(--yellow)",
             borderRadius: 4,
             padding: 12,
             marginTop: 12,
@@ -408,7 +405,7 @@ function Section({
         style={{
           fontSize: 14,
           fontWeight: 600,
-          color: "var(--kojo-yellow)",
+          color: "var(--yellow)",
           marginBottom: 10,
           paddingBottom: 6,
           borderBottom: "1px solid var(--border)",

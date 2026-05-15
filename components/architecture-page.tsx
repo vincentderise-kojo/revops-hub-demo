@@ -39,7 +39,7 @@ const MCP_SERVERS: McpServer[] = [
     type: "MCP",
     shortDesc: "Team communication",
     fullDesc:
-      "Reads #revops-support, #sfdc-opp-review, #weekly-pipeline-review, and leadership group DM. Sends messages and reads channel history for context synthesis.",
+      "Reads #revops-support, #sfdc-opp-review, #pipeline-review, and leadership group DM. Sends messages and reads channel history for context synthesis.",
     usedBy: ["/start-day", "/weekly-update"],
   },
   {
@@ -191,9 +191,9 @@ const APPS: AppEntry[] = [
     category: "PIPELINE",
     route: "/",
     status: "live",
-    automation: "⏰ Mon 9:30 ET → #weekly-pipeline-review",
+    automation: "⏰ Mon 9:30 ET → #pipeline-review",
     description:
-      "Weekly pipeline creation dashboard tracking Q2'26 board-plan targets by owner group (BDR/Field/Perf + AE upside). Scoreboard, MTD tracker, Q2 pacing charts, deal list with period/group filters, and All/MM/ENT segment toggle. Auto-posts a Block Kit exec summary to #weekly-pipeline-review every Monday at 9:30am ET via Vercel Cron (route: /api/cron/monday-pulse), DST-aware, with fail-closed sanity gate and Slack-history idempotency.",
+      "Weekly pipeline creation dashboard tracking Q2'26 board-plan targets by owner group (BDR/Field/Perf + AE upside). Scoreboard, MTD tracker, Q2 pacing charts, deal list with period/group filters, and All/MM/ENT segment toggle. Auto-posts a Block Kit exec summary to #pipeline-review every Monday at 9:30am ET via Vercel Cron (route: /api/cron/monday-pulse), DST-aware, with fail-closed sanity gate and Slack-history idempotency.",
   },
   {
     name: "AE Performance",
@@ -249,7 +249,7 @@ const APPS: AppEntry[] = [
     route: "/support",
     status: "live",
     description:
-      "Ticket queue and analytics for #revops-support. Track open requests, resolution times, and volume trends.",
+      "Ticket queue and analytics for #revops-support. Track open requests, resolution times, and volume trends by category and requester.",
   },
   {
     name: "Pricing Calculator",
@@ -417,10 +417,10 @@ export default function ArchitecturePage() {
 
   return (
     <>
-      {/* KOJO HEADER BAR */}
+      {/* CRESTLINE HEADER BAR */}
       <div className="kojo-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <a href="/hub" style={{ fontSize: 15, fontWeight: 800, color: "#FFE500", letterSpacing: 1.5, textDecoration: "none" }}>KOJO</a>
+          <a href="/hub" style={{ fontSize: 15, fontWeight: 800, color: "#FFE500", letterSpacing: 1.5, textDecoration: "none" }}>CRESTLINE</a>
           <span style={{ width: 1, height: 16, background: "#555", display: "inline-block" }} />
           <a href="/hub" style={{ fontSize: 13, fontWeight: 600, color: "var(--text)", textDecoration: "none" }}>RevOps Hub</a>
         </div>
@@ -457,14 +457,14 @@ export default function ArchitecturePage() {
             <div className="arch-section-title">Operator</div>
             <div className="arch-section-desc">The human in the loop. Sets priorities, reviews outputs, approves deploys.</div>
             <div className="card" style={{ borderLeft: "3px solid var(--kojo-yellow)" }}>
-              <div style={{ fontSize: 15, fontWeight: 700, marginBottom: 8 }}>Vincent DeRise</div>
-              <div style={{ fontSize: 12, color: "var(--muted)", marginBottom: 12 }}>Director of Revenue Operations, Kojo</div>
+              <div style={{ fontSize: 15, fontWeight: 700, marginBottom: 8 }}>Director of Revenue Operations</div>
+              <div style={{ fontSize: 12, color: "var(--muted)", marginBottom: 12 }}>Crestline Procurement</div>
               <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                 <div style={{ fontSize: 11, color: "var(--muted)" }}>
-                  <span style={{ color: "var(--text)", fontWeight: 500 }}>Reports to:</span> Micah Rodman (CEO)
+                  <span style={{ color: "var(--text)", fontWeight: 500 }}>Reports to:</span> Daniel Voss (CEO)
                 </div>
                 <div style={{ fontSize: 11, color: "var(--muted)" }}>
-                  <span style={{ color: "var(--text)", fontWeight: 500 }}>Direct report:</span> Jaime Stillwell (Sales Ops Specialist)
+                  <span style={{ color: "var(--text)", fontWeight: 500 }}>Key collaborators:</span> Marcus Halloran (VP Sales), Sara Lindgren (Head of Finance)
                 </div>
               </div>
             </div>
@@ -754,37 +754,31 @@ export default function ArchitecturePage() {
 
             {/* Dashboard Path */}
             <div style={{ fontSize: 9, color: "var(--teal)", textTransform: "uppercase", letterSpacing: 1.2, fontWeight: 600, marginBottom: 10 }}>
-              Dashboard Path (Coefficient sync, real-time fetch)
+              Dashboard Path (demo build — synthetic CSV)
             </div>
             <div className="arch-flow">
               <div className="arch-flow-node">
-                <div style={{ fontSize: 12, fontWeight: 600 }}>Salesforce</div>
-                <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 2 }}>Source of truth</div>
+                <div style={{ fontSize: 12, fontWeight: 600 }}>Synthetic Generator</div>
+                <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 2 }}>scripts/generate-demo-data.ts</div>
               </div>
               <div className="arch-flow-arrow" style={{ color: "var(--teal)" }}>→</div>
               <div className="arch-flow-node">
-                <div style={{ fontSize: 12, fontWeight: 600 }}>Coefficient</div>
-                <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 2 }}>Sync engine</div>
-              </div>
-              <div className="arch-flow-arrow" style={{ color: "var(--teal)" }}>→</div>
-              <div className="arch-flow-node">
-                <div style={{ fontSize: 12, fontWeight: 600 }}>Google Sheets</div>
-                <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 2 }}>Public CSV export</div>
+                <div style={{ fontSize: 12, fontWeight: 600 }}>data/demo/</div>
+                <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 2 }}>CSV files in repo</div>
               </div>
               <div className="arch-flow-arrow" style={{ color: "var(--teal)" }}>→</div>
               <div className="arch-flow-node highlight">
                 <div style={{ fontSize: 12, fontWeight: 600, color: "var(--kojo-yellow)" }}>Vercel App</div>
-                <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 2 }}>Server-side fetch</div>
+                <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 2 }}>Server-side parse</div>
               </div>
             </div>
             <div className="arch-flow-explainer">
-              Coefficient syncs SFDC reports to Google Sheets. The pipeline tab refreshes hourly; other tabs run on daily or manual schedules set per-tab in Coefficient. The Next.js app fetches each sheet as CSV via public export URL on every page load (force-dynamic, no caching) — so data freshness tracks whichever tab backs the view. Fallback: local CSV in{" "}
-              <code style={{ fontSize: 9 }}>data/</code> directory.
+              This portfolio demo uses synthetic data generated by <code style={{ fontSize: 9 }}>scripts/generate-demo-data.ts</code>. The generator produces realistic-looking pipeline, quota, SDR, and closed-won CSVs in <code style={{ fontSize: 9 }}>data/demo/</code>. The Next.js app reads those files at request time (force-dynamic, no caching). In production the same data-loader interface connects to a Sheets sync tool that pulls from Salesforce — swapping the source requires only changing the data loader config.
             </div>
 
             {/* Real-time Path */}
             <div style={{ fontSize: 9, color: "var(--yellow)", textTransform: "uppercase", letterSpacing: 1.2, fontWeight: 600, marginBottom: 10, marginTop: 24 }}>
-              Real-Time Path (on-demand)
+              Real-Time Path (on-demand, production)
             </div>
             <div className="arch-flow">
               <div className="arch-flow-node">

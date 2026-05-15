@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PricingCalculator from "@/components/pricing-calculator";
 
 export const metadata: Metadata = {
-  title: "Pricing Calculator — Kojo RevOps Hub",
+  title: "Pricing Calculator — Crestline RevOps Hub",
   description: "Calculate deal pricing by product, revenue tier, and deal structure",
 };
 

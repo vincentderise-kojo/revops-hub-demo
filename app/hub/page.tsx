@@ -56,7 +56,7 @@ export default async function HubPage() {
         "Weekly source-adjusted coverage dashboard. Tracks pipeline creation vs. target by source and owner group, with MTD pacing and gap analysis.",
       status: "Live",
       href: "/",
-      accentColor: "var(--kojo-yellow)",
+      accentColor: "var(--yellow)",
       lastUpdated: lastUpdated ?? undefined,
     },
     {
@@ -85,7 +85,7 @@ export default async function HubPage() {
         "Backtest coverage multiples against 2025 actuals and model what-if scenarios with interactive controls. Test stale thresholds, win rates, and coverage targets.",
       status: "Live",
       href: "/scenarios",
-      accentColor: "var(--kojo-yellow)",
+      accentColor: "var(--yellow)",
       lastUpdated: lastUpdated ?? undefined,
     },
     {
@@ -122,7 +122,7 @@ export default async function HubPage() {
         "Ticket queue and analytics for #revops-support. Track open requests, resolution times, and volume trends.",
       status: "Live",
       href: "/support",
-      accentColor: "var(--kojo-yellow)",
+      accentColor: "var(--yellow)",
     },
     {
       title: "Pricing Calculator",
@@ -173,7 +173,7 @@ export default async function HubPage() {
 
   return (
     <>
-      {/* Kojo header bar */}
+      {/* Crestline header bar */}
       <div className="kojo-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <span
@@ -184,7 +184,7 @@ export default async function HubPage() {
               letterSpacing: 1.5,
             }}
           >
-            KOJO
+            CRESTLINE
           </span>
           <span
             style={{
@@ -199,7 +199,7 @@ export default async function HubPage() {
           </span>
         </div>
         <span style={{ fontSize: 10, color: "#777", letterSpacing: 0.5, textTransform: "uppercase" }}>
-          Internal Tools
+          GTM Tools
         </span>
       </div>
 
@@ -217,7 +217,7 @@ export default async function HubPage() {
             margin: "0 auto",
           }}
         >
-          Dashboards and tools built for Kojo&apos;s GTM leadership.
+          Dashboards and tools built for Crestline&apos;s GTM leadership.
         </div>
       </div>
 

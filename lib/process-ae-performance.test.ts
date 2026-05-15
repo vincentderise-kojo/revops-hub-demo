@@ -12,7 +12,7 @@ function buildOpp(overrides: Partial<AeOpp>): AeOpp {
     oppId: "001",
     name: "Acme",
     owner: "Sarah",
-    manager: "Sean Coyle",
+    manager: "Patrick Yu",
     source: "Inbound",
     oppSetType: "AE Set - Inbound",
     stage: "Qualification",
@@ -194,21 +194,21 @@ describe("buildAeRosterFromQuotas", () => {
       startDate: new Date("2026-04-01"),
       endDate: new Date("2026-04-30"),
       ownerName: "Sarah",
-      ownerManager: "Sean Coyle",
+      ownerManager: "Patrick Yu",
       ...overrides,
     };
   }
 
   it("returns active AEs for the month, mapped to segment via manager, sorted, with managers + SDRs + inactives + orphans excluded", () => {
     const records: QuotaRecord[] = [
-      quota({ id: "1", ownerName: "Sarah",   ownerManager: "Sean Coyle" }),     // ENT
-      quota({ id: "2", ownerName: "Garrett", ownerManager: "Sean Coyle" }),     // ENT
-      quota({ id: "3", ownerName: "Mike",    ownerManager: "Jeremy Taylor" }),  // MM
-      quota({ id: "4", ownerName: "Pat",     ownerManager: "Jared Moor" }),     // MM
+      quota({ id: "1", ownerName: "Sarah",   ownerManager: "Patrick Yu" }),     // ENT
+      quota({ id: "2", ownerName: "Garrett", ownerManager: "Patrick Yu" }),     // ENT
+      quota({ id: "3", ownerName: "Mike",    ownerManager: "Kevin Brand" }),  // MM
+      quota({ id: "4", ownerName: "Pat",     ownerManager: "Marcus Halloran" }),     // MM
       quota({ id: "5", ownerName: "Orphan",  ownerManager: "Unknown Mgr" }),    // excluded — no segment mapping
       quota({ id: "6", ownerName: "Inactive", isActive: false }),               // excluded — not active
       quota({ id: "7", ownerName: "OldRamp", startDate: new Date("2026-01-01"), endDate: new Date("2026-01-31") }), // excluded — month doesn't overlap
-      quota({ id: "8", ownerName: "Sean Coyle", ownerManager: "Sean Coyle", forecastingType: "AE Manager" }), // excluded — manager (appears as ownerManager elsewhere)
+      quota({ id: "8", ownerName: "Patrick Yu", ownerManager: "Patrick Yu", forecastingType: "AE Manager" }), // excluded — manager (appears as ownerManager elsewhere)
       quota({ id: "9", ownerName: "Sadie",   ownerManager: "Will Olson", forecastingType: "SDR" }),           // excluded — SDR
     ];
     const roster = buildAeRosterFromQuotas(records, "2026-04");
@@ -229,8 +229,8 @@ describe("buildAeRosterFromQuotas", () => {
 
   it("dedupes when an AE has multiple active quota rows in the same month", () => {
     const records: QuotaRecord[] = [
-      quota({ id: "a", ownerName: "Sarah", ownerManager: "Sean Coyle" }),
-      quota({ id: "b", ownerName: "Sarah", ownerManager: "Sean Coyle", quotaAmount: 30000 }),
+      quota({ id: "a", ownerName: "Sarah", ownerManager: "Patrick Yu" }),
+      quota({ id: "b", ownerName: "Sarah", ownerManager: "Patrick Yu", quotaAmount: 30000 }),
     ];
     expect(buildAeRosterFromQuotas(records, "2026-04")).toEqual([
       { ae: "Sarah", segment: "ENT" },
@@ -253,7 +253,7 @@ describe("opportunityToAeOpp", () => {
       lastActivityDate: new Date("2026-04-20T12:00:00Z"),
       accountLastActivityDate: null,
       annualRevenue: 1000000,
-      manager: "Sean Coyle",
+      manager: "Patrick Yu",
       oppSetType: "AE - Self Set",
       stage: "Discovery",
       segment: "ENT",

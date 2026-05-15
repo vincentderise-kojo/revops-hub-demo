@@ -24,7 +24,7 @@ export interface SupportData {
 
 // ── Constants ──
 
-const CHANNEL_ID = "C02HZ3KV6SX";
+const CHANNEL_ID = "DEMO_REVOPS_SUPPORT";
 const BOT_ID = "B07SCUZU5ML";
 
 const CATEGORY_MAP: Record<string, string> = {

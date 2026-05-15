@@ -135,8 +135,8 @@ export default function CcwrMethodology({ salesCycle, ccwrTarget }: CcwrMethodol
         <div style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.7 }}>
           The {targetPct}% CCWR target is the inverse of the{" "}
           <strong style={{ color: "var(--text)" }}>{COVERAGE_MULTIPLE}× coverage multiple</strong> used
-          across the Pipeline Pulse dashboard. Luke Brown&apos;s pipeline model holds that for every{" "}
-          {COVERAGE_MULTIPLE} dollars of pipeline created, Kojo closes 1 dollar. Inverting that ratio:{" "}
+          across the Pipeline Pulse dashboard. The pipeline model holds that for every{" "}
+          {COVERAGE_MULTIPLE} dollars of pipeline created, the team closes 1 dollar. Inverting that ratio:{" "}
           1 ÷ {COVERAGE_MULTIPLE} = {(1 / COVERAGE_MULTIPLE * 100).toFixed(1)}%, rounded to {targetPct}%.
           When CCWR = {targetPct}%, the cohort model is calibrated with the pipeline coverage model. A CCWR
           above {targetPct}% means the team is closing at a better rate than the model assumes; below means
@@ -189,7 +189,7 @@ export default function CcwrMethodology({ salesCycle, ccwrTarget }: CcwrMethodol
         />
         <DefItem
           term="Gate 2 — Manager override"
-          def="Overrides Gate 1. Sean Coyle's opps → ENT. Jeremy Taylor's or Jared Moor's opps → MM. Manager gate takes precedence over the revenue threshold."
+          def="Overrides Gate 1. Patrick Yu's opps → ENT. Kevin Brand's or Marcus Halloran's opps → MM. Manager gate takes precedence over the revenue threshold."
         />
       </div>
 
@@ -237,7 +237,7 @@ export default function CcwrMethodology({ salesCycle, ccwrTarget }: CcwrMethodol
           </tbody>
         </table>
         <div style={{ fontSize: 10, color: "var(--muted)", marginTop: 8 }}>
-          * Industry vs Sub Industry mapping is under review (flagged for Luke). Some accounts may roll up
+          * Industry vs Sub Industry mapping is under review. Some accounts may roll up
           differently depending on which field is populated.
         </div>
       </div>
@@ -249,11 +249,11 @@ export default function CcwrMethodology({ salesCycle, ccwrTarget }: CcwrMethodol
         </div>
         <DefItem
           term="Source"
-          def="Salesforce via Google Sheets. Coefficient runs a daily sync to keep the sheet current. New Business opportunities only; agora/test accounts excluded."
+          def="Synthetic demo data (mirrors production structure from Salesforce via Sheets sync tool). New Business opportunities only; test accounts excluded."
         />
         <DefItem
           term="Tab"
-          def="pipeline tab (gid 1815244803) — same sheet used by Pipeline Pulse, Coverage, and Scenarios views."
+          def="pipeline CSV — same file used by Pipeline Pulse, Coverage, and Scenarios views."
         />
         <DefItem
           term="Trailing averages"

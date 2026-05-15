@@ -4,7 +4,7 @@ import path from "path";
 import UpdatesPage from "@/components/updates-page";
 
 export const metadata: Metadata = {
-  title: "Updates — Kojo RevOps Hub",
+  title: "Updates — Crestline RevOps Hub",
   description: "What's been shipped across the RevOps Hub",
 };
 

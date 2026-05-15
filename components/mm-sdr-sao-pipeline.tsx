@@ -95,7 +95,7 @@ export default function MmSdrSaoPipeline({ data }: { data: SaoPipelineState }) {
                     <td style={{ padding: 8, fontWeight: 500 }}>
                       {r.oppId ? (
                         <a
-                          href={`https://usekojo.lightning.force.com/lightning/r/Opportunity/${r.oppId}/view`}
+                          href={`https://crestline.lightning.force.com/lightning/r/Opportunity/${r.oppId}/view`}
                           target="_blank"
                           rel="noopener noreferrer"
                           style={{ color: "var(--teal)", textDecoration: "none" }}

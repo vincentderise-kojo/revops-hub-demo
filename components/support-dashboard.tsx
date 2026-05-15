@@ -54,7 +54,7 @@ function formatSubmitted(submittedAt: string): string {
 
 function slackDeepLink(messageTs: string): string {
   const tsWithoutDot = messageTs.replace(".", "");
-  return `https://kojo-app.slack.com/archives/C02HZ3KV6SX/p${tsWithoutDot}`;
+  return `https://slack.com/archives/revops-support/p${tsWithoutDot}`;
 }
 
 function isOverdue(ticket: SupportTicket): boolean {
@@ -102,10 +102,10 @@ export default function SupportDashboard({ data }: { data: SupportData }) {
 
   return (
     <>
-      {/* KOJO HEADER BAR */}
+      {/* CRESTLINE HEADER BAR */}
       <div className="kojo-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <a href="/hub" style={{ fontSize: 15, fontWeight: 800, color: "#FFE500", letterSpacing: 1.5, textDecoration: "none" }}>KOJO</a>
+          <a href="/hub" style={{ fontSize: 15, fontWeight: 800, color: "#FFE500", letterSpacing: 1.5, textDecoration: "none" }}>CRESTLINE</a>
           <span style={{ width: 1, height: 16, background: "#555", display: "inline-block" }} />
           <a href="/hub" style={{ fontSize: 13, fontWeight: 600, color: "var(--text)", textDecoration: "none" }}>RevOps Hub</a>
         </div>
@@ -115,7 +115,7 @@ export default function SupportDashboard({ data }: { data: SupportData }) {
       {/* APP HEADER */}
       <div style={{ padding: "16px 20px 0", borderBottom: "1px solid var(--border)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
-          <div style={{ width: 8, height: 8, borderRadius: 4, background: "var(--kojo-yellow)", boxShadow: "0 0 8px #f59e0b88" }} />
+          <div style={{ width: 8, height: 8, borderRadius: 4, background: "var(--yellow)", boxShadow: "0 0 8px #f59e0b88" }} />
           <span style={{ fontSize: 18, fontWeight: 700, letterSpacing: -0.5 }}>RevOps Support</span>
           <span style={{ fontSize: 11, color: "var(--muted)", marginLeft: 4 }}>Ticket Queue & Analytics</span>
         </div>
@@ -127,7 +127,7 @@ export default function SupportDashboard({ data }: { data: SupportData }) {
               background: "none", border: "none", cursor: "pointer", fontFamily: "inherit",
               fontSize: 12, fontWeight: 600, padding: "8px 0",
               color: activeTab === "queue" ? "var(--text)" : "var(--muted)",
-              borderBottom: activeTab === "queue" ? "2px solid var(--kojo-yellow)" : "2px solid transparent",
+              borderBottom: activeTab === "queue" ? "2px solid var(--yellow)" : "2px solid transparent",
             }}
           >
             Queue
@@ -138,7 +138,7 @@ export default function SupportDashboard({ data }: { data: SupportData }) {
               background: "none", border: "none", cursor: "pointer", fontFamily: "inherit",
               fontSize: 12, fontWeight: 600, padding: "8px 0",
               color: activeTab === "analytics" ? "var(--text)" : "var(--muted)",
-              borderBottom: activeTab === "analytics" ? "2px solid var(--kojo-yellow)" : "2px solid transparent",
+              borderBottom: activeTab === "analytics" ? "2px solid var(--yellow)" : "2px solid transparent",
             }}
           >
             Analytics

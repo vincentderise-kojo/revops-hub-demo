@@ -120,7 +120,7 @@ export default function AccountIntelligenceDashboard({ data }: Props) {
 
 function EnrHeroStatsBar({ stats }: { stats: EnrHeroStats }) {
   const items = [
-    { label: "Kojo Customers", value: `${stats.kojoCustomers} of 600` },
+    { label: "Crestline Customers", value: `${stats.kojoCustomers} of 600` },
     { label: "Active Opps", value: String(stats.activeOpps) },
     { label: "Not in SFDC", value: String(stats.notInSfdc) },
     { label: "ENR Customer ARR", value: fmtK(stats.enrCustomerArr) },

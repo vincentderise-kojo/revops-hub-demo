@@ -126,7 +126,7 @@ export default function Dashboard({ data, sdrData, aePerformance, inspections }:
         </div>
       )}
 
-      {/* KOJO HEADER BAR */}
+      {/* CRESTLINE HEADER BAR */}
       <div className="kojo-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <a
@@ -139,7 +139,7 @@ export default function Dashboard({ data, sdrData, aePerformance, inspections }:
               textDecoration: "none",
             }}
           >
-            KOJO
+            CRESTLINE
           </a>
           <span
             style={{

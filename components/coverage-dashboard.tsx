@@ -313,10 +313,10 @@ export default function CoverageDashboard({ data, quotaMap }: { data: CoverageSt
 
   return (
     <>
-      {/* KOJO HEADER BAR */}
+      {/* CRESTLINE HEADER BAR */}
       <div className="kojo-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <a href="/hub" style={{ fontSize: 15, fontWeight: 800, color: "#FFE500", letterSpacing: 1.5, textDecoration: "none" }}>KOJO</a>
+          <a href="/hub" style={{ fontSize: 15, fontWeight: 800, color: "#FFE500", letterSpacing: 1.5, textDecoration: "none" }}>CRESTLINE</a>
           <span style={{ width: 1, height: 16, background: "#555", display: "inline-block" }} />
           <a href="/hub" style={{ fontSize: 13, fontWeight: 600, color: "var(--text)", textDecoration: "none" }}>RevOps Hub</a>
         </div>
@@ -721,7 +721,7 @@ function CoverageScoreboard({ windows, staleThreshold }: { windows: CoverageWind
     <div className="card">
       <div style={{ fontSize: 14, fontWeight: 600, marginBottom: 4 }}>Coverage Scoreboard</div>
       <div style={{ fontSize: 11, color: "var(--muted)", marginBottom: 16 }}>
-        Fresh pipeline vs. CW quota. Target coverage: 5.8× (Luke&apos;s model — for every $5.80 of pipeline, Kojo closes $1.00).
+        Fresh pipeline vs. CW quota. Target coverage: 5.8× (for every $5.80 of pipeline created, the team closes $1.00).
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12, marginBottom: 16 }}>
         {windows.map((w) => (
@@ -786,7 +786,7 @@ function AgingCard({ data, label, color, threshold }: { data: SegmentAging; labe
       </div>
       <div style={{ background: "var(--bg)", borderRadius: 6, padding: "8px 10px", fontSize: 11 }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 4 }}>
-          <span className="muted">Fresh pipeline vs. Luke&apos;s threshold</span>
+          <span className="muted">Fresh pipeline vs. coverage threshold</span>
           <span style={{ fontWeight: 700, color: freshStatus }}>{freshVsThresholdPct}%</span>
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: 10 }}>

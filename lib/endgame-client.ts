@@ -34,7 +34,7 @@ async function getClient(): Promise<Client> {
   });
 
   const client = new Client(
-    { name: "kojo-pipeline-pulse-cron", version: "1.0.0" },
+    { name: "crestline-pipeline-pulse-cron", version: "1.0.0" },
     { capabilities: {} }
   );
   await client.connect(transport);

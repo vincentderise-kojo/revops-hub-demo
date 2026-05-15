@@ -382,7 +382,7 @@ export function matchEnrFirms(
       }
     }
 
-    // Determine Kojo Status
+    // Determine CRM Status
     let kojoStatus: KojoStatus = "Not in SFDC";
     if (matchedAccount) {
       if (matchedAccount.type === "Customer - Active") {

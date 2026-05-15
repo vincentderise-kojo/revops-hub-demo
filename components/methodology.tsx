@@ -38,15 +38,8 @@ export default function Methodology({ data }: MethodologyProps) {
         <section style={{ marginTop: 0 }}>
           <p style={{ fontSize: 13, lineHeight: 1.6, marginTop: 8 }}>
             Pipeline Pulse&apos;s weekly target comes from the{" "}
-            <a
-              href="https://docs.google.com/spreadsheets/d/1zoMQ2axDtOcQaPH6lA3eXkvcBy-VvYCSz0hagSkiggs/edit?gid=1664753925#gid=1664753925"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "var(--teal)", textDecoration: "underline" }}
-            >
-              <strong>Q2&apos;26 board-committed pipeline plan</strong>
-            </a>
-            , not from a coverage multiple. Each month Sadie (BDR), Alex (Field), and Ali (Perf) commit bottoms-up
+            <strong>Q2&apos;26 board-committed pipeline plan</strong>
+            {" "}(hardcoded in the app for the demo build), not from a coverage multiple. Each month Riley (BDR), Owen (Field), and Priya (Perf) commit bottoms-up
             creation goals; the board reviews and locks them quarterly. The blended weekly target is the
             current month&apos;s total goal divided by 4.33 weeks.
           </p>
@@ -121,16 +114,7 @@ export default function Methodology({ data }: MethodologyProps) {
             consistency.
           </div>
           <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 4, fontStyle: "italic" }}>
-            Source of truth:{" "}
-            <a
-              href="https://docs.google.com/spreadsheets/d/1zoMQ2axDtOcQaPH6lA3eXkvcBy-VvYCSz0hagSkiggs/edit?gid=1664753925#gid=1664753925"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "var(--teal)", textDecoration: "underline" }}
-            >
-              board pipeline plan sheet
-            </a>
-            . Monthly goals are hardcoded in the app today; the table is updated by hand as each month&apos;s commits land.
+            Monthly goals are hardcoded in the app for the demo build; the table is updated by hand as each month&apos;s commits land.
           </div>
           <p style={{ fontSize: 12, lineHeight: 1.6, marginTop: 10 }}>
             <strong>Segment split note.</strong> The board report commits monthly pipeline goals in
@@ -360,7 +344,7 @@ export default function Methodology({ data }: MethodologyProps) {
             >
               Monthly quota: {fmtK(mmMonthlyQuota)} × {COVERAGE_MULTIPLE} = {fmtK(mmMonthlyCreation)} creation/mo
               → {fmtK(mmWeekly)}/wk. Manager
-              gate: Jeremy Taylor. Close cycle ~30 days. Stale: &gt;40 days.
+              gate: Kevin Brand. Close cycle ~30 days. Stale: &gt;40 days.
             </div>
           </div>
           <div
@@ -384,7 +368,7 @@ export default function Methodology({ data }: MethodologyProps) {
             <div
               style={{ fontSize: 11, color: "var(--muted)", lineHeight: 1.6 }}
             >
-              Monthly quota: {fmtK(entMonthlyQuota)} ({fmtK(monthlyQuota)} total − {fmtK(mmMonthlyQuota)} MM) × {COVERAGE_MULTIPLE} = {fmtK(entMonthlyCreation)} creation/mo → {fmtK(entWeekly)}/wk. Manager gate: Sean Coyle. Close cycle ~90 days. Stale:
+              Monthly quota: {fmtK(entMonthlyQuota)} ({fmtK(monthlyQuota)} total − {fmtK(mmMonthlyQuota)} MM) × {COVERAGE_MULTIPLE} = {fmtK(entMonthlyCreation)} creation/mo → {fmtK(entWeekly)}/wk. Manager gate: Patrick Yu. Close cycle ~90 days. Stale:
               &gt;90 days.
             </div>
           </div>
@@ -420,7 +404,7 @@ export default function Methodology({ data }: MethodologyProps) {
             <SourceMapRow
               label="Inbound"
               sfdc="AE Set - Inbound + SDR Set - Inbound"
-              ctx="Highest WR. Ali Karshenas owns demand gen spend."
+              ctx="Highest WR. Priya Banerjee owns demand gen spend."
             />
             <SourceMapRow
               label="Events"
@@ -440,7 +424,7 @@ export default function Methodology({ data }: MethodologyProps) {
             <SourceMapRow
               label="Partner"
               sfdc="Partner"
-              ctx="Alex Harmon building channel. Small sample, strong conversion."
+              ctx="Owen Hartwell building channel. Small sample, strong conversion."
             />
             <SourceMapRow
               label="Webinar"
@@ -471,12 +455,11 @@ export default function Methodology({ data }: MethodologyProps) {
         />
         <DefItem
           term="Segment"
-          def="Two-gate: Annual Revenue ≥$75M = ENT, else MM. Manager override: Sean Coyle → ENT, Jeremy Taylor → MM."
+          def="Two-gate: Annual Revenue ≥$75M = ENT, else MM. Manager override: Patrick Yu → ENT, Kevin Brand → MM."
         />
         <div className="def-item" style={{ marginTop: 8 }}>
-          <strong style={{ color: "var(--text)" }}>Data:</strong> SFDC via
-          Google Sheets (Coefficient daily sync) · New
-          Business · Discovery Date as column · Excludes agora/test.
+          <strong style={{ color: "var(--text)" }}>Data:</strong> Synthetic demo data (mirrors production structure from SFDC via Sheets sync) · New
+          Business · Discovery Date as column · Excludes test accounts.
         </div>
       </div>
     </>
