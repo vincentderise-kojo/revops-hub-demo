@@ -1,26 +1,14 @@
-import path from "path";
-import { CsvDataSource, GoogleSheetsDataSource } from "@/lib/data-loader";
+import { CsvDataSource, DEMO_CSV_PATHS } from "@/lib/data-loader";
 import { processCoverage } from "@/lib/process-coverage";
 import { fetchQuotaRecords } from "@/lib/quota-loader";
 import CoverageDashboard from "@/components/coverage-dashboard";
-import { SPREADSHEET_ID, SHEET_GIDS } from "@/lib/config";
 
 export const dynamic = "force-dynamic";
 
 export default async function CoveragePage() {
-  let rawOpps;
-
-  try {
-    const sheetsSource = new GoogleSheetsDataSource(SPREADSHEET_ID, SHEET_GIDS.pipeline);
-    rawOpps = await sheetsSource.loadOpportunities();
-    console.log(`[Coverage] Loaded ${rawOpps.length} opps from Google Sheets`);
-  } catch (err) {
-    console.warn("[Coverage] Google Sheets failed, falling back to CSV:", err);
-    const csvPath = path.join(process.cwd(), "data", "report1773939885150.csv");
-    const csvSource = new CsvDataSource(csvPath);
-    rawOpps = await csvSource.loadOpportunities();
-    console.log(`[Coverage] Loaded ${rawOpps.length} opps from CSV fallback`);
-  }
+  // Demo build: read from data/demo/pipeline.csv
+  const rawOpps = await new CsvDataSource(DEMO_CSV_PATHS.pipeline).loadOpportunities();
+  console.log(`[Coverage] Loaded ${rawOpps.length} opps from demo CSV`);
 
   const quotaRecords = await fetchQuotaRecords().catch((err) => {
     console.warn("[Coverage] Quota fetch failed:", err);

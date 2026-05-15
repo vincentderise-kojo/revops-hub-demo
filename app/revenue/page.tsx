@@ -1,40 +1,22 @@
-import { GoogleSheetsDataSource } from "@/lib/data-loader";
+import { loadCsvFile, DEMO_CSV_PATHS } from "@/lib/data-loader";
 import { parseCwOpp, parsePipelineOpp } from "@/lib/process-revenue";
 import { RawCwOpportunity } from "@/lib/types-revenue";
 import RevenueDashboard from "@/components/revenue-dashboard";
-import { SPREADSHEET_ID, SHEET_GIDS } from "@/lib/config";
+import type { RawOpportunity } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
 export default async function RevenuePage() {
-  let rawCwData: RawCwOpportunity[];
-  let dataSourceLabel = "Google Sheets";
-
-  // Fetch CW tab and Pipeline tab in parallel
+  // Demo build: read both tabs from data/demo/ CSV files
+  const dataSourceLabel = "Demo CSV";
   const [cwResult, pipelineResult] = await Promise.all([
-    (async () => {
-      try {
-        const sheetsSource = new GoogleSheetsDataSource(SPREADSHEET_ID, SHEET_GIDS.closedWon);
-        const raw = await sheetsSource.loadOpportunities();
-        return raw as unknown as RawCwOpportunity[];
-      } catch (err) {
-        console.error("[Revenue] Failed to load CW data:", err);
-        return [];
-      }
-    })(),
-    (async () => {
-      try {
-        const sheetsSource = new GoogleSheetsDataSource(SPREADSHEET_ID, SHEET_GIDS.pipeline);
-        return await sheetsSource.loadOpportunities();
-      } catch (err) {
-        console.error("[Revenue] Failed to load pipeline data:", err);
-        return [];
-      }
-    })(),
+    loadCsvFile<RawCwOpportunity>(DEMO_CSV_PATHS.closedWon),
+    loadCsvFile<RawOpportunity>(DEMO_CSV_PATHS.pipeline),
   ]);
 
-  rawCwData = cwResult;
-  if (rawCwData.length === 0) dataSourceLabel = "Error — no data loaded";
+  let rawCwData: RawCwOpportunity[] = cwResult;
+
+  if (rawCwData.length === 0) console.warn("[Revenue] Empty closedWon data");
 
   const opps = rawCwData
     .map(parseCwOpp)

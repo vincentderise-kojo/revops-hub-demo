@@ -1,4 +1,4 @@
-import { SPREADSHEET_ID, SHEET_GIDS, OPP_SET_TYPE_MAP, aeSegmentFromManager } from "./config";
+import { OPP_SET_TYPE_MAP, aeSegmentFromManager } from "./config";
 import type { AeOpp } from "./types-ae-performance";
 import type { SourceLabel } from "./types";
 
@@ -69,45 +69,9 @@ export interface QualificationLoadResult {
 }
 
 /**
- * Fetch + parse the qualification tab. Returns `available: false` (with empty opps)
- * if the GID is the placeholder or the fetch fails — surface this to the UI as
- * "Section 1 not yet wired" rather than crashing the page.
+ * Demo build: no qualification CSV — AE Performance section 1 renders as "not wired".
  */
 export async function fetchQualificationOpps(): Promise<QualificationLoadResult> {
-  const gid = SHEET_GIDS.qualification;
-  const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=csv&gid=${gid}`;
-  let response: Response;
-  try {
-    response = await fetch(url, { next: { revalidate: 0 } });
-  } catch (err) {
-    console.warn("[AE Performance] qualification fetch threw:", err);
-    return { opps: [], available: false };
-  }
-
-  if (!response.ok) {
-    console.warn(`[AE Performance] qualification fetch failed: ${response.status} ${response.statusText}`);
-    return { opps: [], available: false };
-  }
-
-  const csvText = await response.text();
-  if (csvText.trimStart().startsWith("<!") || csvText.trimStart().startsWith("<html")) {
-    console.warn("[AE Performance] qualification sheet returned HTML — is the sheet shared publicly?");
-    return { opps: [], available: false };
-  }
-
-  const PapaMod = await import("papaparse");
-  const Papa = PapaMod.default || PapaMod;
-  const result = Papa.parse<RawQualificationOpp>(csvText, {
-    header: true,
-    skipEmptyLines: true,
-  });
-
-  const opps: AeOpp[] = [];
-  for (const raw of result.data) {
-    const parsed = parseQualificationOpp(raw);
-    if (parsed) opps.push(parsed);
-  }
-
-  console.log(`[AE Performance] Loaded ${opps.length} qualification opps from Google Sheets`);
-  return { opps, available: true };
+  // Demo build: no synthetic qualification tab — AE Performance section renders gracefully.
+  return { opps: [], available: false };
 }

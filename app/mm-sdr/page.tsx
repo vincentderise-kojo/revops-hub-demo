@@ -1,10 +1,9 @@
-import { GoogleSheetsDataSource } from "@/lib/data-loader";
+import { CsvDataSource, DEMO_CSV_PATHS } from "@/lib/data-loader";
 import { parseOpp } from "@/lib/process-pipeline";
 import { fetchQuotaRecords } from "@/lib/quota-loader";
 import { fetchCalls, fetchSdrSetsForMmSdr } from "@/lib/mm-sdr-data-loader";
 import { processMmSdr } from "@/lib/process-mm-sdr";
 import MmSdrDashboard from "@/components/mm-sdr-dashboard";
-import { SPREADSHEET_ID, SHEET_GIDS } from "@/lib/config";
 
 export const dynamic = "force-dynamic";
 
@@ -19,10 +18,11 @@ export default async function MmSdrPage({
   const weekOffset = isNaN(rawOffset) ? 0 : Math.min(Math.max(rawOffset, -1), 11);
 
   const [rawOpps, calls, sdrSets, quotaRecords] = await Promise.all([
-    new GoogleSheetsDataSource(SPREADSHEET_ID, SHEET_GIDS.pipeline)
+    // Demo build: read from data/demo/pipeline.csv
+    new CsvDataSource(DEMO_CSV_PATHS.pipeline)
       .loadOpportunities()
       .catch((err) => {
-        console.warn("[MM SDR] Pipeline fetch failed:", err);
+        console.warn("[MM SDR] Pipeline CSV load failed:", err);
         return [];
       }),
     fetchCalls().catch((err) => {

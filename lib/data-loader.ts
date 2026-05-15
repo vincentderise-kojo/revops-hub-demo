@@ -1,11 +1,17 @@
+import path from "path";
 import { RawOpportunity } from "./types";
 
-// Swappable data source interface
+// Demo build: all data is read from data/demo/ — no Google Sheets or env vars needed.
+const DEMO_DIR = path.join(process.cwd(), "data", "demo");
+
+// ── Swappable data source interface ──
+
 export interface DataSource {
   loadOpportunities(): Promise<RawOpportunity[]>;
 }
 
-// CSV file data source (server-side only)
+// ── CSV file data source (server-side only) ──
+
 export class CsvDataSource implements DataSource {
   private filePath: string;
 
@@ -26,47 +32,32 @@ export class CsvDataSource implements DataSource {
   }
 }
 
-// Google Sheets data source — fetches the sheet as CSV via public export URL
-export class GoogleSheetsDataSource implements DataSource {
-  private spreadsheetId: string;
-  private gid: string;
+// ── Generic CSV loader (returns typed rows) ──
 
-  constructor(spreadsheetId: string, gid: string) {
-    this.spreadsheetId = spreadsheetId;
-    this.gid = gid;
-  }
-
-  async loadOpportunities(): Promise<RawOpportunity[]> {
-    const url = `https://docs.google.com/spreadsheets/d/${this.spreadsheetId}/export?format=csv&gid=${this.gid}`;
-    const response = await fetch(url, { next: { revalidate: 0 } });
-
-    if (!response.ok) {
-      throw new Error(
-        `Google Sheets fetch failed: ${response.status} ${response.statusText}`
-      );
-    }
-
-    const csvText = await response.text();
-
-    // Sanity check — Google returns an HTML login page if the sheet isn't shared
-    if (csvText.trimStart().startsWith("<!") || csvText.trimStart().startsWith("<html")) {
-      throw new Error("Google Sheets returned HTML instead of CSV — is the sheet shared?");
-    }
-
-    const PapaMod = await import("papaparse");
-    const Papa = PapaMod.default || PapaMod;
-    const result = Papa.parse<RawOpportunity>(csvText, {
-      header: true,
-      skipEmptyLines: true,
-    });
-
-    // Exclude rows where Amount is 0 or blank
-    return result.data.filter((row) => {
-      const amt = parseFloat(row.Amount);
-      return !isNaN(amt) && amt > 0;
-    });
-  }
+export async function loadCsvFile<T>(filePath: string): Promise<T[]> {
+  const fs = await import("fs");
+  const PapaMod = await import("papaparse");
+  const Papa = PapaMod.default || PapaMod;
+  const csvText = fs.readFileSync(filePath, "utf-8");
+  const result = Papa.parse<T>(csvText, {
+    header: true,
+    skipEmptyLines: true,
+  });
+  return result.data;
 }
 
-// Future: Endgame MCP data source
-// export class EndgameMcpDataSource implements DataSource { ... }
+// ── Factory — always returns demo CSV source ──
+
+export function getDataSource(): DataSource {
+  return new CsvDataSource(path.join(DEMO_DIR, "pipeline.csv"));
+}
+
+// ── Named CSV paths for each tab ──
+
+export const DEMO_CSV_PATHS = {
+  pipeline: path.join(DEMO_DIR, "pipeline.csv"),
+  closedWon: path.join(DEMO_DIR, "closedWon.csv"),
+  quotas: path.join(DEMO_DIR, "quotas.csv"),
+  sdrSets: path.join(DEMO_DIR, "sdrSets.csv"),
+  customerAccounts: path.join(DEMO_DIR, "customerAccounts.csv"),
+} as const;

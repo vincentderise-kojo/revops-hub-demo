@@ -1,17 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import path from "path";
-import { CsvDataSource, GoogleSheetsDataSource } from "@/lib/data-loader";
+import { CsvDataSource, DEMO_CSV_PATHS } from "@/lib/data-loader";
 
 export const metadata: Metadata = {
-  title: "Kojo RevOps Hub",
-  description: "Dashboards and tools built for Kojo's GTM leadership",
+  title: "Crestline RevOps Hub",
+  description: "Dashboards and tools built for Crestline's GTM leadership",
 };
 
 export const dynamic = "force-dynamic";
-
-const SPREADSHEET_ID = "139f4amjRpd-CuQwXfjCJ1oYJ4vbda68GdsSF7C3q6KU";
-const GID = "1815244803";
 
 interface AppCardData {
   title: string;
@@ -25,15 +21,8 @@ interface AppCardData {
 
 async function getLatestDiscoveryDate(): Promise<string | null> {
   try {
-    let rawOpps;
-    try {
-      const sheetsSource = new GoogleSheetsDataSource(SPREADSHEET_ID, GID);
-      rawOpps = await sheetsSource.loadOpportunities();
-    } catch {
-      const csvPath = path.join(process.cwd(), "data", "report1773939885150.csv");
-      const csvSource = new CsvDataSource(csvPath);
-      rawOpps = await csvSource.loadOpportunities();
-    }
+    // Demo build: read from data/demo/pipeline.csv
+    const rawOpps = await new CsvDataSource(DEMO_CSV_PATHS.pipeline).loadOpportunities();
 
     let latest: Date | null = null;
     for (const row of rawOpps) {

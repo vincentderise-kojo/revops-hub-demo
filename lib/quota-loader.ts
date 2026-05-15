@@ -1,5 +1,6 @@
 import { RawQuotaRecord, QuotaRecord } from "./types-sdr";
-import { MonthlyQuota, MONTHLY_QUOTAS, SPREADSHEET_ID, SHEET_GIDS, getMonthlyQuota } from "./config";
+import { MonthlyQuota, MONTHLY_QUOTAS, getMonthlyQuota } from "./config";
+import { loadCsvFile, DEMO_CSV_PATHS } from "./data-loader";
 
 // ── Parse raw quota record ──
 function parseQuotaRecord(raw: RawQuotaRecord): QuotaRecord | null {
@@ -28,34 +29,15 @@ function parseQuotaRecord(raw: RawQuotaRecord): QuotaRecord | null {
   };
 }
 
-// ── Fetch all quota records from Google Sheets ──
+// ── Fetch all quota records from demo CSV ──
 export async function fetchQuotaRecords(): Promise<QuotaRecord[]> {
-  const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=csv&gid=${SHEET_GIDS.quotas}`;
-  const response = await fetch(url, { next: { revalidate: 0 } });
-
-  if (!response.ok) {
-    throw new Error(`Quota sheet fetch failed: ${response.status} ${response.statusText}`);
-  }
-
-  const csvText = await response.text();
-
-  if (csvText.trimStart().startsWith("<!") || csvText.trimStart().startsWith("<html")) {
-    throw new Error("Quota sheet returned HTML instead of CSV — is the sheet shared?");
-  }
-
-  const PapaMod = await import("papaparse");
-  const Papa = PapaMod.default || PapaMod;
-  const result = Papa.parse<RawQuotaRecord>(csvText, {
-    header: true,
-    skipEmptyLines: true,
-  });
-
+  // Demo build: read from data/demo/quotas.csv
+  const rawRows = await loadCsvFile<RawQuotaRecord>(DEMO_CSV_PATHS.quotas);
   const records: QuotaRecord[] = [];
-  for (const raw of result.data) {
+  for (const raw of rawRows) {
     const parsed = parseQuotaRecord(raw);
     if (parsed) records.push(parsed);
   }
-
   return records;
 }
 

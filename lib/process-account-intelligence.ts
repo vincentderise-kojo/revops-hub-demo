@@ -25,23 +25,9 @@ import {
   ContractAcrMethod,
   ContractAcrError,
 } from "./types-account-intelligence";
-import { AI_CONFIG, SPREADSHEET_ID, OPEN_STAGES, UPSELL_CONFIG, GMV_CONFIG } from "./config";
+import { AI_CONFIG, OPEN_STAGES, UPSELL_CONFIG, GMV_CONFIG } from "./config";
 import { assetsToProducts, computeListBps } from "./pricing-config";
 import type { RawOpportunity } from "./types";
-
-// ── Data Loading ──
-
-export async function fetchSheetCsv<T>(gid: string): Promise<T[]> {
-  const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=csv&gid=${gid}`;
-  const res = await fetch(url, { next: { revalidate: 0 } });
-  if (!res.ok) throw new Error(`Sheet fetch failed: ${res.status}`);
-  const text = await res.text();
-  if (text.trim().startsWith("<!DOCTYPE") || text.trim().startsWith("<html")) {
-    throw new Error("Sheet returned HTML — check sharing settings");
-  }
-  const { data } = Papa.parse<T>(text, { header: true, skipEmptyLines: true });
-  return data;
-}
 
 // ── Parsing ──
 

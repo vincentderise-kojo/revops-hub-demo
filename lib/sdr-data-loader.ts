@@ -1,5 +1,5 @@
 import { RawSdrMeeting, SdrMeeting } from "./types-sdr";
-import { SPREADSHEET_ID, SHEET_GIDS } from "./config";
+import { loadCsvFile, DEMO_CSV_PATHS } from "./data-loader";
 
 function parseSdrMeeting(raw: RawSdrMeeting): SdrMeeting | null {
   const dateStr = raw["Qualification Set Date"];
@@ -28,32 +28,13 @@ function parseSdrMeeting(raw: RawSdrMeeting): SdrMeeting | null {
 }
 
 export async function fetchSdrMeetings(): Promise<SdrMeeting[]> {
-  const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=csv&gid=${SHEET_GIDS.sdrSets}`;
-  const response = await fetch(url, { next: { revalidate: 0 } });
-
-  if (!response.ok) {
-    throw new Error(`SDR Sets sheet fetch failed: ${response.status} ${response.statusText}`);
-  }
-
-  const csvText = await response.text();
-
-  if (csvText.trimStart().startsWith("<!") || csvText.trimStart().startsWith("<html")) {
-    throw new Error("SDR Sets sheet returned HTML instead of CSV — is the sheet shared?");
-  }
-
-  const PapaMod = await import("papaparse");
-  const Papa = PapaMod.default || PapaMod;
-  const result = Papa.parse<RawSdrMeeting>(csvText, {
-    header: true,
-    skipEmptyLines: true,
-  });
-
+  // Demo build: read from data/demo/sdrSets.csv
+  const rawRows = await loadCsvFile<RawSdrMeeting>(DEMO_CSV_PATHS.sdrSets);
   const meetings: SdrMeeting[] = [];
-  for (const raw of result.data) {
+  for (const raw of rawRows) {
     const parsed = parseSdrMeeting(raw);
     if (parsed) meetings.push(parsed);
   }
-
-  console.log(`[SDR Sets] Loaded ${meetings.length} meetings from Google Sheets`);
+  console.log(`[SDR Sets] Loaded ${meetings.length} meetings from demo CSV`);
   return meetings;
 }

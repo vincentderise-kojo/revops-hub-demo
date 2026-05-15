@@ -1,5 +1,6 @@
 import { RawCallRecord, ParsedCall, RawSdrSetRecord, ParsedSdrSet } from "./types-mm-sdr";
-import { SPREADSHEET_ID, SHEET_GIDS, CALL_RESULT_CONNECT } from "./config";
+import { CALL_RESULT_CONNECT } from "./config";
+import { loadCsvFile, DEMO_CSV_PATHS } from "./data-loader";
 
 // ── Parse raw call record ──
 
@@ -27,41 +28,12 @@ function parseCallRecord(raw: RawCallRecord): ParsedCall | null {
   };
 }
 
-// ── Fetch calls from Google Sheets ──
+// ── Fetch calls — Demo build: no calls CSV, return empty ──
 
 export async function fetchCalls(): Promise<ParsedCall[]> {
-  const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=csv&gid=${SHEET_GIDS.calls}`;
-  const response = await fetch(url, { next: { revalidate: 0 } });
-
-  if (!response.ok) {
-    throw new Error(`Calls sheet fetch failed: ${response.status} ${response.statusText}`);
-  }
-
-  const csvText = await response.text();
-
-  if (csvText.trimStart().startsWith("<!") || csvText.trimStart().startsWith("<html")) {
-    throw new Error("Calls sheet returned HTML instead of CSV — is the sheet shared?");
-  }
-
-  const PapaMod = await import("papaparse");
-  const Papa = PapaMod.default || PapaMod;
-  const result = Papa.parse<RawCallRecord>(csvText, {
-    header: true,
-    skipEmptyLines: true,
-  });
-
-  // Filter to last 120 days for performance
-  const cutoff = new Date();
-  cutoff.setDate(cutoff.getDate() - 120);
-
-  const calls: ParsedCall[] = [];
-  for (const raw of result.data) {
-    const parsed = parseCallRecord(raw);
-    if (parsed && parsed.date >= cutoff) calls.push(parsed);
-  }
-
-  console.log(`[MM SDR] Loaded ${calls.length} calls from Google Sheets (120-day window)`);
-  return calls;
+  // Demo build: no synthetic calls CSV — MM SDR call activity section will be empty.
+  console.log("[MM SDR] Demo build: no calls CSV, returning empty call list");
+  return [];
 }
 
 // ── Parse updated SDR Set record ──
@@ -92,35 +64,16 @@ function parseSdrSetRecord(raw: RawSdrSetRecord): ParsedSdrSet | null {
   };
 }
 
-// ── Fetch updated SDR Sets from Google Sheets ──
+// ── Fetch updated SDR Sets from demo CSV ──
 
 export async function fetchSdrSetsForMmSdr(): Promise<ParsedSdrSet[]> {
-  const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=csv&gid=${SHEET_GIDS.sdrSets}`;
-  const response = await fetch(url, { next: { revalidate: 0 } });
-
-  if (!response.ok) {
-    throw new Error(`SDR Sets sheet fetch failed: ${response.status} ${response.statusText}`);
-  }
-
-  const csvText = await response.text();
-
-  if (csvText.trimStart().startsWith("<!") || csvText.trimStart().startsWith("<html")) {
-    throw new Error("SDR Sets sheet returned HTML instead of CSV — is the sheet shared?");
-  }
-
-  const PapaMod = await import("papaparse");
-  const Papa = PapaMod.default || PapaMod;
-  const result = Papa.parse<RawSdrSetRecord>(csvText, {
-    header: true,
-    skipEmptyLines: true,
-  });
-
+  // Demo build: read from data/demo/sdrSets.csv
+  const rawRows = await loadCsvFile<RawSdrSetRecord>(DEMO_CSV_PATHS.sdrSets);
   const records: ParsedSdrSet[] = [];
-  for (const raw of result.data) {
+  for (const raw of rawRows) {
     const parsed = parseSdrSetRecord(raw);
     if (parsed) records.push(parsed);
   }
-
-  console.log(`[MM SDR] Loaded ${records.length} SDR set records from Google Sheets`);
+  console.log(`[MM SDR] Loaded ${records.length} SDR set records from demo CSV`);
   return records;
 }

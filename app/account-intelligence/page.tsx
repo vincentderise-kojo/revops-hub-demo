@@ -1,12 +1,11 @@
 import { Metadata } from "next";
+import path from "path";
 import {
-  fetchSheetCsv,
   parseCustomerAccount,
   parseHierarchyAccount,
   processAccountIntelligence,
 } from "@/lib/process-account-intelligence";
-import { GoogleSheetsDataSource } from "@/lib/data-loader";
-import { SPREADSHEET_ID, SHEET_GIDS, AI_CONFIG } from "@/lib/config";
+import { loadCsvFile, DEMO_CSV_PATHS } from "@/lib/data-loader";
 import type { RawOpportunity } from "@/lib/types";
 import type {
   EnrFirm,
@@ -17,50 +16,44 @@ import type {
 } from "@/lib/types-account-intelligence";
 import AccountIntelligenceDashboard from "@/components/account-intelligence-dashboard";
 
-import enrData from "@/data/enr-top-600-2025.json";
-import overrides from "@/data/enr-sfdc-overrides.json";
-import gmvSnapshot from "@/data/customer-gmv-snapshot.json";
-import contractAcrSnapshot from "@/data/customer-contract-acr.json";
+// Demo build: synthetic ENR list lives in data/demo/ as a lightweight JSON.
+// The full enr-top-600-2025.json is not included — use a minimal stub instead.
+// enr-sfdc-overrides is also omitted; pass an empty map.
+import contractAcrSnapshot from "@/data/demo/customer-contract-acr.json";
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Account Intelligence | Kojo RevOps Hub",
+  title: "Account Intelligence | Crestline RevOps Hub",
 };
 
 export default async function AccountIntelligencePage() {
-  let dataSourceLabel = "Google Sheets";
+  let dataSourceLabel = "Demo CSV";
+
+  // Demo build: no synthetic ENR top-600 or GMV snapshot files.
+  // Account Intelligence renders with empty ENR matches and no GMV signals.
+  const enrData: EnrFirm[] = [];
+  const overrides: Record<string, string> = {};
+  // Demo build: no live GMV snapshot — Account Intelligence reads GMV from customerAccounts.csv directly (field not yet populated).
+  const gmvSnapshot: GmvSnapshot | null = null;
 
   let rawCustomers: RawCustomerAccount[] = [];
-  let rawHierarchy: RawHierarchyAccount[] = [];
   let rawPipeline: RawOpportunity[] = [];
-  let rawExpansion: RawOpportunity[] = [];
 
   try {
-    const [customers, hierarchy, pipeline, expansion] = await Promise.all([
-      fetchSheetCsv<RawCustomerAccount>(AI_CONFIG.sheetGids.customerAccounts),
-      fetchSheetCsv<RawHierarchyAccount>(AI_CONFIG.sheetGids.hierarchyProspects),
-      new GoogleSheetsDataSource(SPREADSHEET_ID, SHEET_GIDS.pipeline)
-        .loadOpportunities()
-        .catch((err) => {
-          console.error("[Account Intelligence] Pipeline fetch failed:", err);
-          return [] as RawOpportunity[];
-        }),
-      new GoogleSheetsDataSource(SPREADSHEET_ID, SHEET_GIDS.renewalsUpsells)
-        .loadOpportunities()
-        .catch((err) => {
-          console.error("[Account Intelligence] Expansion fetch failed:", err);
-          return [] as RawOpportunity[];
-        }),
+    [rawCustomers, rawPipeline] = await Promise.all([
+      loadCsvFile<RawCustomerAccount>(DEMO_CSV_PATHS.customerAccounts),
+      loadCsvFile<RawOpportunity>(DEMO_CSV_PATHS.pipeline),
     ]);
-    rawCustomers = customers;
-    rawHierarchy = hierarchy;
-    rawPipeline = pipeline;
-    rawExpansion = expansion;
   } catch (err) {
-    console.error("[Account Intelligence] Data fetch failed:", err);
+    console.error("[Account Intelligence] Data load failed:", err);
     dataSourceLabel = "Error — no data loaded";
   }
+
+  // Demo build: no hierarchy prospects CSV — pass empty array.
+  const rawHierarchy: RawHierarchyAccount[] = [];
+  // Demo build: no renewals/upsells pipeline tab — pass empty array.
+  const rawExpansion: RawOpportunity[] = [];
 
   const customerAccounts = rawCustomers.map(parseCustomerAccount);
   const hierarchyAccounts = rawHierarchy.map(parseHierarchyAccount);
@@ -75,7 +68,7 @@ export default async function AccountIntelligencePage() {
     rawPipeline,
     rawExpansion,
     overrides as Record<string, string>,
-    gmvSnapshot as GmvSnapshot,
+    gmvSnapshot,
     contractAcrSnapshot as ContractAcrSnapshot,
     sfdcInstanceUrl
   );
