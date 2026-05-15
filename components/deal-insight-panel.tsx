@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { fmtK } from "@/lib/format";
 import type {
   DealInsightRequest,
@@ -421,31 +421,23 @@ export default function DealInsightPanel({ deal, onClose, inspections }: DealIns
   const [slackError, setSlackError] = useState(false);
   const [forecastError, setForecastError] = useState(false);
 
-  const fetchInsight = useCallback(async () => {
-    setSlackMessages(null);
-    setForecast(null);
-    setSlackError(false);
-    setForecastError(false);
-
-    try {
-      const res = await fetch("/api/deal-insight", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(deal),
-      });
-      if (!res.ok) throw new Error("fetch failed");
-      const data = await res.json();
-      setSlackMessages(data.slackMessages ?? []);
-      setForecast(data.forecast ?? null);
-    } catch {
-      setSlackError(true);
-      setForecastError(true);
-    }
-  }, [deal]);
-
+  // Demo stub — the production app fetches live Slack + Anthropic-generated forecast here.
   useEffect(() => {
-    fetchInsight();
-  }, [fetchInsight]);
+    setSlackMessages([
+      {
+        author: "Demo User",
+        date: "2026-05-15",
+        channel: "deal-channel",
+        text: "Portfolio demo: in the production app, Slack messages relevant to this account are surfaced here in real time.",
+      },
+    ]);
+    setForecast({
+      confidence: 72,
+      label: "On Track",
+      narrative:
+        "Portfolio demo: in the production app, an LLM analyses SFDC data and Slack signals to generate a deal forecast narrative here. The panel layout and interaction model are fully functional — only the live data feed is disabled in this version.",
+    });
+  }, [deal]);
 
   // ── Snapshot grid items ──
   const snapItems = [
