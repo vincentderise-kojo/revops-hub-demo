@@ -91,7 +91,7 @@ export default function Methodology({ data }: MethodologyProps) {
                     </tr>
                   );
                 })}
-              {/* July '26 preview row — Field + Perf committed, BDR TBD. Promote to MONTHLY_PIPELINE_GOALS once Sadie lands her commit. */}
+              {/* July '26 preview row — Field + Perf committed, BDR TBD. Promote to MONTHLY_PIPELINE_GOALS once Riley lands her commit. */}
               <tr style={{ opacity: 0.75 }}>
                 <td style={{ padding: "4px 8px" }}>Jul 26</td>
                 <td style={{ padding: "4px 8px", textAlign: "right", color: "var(--muted)" }}>TBD</td>

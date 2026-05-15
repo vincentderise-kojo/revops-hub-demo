@@ -255,9 +255,9 @@ function buildBlendedAndGroupCards(
   };
 
   const groups = {
-    bdrOutbound: makeGroupCard("SDR", "BDR Outbound", "Sadie Rankin", "var(--green)"),
-    fieldMarketing: makeGroupCard("Marketing", "Field Marketing", "Alex Harmon", "var(--blue)"),
-    perfMarketing: makeGroupCard("Demand Gen", "Perf Marketing", "Ali Karshenas", "var(--yellow)"),
+    bdrOutbound: makeGroupCard("SDR", "BDR Outbound", "Riley Quinn", "var(--green)"),
+    fieldMarketing: makeGroupCard("Marketing", "Field Marketing", "Owen Hartwell", "var(--blue)"),
+    perfMarketing: makeGroupCard("Demand Gen", "Perf Marketing", "Priya Banerjee", "var(--yellow)"),
   };
 
   const aeWeeklyTarget = getAeWeeklyTarget(monthKey) * segmentRatio;
@@ -265,7 +265,7 @@ function buildBlendedAndGroupCards(
   const aePctHit = aeWeeklyTarget > 0 ? (aeCreated / aeWeeklyTarget) * 100 : 0;
   const aeUpside: UpsideCard = {
     label: "AE Self-Set",
-    owner: "Jeremy + Sean",
+    owner: "Kevin & Patrick",
     created: aeCreated,
     oppCount: aeOpps.length,
     target: aeWeeklyTarget,

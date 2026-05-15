@@ -209,7 +209,7 @@ describe("buildAeRosterFromQuotas", () => {
       quota({ id: "6", ownerName: "Inactive", isActive: false }),               // excluded — not active
       quota({ id: "7", ownerName: "OldRamp", startDate: new Date("2026-01-01"), endDate: new Date("2026-01-31") }), // excluded — month doesn't overlap
       quota({ id: "8", ownerName: "Patrick Yu", ownerManager: "Patrick Yu", forecastingType: "AE Manager" }), // excluded — manager (appears as ownerManager elsewhere)
-      quota({ id: "9", ownerName: "Sadie",   ownerManager: "Will Olson", forecastingType: "SDR" }),           // excluded — SDR
+      quota({ id: "9", ownerName: "Riley",   ownerManager: "Will Olson", forecastingType: "SDR" }),           // excluded — SDR
     ];
     const roster = buildAeRosterFromQuotas(records, "2026-04");
     expect(roster).toEqual([

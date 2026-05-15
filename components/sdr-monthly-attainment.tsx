@@ -32,7 +32,7 @@ export default function SdrMonthlyAttainmentBar({ data }: { data: SdrMonthlyAtta
             letterSpacing: 1,
           }}
         >
-          Sadie · {data.monthLabel} Attainment
+          Riley · {data.monthLabel} Attainment
         </div>
         <div style={{ fontSize: 11, color: "#888" }}>
           <span style={{ color: "#fff", fontWeight: 600 }}>{data.totalSaos.toFixed(2)}</span>

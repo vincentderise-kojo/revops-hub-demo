@@ -142,7 +142,7 @@ export interface DealRow {
 export interface GroupScoreCard {
   group: OwnerGroup;            // "SDR" | "Marketing" | "Demand Gen"
   displayLabel: string;         // "BDR Outbound" | "Field Marketing" | "Perf Marketing"
-  owner: string;                // "Sadie Rankin", etc.
+  owner: string;                // "Riley Quinn", etc.
   color: string;                // CSS variable
   target: number;               // Weekly target (monthly goal / 4.33)
   created: number;              // This week's actual
@@ -157,7 +157,7 @@ export interface GroupScoreCard {
  *  GroupScoreCard so it can render with the same component. */
 export interface UpsideCard {
   label: string;                // "AE Self-Set"
-  owner: string;                // "Jeremy + Sean"
+  owner: string;                // "Kevin & Patrick"
   created: number;              // This week's AE Self-Set pipeline
   oppCount: number;
   target: number;               // Weekly AE stretch target (10% of board plan / 4.33)

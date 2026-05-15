@@ -117,7 +117,7 @@ function getMmRoster(quotaRecords: QuotaRecord[], monthKey: string): Set<string>
     if (aeOwners.has(r.ownerName)) continue; // transitioned to AE
     if (r.startDate > monthEnd || r.endDate < monthStart) continue; // not active this month
 
-    // Exclude pure managers (like Sadie) but keep player-coaches (like Valeria)
+    // Exclude pure managers (like Riley) but keep player-coaches
     // Player-coaches have SDR_TL_QUOTA (5) — they manage others but carry their own number
     if (sdrManagers.has(r.ownerName) && r.quotaQuantity !== SDR_TL_QUOTA) continue;
 

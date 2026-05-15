@@ -65,7 +65,7 @@ export default function PacingSection({ data }: { data: DashboardState }) {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 14 }}>
           <PacingChart
             title="BDR Outbound"
-            owner="Sadie Rankin"
+            owner="Riley Quinn"
             color="var(--green)"
             weeks={weeks}
             actualKey="bdr"
@@ -73,7 +73,7 @@ export default function PacingSection({ data }: { data: DashboardState }) {
           />
           <PacingChart
             title="Field Marketing"
-            owner="Alex Harmon"
+            owner="Owen Hartwell"
             color="var(--blue)"
             weeks={weeks}
             actualKey="field"
@@ -81,7 +81,7 @@ export default function PacingSection({ data }: { data: DashboardState }) {
           />
           <PacingChart
             title="Perf Marketing"
-            owner="Ali Karshenas"
+            owner="Priya Banerjee"
             color="var(--yellow)"
             weeks={weeks}
             actualKey="perf"
@@ -89,7 +89,7 @@ export default function PacingSection({ data }: { data: DashboardState }) {
           />
           <PacingChart
             title="AE Self-Set · Upside"
-            owner="Jeremy + Sean"
+            owner="Kevin & Patrick"
             color="var(--muted)"
             weeks={weeks}
             actualKey="ae"

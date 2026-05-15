@@ -189,7 +189,7 @@ export function processSdrPerformance(
   // Count ALL opps where SDR Owner is populated — SDRs work across source channels
   const sdrOpps = allOpps.filter((o) => o.sdrOwner);
 
-  // ── Monthly Attainment (Sadie's team) ──
+  // ── Monthly Attainment (Riley's team) ──
   // Numerator: sum of SAO Points Calculation on sdrSets where Meeting Held Date is in current month
   // Denominator: sum of monthlyQuota across full roster (ramped + ramping, MM + ENT)
   const now = new Date();
@@ -266,7 +266,7 @@ export function processSdrPerformance(
   }
 
   // ── SAO Points by SDR (quota-attainment view) ──
-  // Mirrors how Sadie's monthly attainment is measured: sum of SAO Points Calculation
+  // Mirrors how Riley's monthly attainment is measured: sum of SAO Points Calculation
   // on sdrSets, anchored on Meeting Held Date. Used for Rep Detail pace + row status.
   const qtdSaoPoints = new Map<string, number>();
   const weeklySaoPoints = new Map<string, Map<string, number>>(); // sdr -> weekLabel -> points
