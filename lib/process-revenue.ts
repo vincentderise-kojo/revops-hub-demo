@@ -507,7 +507,7 @@ export function computeQuarterlyFunnels(opps: PipelineOppForRevenue[]): Quarterl
 const STAGE_TRANSITION_COLORS: Record<string, string> = {
   "Discovery→Evaluation": "var(--teal)",
   "Evaluation→Contracts/Negotiation": "var(--yellow)",
-  "Contracts/Negotiation→Final Approvals": "var(--kojo-yellow)",
+  "Contracts/Negotiation→Final Approvals": "var(--brand-yellow)",
   "Final Approvals→Closed Won": "var(--green)",
   "Discovery→Closed Won": "var(--red)",
 };

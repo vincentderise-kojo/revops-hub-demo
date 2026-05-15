@@ -55,10 +55,10 @@ export default function MmSdrTargeting({ data }: { data: TargetingState }) {
               <tr key={r.sdrName} style={{ borderTop: "1px solid #2a2a2a" }}>
                 <td style={{ padding: 8, color: "#fff", fontWeight: 500 }}>{r.sdrName}</td>
                 <td style={{ textAlign: "center", padding: 8, color: "#ddd" }}>{r.uniqueAccountsTouched}</td>
-                <td style={{ textAlign: "center", padding: 8, color: r.avgContactsPerAccount >= 2 ? "var(--green)" : r.avgContactsPerAccount >= 1.5 ? "var(--kojo-yellow)" : "#ff6b6b", fontWeight: 600 }}>
+                <td style={{ textAlign: "center", padding: 8, color: r.avgContactsPerAccount >= 2 ? "var(--green)" : r.avgContactsPerAccount >= 1.5 ? "var(--brand-yellow)" : "#ff6b6b", fontWeight: 600 }}>
                   {r.avgContactsPerAccount}
                 </td>
-                <td style={{ textAlign: "center", padding: 8, color: r.accountsWith1Contact > 0 ? "var(--kojo-yellow)" : "#ccc" }}>
+                <td style={{ textAlign: "center", padding: 8, color: r.accountsWith1Contact > 0 ? "var(--brand-yellow)" : "#ccc" }}>
                   {r.accountsWith1Contact}
                 </td>
                 <td style={{ textAlign: "center", padding: 8, color: r.accountsWith3PlusContacts > 0 ? "var(--green)" : "#ccc" }}>

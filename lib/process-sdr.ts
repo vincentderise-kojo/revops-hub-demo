@@ -534,7 +534,7 @@ export function processSdrPerformance(
     execSummary += ` <span style="color:var(--red);font-weight:700">${bottom.sdrName}</span> is <span style="color:var(--red);font-weight:700">${Math.abs(bottomGap).toFixed(1)} points behind QTD pace</span>.`;
   }
 
-  execSummary += ` Team conversion rate is <span style="color:var(--kojo-yellow);font-weight:700">${Math.round(teamFunnelTotal.conversionRate * 100)}%</span>.`;
+  execSummary += ` Team conversion rate is <span style="color:var(--brand-yellow);font-weight:700">${Math.round(teamFunnelTotal.conversionRate * 100)}%</span>.`;
 
   return {
     focusWeekLabel: focusLabel,

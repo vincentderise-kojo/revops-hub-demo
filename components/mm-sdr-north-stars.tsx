@@ -39,7 +39,7 @@ export default function MmSdrNorthStars({ data }: { data: NorthStarMetrics }) {
   const { benchmarks, volume, quality, outcome } = data;
 
   const volColor = volume.saosThisWeek >= volume.target ? "var(--green)" : "#ff6b6b";
-  const evalColor = quality.evalConversionPct >= 0.3 ? "var(--green)" : quality.evalConversionPct >= 0.2 ? "var(--kojo-yellow)" : "#ff6b6b";
+  const evalColor = quality.evalConversionPct >= 0.3 ? "var(--green)" : quality.evalConversionPct >= 0.2 ? "var(--brand-yellow)" : "#ff6b6b";
   const cwColor = outcome.cwRate90d >= outcome.cwTarget ? "var(--green)" : "#ff6b6b";
 
   return (

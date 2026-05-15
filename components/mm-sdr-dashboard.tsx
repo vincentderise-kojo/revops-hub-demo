@@ -181,7 +181,7 @@ export default function MmSdrDashboard({ data, weekOffset }: { data: MmSdrState;
               Handles historical promotions correctly because the opp&apos;s attributes don&apos;t change when an SDR moves teams.
             </div>
 
-            <div style={{ fontWeight: 600, color: "var(--kojo-yellow)", marginBottom: 4 }}>
+            <div style={{ fontWeight: 600, color: "var(--brand-yellow)", marginBottom: 4 }}>
               2. SDR Sets Tab (SAO Acceptance / Rejection)
             </div>
             <div style={{ marginBottom: 12, paddingLeft: 12 }}>

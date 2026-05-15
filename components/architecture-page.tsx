@@ -316,7 +316,7 @@ function ExpandableRow({
         style={{ borderLeft: planned ? undefined : `3px solid ${borderColor}` }}
       >
         {header}
-        <span style={{ fontSize: 10, color: expanded ? "var(--kojo-yellow)" : "var(--muted)" }}>
+        <span style={{ fontSize: 10, color: expanded ? "var(--brand-yellow)" : "var(--muted)" }}>
           {expanded ? "▼" : "▶"}
         </span>
       </div>
@@ -418,7 +418,7 @@ export default function ArchitecturePage() {
   return (
     <>
       {/* CRESTLINE HEADER BAR */}
-      <div className="kojo-header">
+      <div className="brand-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <a href="/hub" style={{ fontSize: 15, fontWeight: 800, color: "#FFE500", letterSpacing: 1.5, textDecoration: "none" }}>CRESTLINE</a>
           <span style={{ width: 1, height: 16, background: "#555", display: "inline-block" }} />
@@ -430,7 +430,7 @@ export default function ArchitecturePage() {
       <div className="arch-layout">
         {/* SIDEBAR */}
         <nav className="arch-sidebar">
-          <div style={{ fontSize: 9, color: "var(--kojo-yellow)", textTransform: "uppercase", letterSpacing: 1.2, fontWeight: 600, marginBottom: 16, padding: "0 10px" }}>
+          <div style={{ fontSize: 9, color: "var(--brand-yellow)", textTransform: "uppercase", letterSpacing: 1.2, fontWeight: 600, marginBottom: 16, padding: "0 10px" }}>
             Navigation
           </div>
           {SECTIONS.map((s) => (
@@ -453,10 +453,10 @@ export default function ArchitecturePage() {
             className="arch-section"
             ref={(el) => { sectionRefs.current["operator"] = el; }}
           >
-            <div className="arch-section-label" style={{ color: "var(--kojo-yellow)" }}>§1</div>
+            <div className="arch-section-label" style={{ color: "var(--brand-yellow)" }}>§1</div>
             <div className="arch-section-title">Operator</div>
             <div className="arch-section-desc">The human in the loop. Sets priorities, reviews outputs, approves deploys.</div>
-            <div className="card" style={{ borderLeft: "3px solid var(--kojo-yellow)" }}>
+            <div className="card" style={{ borderLeft: "3px solid var(--brand-yellow)" }}>
               <div style={{ fontSize: 15, fontWeight: 700, marginBottom: 8 }}>Director of Revenue Operations</div>
               <div style={{ fontSize: 12, color: "var(--muted)", marginBottom: 12 }}>Crestline Procurement</div>
               <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
@@ -551,11 +551,11 @@ export default function ArchitecturePage() {
             className="arch-section"
             ref={(el) => { sectionRefs.current["plugins"] = el; }}
           >
-            <div className="arch-section-label" style={{ color: "var(--kojo-yellow)" }}>§4</div>
+            <div className="arch-section-label" style={{ color: "var(--brand-yellow)" }}>§4</div>
             <div className="arch-section-title">Plugins</div>
             <div className="arch-section-desc">Extended capabilities installed into the Claude Code CLI.</div>
             <ExpandableRow
-              borderColor="var(--kojo-yellow)"
+              borderColor="var(--brand-yellow)"
               expanded={expandedItems.has("plugin-superpowers")}
               onToggle={() => toggleItem("plugin-superpowers")}
               header={
@@ -569,15 +569,15 @@ export default function ArchitecturePage() {
                 Prevents &quot;code first, think later.&quot; Every feature goes through a structured workflow with review gates at each stage.
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 12 }}>
-                <span style={{ fontSize: 11, fontWeight: 600, color: "var(--kojo-yellow)", padding: "4px 10px", background: "#FFE50011", borderRadius: 6 }}>
+                <span style={{ fontSize: 11, fontWeight: 600, color: "var(--brand-yellow)", padding: "4px 10px", background: "#FFE50011", borderRadius: 6 }}>
                   Brainstorm
                 </span>
                 <span style={{ color: "var(--muted)", fontSize: 14 }}>→</span>
-                <span style={{ fontSize: 11, fontWeight: 600, color: "var(--kojo-yellow)", padding: "4px 10px", background: "#FFE50011", borderRadius: 6 }}>
+                <span style={{ fontSize: 11, fontWeight: 600, color: "var(--brand-yellow)", padding: "4px 10px", background: "#FFE50011", borderRadius: 6 }}>
                   Plan
                 </span>
                 <span style={{ color: "var(--muted)", fontSize: 14 }}>→</span>
-                <span style={{ fontSize: 11, fontWeight: 600, color: "var(--kojo-yellow)", padding: "4px 10px", background: "#FFE50011", borderRadius: 6 }}>
+                <span style={{ fontSize: 11, fontWeight: 600, color: "var(--brand-yellow)", padding: "4px 10px", background: "#FFE50011", borderRadius: 6 }}>
                   Execute
                 </span>
               </div>
@@ -673,7 +673,7 @@ export default function ArchitecturePage() {
             className="arch-section"
             ref={(el) => { sectionRefs.current["apps"] = el; }}
           >
-            <div className="arch-section-label" style={{ color: "var(--kojo-yellow)" }}>§6</div>
+            <div className="arch-section-label" style={{ color: "var(--brand-yellow)" }}>§6</div>
             <div className="arch-section-title">Deployed Apps</div>
             <div className="arch-section-desc">Live applications deployed on Vercel under the RevOps Hub.</div>
             {APPS.map((app) => (
@@ -705,7 +705,7 @@ export default function ArchitecturePage() {
                       <span
                         style={{
                           fontSize: 10,
-                          color: "var(--kojo-yellow)",
+                          color: "var(--brand-yellow)",
                           background: "rgba(234, 179, 8, 0.12)",
                           padding: "2px 8px",
                           borderRadius: 10,
@@ -732,7 +732,7 @@ export default function ArchitecturePage() {
                   <div style={{ marginTop: 10 }}>
                     <Link
                       href={app.route}
-                      style={{ fontSize: 11, fontWeight: 600, color: "var(--kojo-yellow)", textDecoration: "none" }}
+                      style={{ fontSize: 11, fontWeight: 600, color: "var(--brand-yellow)", textDecoration: "none" }}
                     >
                       Open dashboard →
                     </Link>
@@ -768,7 +768,7 @@ export default function ArchitecturePage() {
               </div>
               <div className="arch-flow-arrow" style={{ color: "var(--teal)" }}>→</div>
               <div className="arch-flow-node highlight">
-                <div style={{ fontSize: 12, fontWeight: 600, color: "var(--kojo-yellow)" }}>Vercel App</div>
+                <div style={{ fontSize: 12, fontWeight: 600, color: "var(--brand-yellow)" }}>Vercel App</div>
                 <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 2 }}>Server-side parse</div>
               </div>
             </div>
@@ -792,7 +792,7 @@ export default function ArchitecturePage() {
               </div>
               <div className="arch-flow-arrow" style={{ color: "var(--yellow)" }}>→</div>
               <div className="arch-flow-node highlight">
-                <div style={{ fontSize: 12, fontWeight: 600, color: "var(--kojo-yellow)" }}>Claude Code</div>
+                <div style={{ fontSize: 12, fontWeight: 600, color: "var(--brand-yellow)" }}>Claude Code</div>
                 <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 2 }}>Bash tool execution</div>
               </div>
             </div>
@@ -826,13 +826,13 @@ export default function ArchitecturePage() {
               <div className="arch-vis-arrow" style={{ color: "var(--teal)" }}>→</div>
               <div className="arch-vis-card">
                 <div style={{ marginBottom: 8 }}>
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--kojo-yellow)" strokeWidth="2">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--brand-yellow)" strokeWidth="2">
                     <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
                     <polyline points="14 2 14 8 20 8" />
                   </svg>
                 </div>
                 <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 4 }}>/updates</div>
-                <div style={{ fontSize: 10, color: "var(--kojo-yellow)", fontWeight: 600, marginBottom: 6 }}>Stakeholder Changelog</div>
+                <div style={{ fontSize: 10, color: "var(--brand-yellow)", fontWeight: 600, marginBottom: 6 }}>Stakeholder Changelog</div>
                 <div style={{ fontSize: 10, color: "var(--muted)", lineHeight: 1.5 }}>
                   CLAUDE.md auto-appends to <code style={{ fontSize: 9 }}>changelog.json</code> on commit to main
                 </div>

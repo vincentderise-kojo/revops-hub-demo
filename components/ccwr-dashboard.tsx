@@ -776,7 +776,7 @@ export default function CcwrDashboard({ data }: CcwrDashboardProps) {
   return (
     <>
       {/* KOJO HEADER BAR */}
-      <div className="kojo-header">
+      <div className="brand-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <a
             href="/hub"

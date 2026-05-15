@@ -48,19 +48,19 @@ function cellTextColor(
 
   if (mode === "sao") {
     if (value >= weeklyPace) return "var(--green)";
-    if (value >= weeklyPace - 1) return "var(--kojo-yellow)";
+    if (value >= weeklyPace - 1) return "var(--brand-yellow)";
     return "#ff6b6b";
   } else {
     if (rollingAvg === 0) return "#666";
     if (value >= rollingAvg) return "var(--green)";
-    if (value >= rollingAvg * 0.5) return "var(--kojo-yellow)";
+    if (value >= rollingAvg * 0.5) return "var(--brand-yellow)";
     return "#ff6b6b";
   }
 }
 
 const statusColors: Record<string, { bg: string; text: string }> = {
   "On Pace": { bg: "#1a3a1a", text: "var(--green)" },
-  "At Risk": { bg: "#2a2a1a", text: "var(--kojo-yellow)" },
+  "At Risk": { bg: "#2a2a1a", text: "var(--brand-yellow)" },
   Behind: { bg: "#2a1a1a", text: "#ff6b6b" },
   Ramping: { bg: "#1a1a1a", text: "#555" },
 };
@@ -319,7 +319,7 @@ export default function SdrHeatmap({ data }: { data: HeatmapData }) {
       <div style={{ padding: "8px 8px 0", fontSize: 10, color: "#555" }}>
         Color intensity:{" "}
         <span style={{ color: "var(--green)" }}>green</span> = at/above weekly pace ·{" "}
-        <span style={{ color: "var(--kojo-yellow)" }}>yellow</span> = within 1 of pace ·{" "}
+        <span style={{ color: "var(--brand-yellow)" }}>yellow</span> = within 1 of pace ·{" "}
         <span style={{ color: "#ff6b6b" }}>red</span> = 2+ below pace · Ramping reps shown but not
         paced
       </div>

@@ -611,7 +611,7 @@ export default function UpsellSignalsView({ data }: Props) {
                 style={{
                   padding: "6px 14px",
                   fontSize: 12,
-                  background: "var(--kojo-yellow)",
+                  background: "var(--brand-yellow)",
                   border: "none",
                   borderRadius: 6,
                   color: "#000",
@@ -671,7 +671,7 @@ function UpsellRow({
           {s.signalCount}/3
         </td>
         <td style={{ ...tdStyle, fontWeight: 500, color: "var(--text)" }}>
-          <span style={{ color: hasChildren ? "var(--kojo-yellow)" : "var(--border)", marginRight: 6, fontSize: 10 }}>
+          <span style={{ color: hasChildren ? "var(--brand-yellow)" : "var(--border)", marginRight: 6, fontSize: 10 }}>
             {hasChildren ? (isExpanded ? "▼" : "▶") : "▶"}
           </span>
           {parentUrl ? (
@@ -732,7 +732,7 @@ function UpsellRow({
         <td style={{ ...tdStyle, textAlign: "right", color: "var(--muted)" }}>
           {s.originalFamilyArr > 0 ? fmtK(s.originalFamilyArr) : "\u2014"}
         </td>
-        <td style={{ ...tdStyle, textAlign: "right", fontWeight: 600, color: "var(--kojo-yellow)" }}>
+        <td style={{ ...tdStyle, textAlign: "right", fontWeight: 600, color: "var(--brand-yellow)" }}>
           {fmtK(s.currentFamilyArr)}
         </td>
         <td style={{ ...tdStyle, textAlign: "center" }}>
@@ -742,7 +742,7 @@ function UpsellRow({
           style={{
             ...tdStyle,
             textAlign: "center",
-            color: s.enrRank ? "var(--kojo-yellow)" : "var(--muted)",
+            color: s.enrRank ? "var(--brand-yellow)" : "var(--muted)",
             fontWeight: s.enrRank ? 500 : 400,
           }}
         >
@@ -780,8 +780,8 @@ function UpsellRow({
                     fontSize: 11,
                     color:
                       s.contractAcrDeltaPct > 0
-                        ? "var(--kojo-green)"
-                        : "var(--kojo-red)",
+                        ? "var(--brand-green)"
+                        : "var(--brand-red)",
                   }}
                 >
                   {s.contractAcrDeltaPct > 0 ? "+" : ""}
@@ -789,7 +789,7 @@ function UpsellRow({
                 </div>
               )}
               {s.acrMismatch && s.acrMismatchPct !== null && (
-                <div style={{ fontSize: 10, color: "var(--kojo-yellow)" }} title={
+                <div style={{ fontSize: 10, color: "var(--brand-yellow)" }} title={
                   `PDF \$${((s.pdfStatedAcr ?? 0) / 1_000_000).toFixed(1)}M vs Quote field \$${((s.quoteFieldAcr ?? 0) / 1_000_000).toFixed(1)}M`
                 }>
                   ⚠ field Δ {s.acrMismatchPct > 0 ? "+" : ""}{Math.round(s.acrMismatchPct * 100)}%
@@ -939,7 +939,7 @@ function UpsellRow({
                         marginTop: 10,
                         padding: 8,
                         background: "var(--bg)",
-                        borderLeft: "3px solid var(--kojo-yellow)",
+                        borderLeft: "3px solid var(--brand-yellow)",
                         borderRadius: 4,
                         fontSize: 11,
                         lineHeight: 1.5,

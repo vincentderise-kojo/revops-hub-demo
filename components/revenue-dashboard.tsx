@@ -809,7 +809,7 @@ function FunnelChart({
     "Discovery": "var(--blue)",
     "Evaluation": "var(--teal)",
     "Contracts/Negotiation": "var(--yellow)",
-    "Final Approvals": "var(--kojo-yellow)",
+    "Final Approvals": "var(--brand-yellow)",
     "Closed Won": "var(--green)",
   };
 
@@ -1126,7 +1126,7 @@ function QuarterlyFunnelGrid({
     "Discovery": "var(--blue)",
     "Evaluation": "var(--teal)",
     "Contracts/Negotiation": "var(--yellow)",
-    "Final Approvals": "var(--kojo-yellow)",
+    "Final Approvals": "var(--brand-yellow)",
     "Closed Won": "var(--green)",
   };
 

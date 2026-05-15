@@ -174,7 +174,7 @@ export default async function HubPage() {
   return (
     <>
       {/* Crestline header bar */}
-      <div className="kojo-header">
+      <div className="brand-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <span
             style={{

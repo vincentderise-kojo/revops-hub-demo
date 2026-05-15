@@ -4,7 +4,7 @@ import { useState, useMemo, useCallback } from "react";
 import {
   AccountIntelligenceData,
   EnrMatch,
-  KojoStatus,
+  MatchStatus,
   MatchConfidence,
 } from "@/lib/types-account-intelligence";
 import { AI_CONFIG } from "@/lib/config";
@@ -27,7 +27,7 @@ type SortKey =
   | "state";
 type SortDir = "asc" | "desc";
 
-const STATUS_OPTIONS: KojoStatus[] = [
+const STATUS_OPTIONS: MatchStatus[] = [
   "Customer",
   "Former",
   "Active Opp",
@@ -69,9 +69,9 @@ export default function EnrView({ data }: Props) {
     // Status filter
     if (statusFilter.size > 0) {
       rows = rows.filter((m) => {
-        if (statusFilter.has(m.kojoStatus)) return true;
-        if (statusFilter.has("Not in SFDC - ICP") && m.kojoStatus === "Not in SFDC" && m.isIcp) return true;
-        if (statusFilter.has("Not in SFDC - Non-ICP") && m.kojoStatus === "Not in SFDC" && !m.isIcp) return true;
+        if (statusFilter.has(m.matchStatus)) return true;
+        if (statusFilter.has("Not in SFDC - ICP") && m.matchStatus === "Not in SFDC" && m.isIcp) return true;
+        if (statusFilter.has("Not in SFDC - Non-ICP") && m.matchStatus === "Not in SFDC" && !m.isIcp) return true;
         return false;
       });
     }
@@ -130,7 +130,7 @@ export default function EnrView({ data }: Props) {
           cmp = a.enrFirm.revenue2024Mil - b.enrFirm.revenue2024Mil;
           break;
         case "status":
-          cmp = a.kojoStatus.localeCompare(b.kojoStatus);
+          cmp = a.matchStatus.localeCompare(b.matchStatus);
           break;
         case "sfdcRev":
           cmp = (a.sfdcRevenue || 0) - (b.sfdcRevenue || 0);
@@ -191,7 +191,7 @@ export default function EnrView({ data }: Props) {
         `"${m.enrFirm.firmName}"`,
         m.enrFirm.firmType,
         m.enrFirm.revenue2024Mil,
-        m.kojoStatus + (m.kojoStatus === "Not in SFDC" ? (m.isIcp ? " (ICP)" : " (Non-ICP)") : ""),
+        m.matchStatus + (m.matchStatus === "Not in SFDC" ? (m.isIcp ? " (ICP)" : " (Non-ICP)") : ""),
         m.matchConfidence || "",
         `"${m.matchedAccount?.accountName || ""}"`,
         m.sfdcRevenue || "",
@@ -519,7 +519,7 @@ export default function EnrView({ data }: Props) {
                 style={{
                   padding: "6px 14px",
                   fontSize: 12,
-                  background: "var(--kojo-yellow)",
+                  background: "var(--brand-yellow)",
                   border: "none",
                   borderRadius: 6,
                   color: "#000",
@@ -540,7 +540,7 @@ export default function EnrView({ data }: Props) {
 // ── Sub-components ──
 
 function EnrRow({ match: m }: { match: EnrMatch }) {
-  const isUnmatched = m.kojoStatus === "Not in SFDC";
+  const isUnmatched = m.matchStatus === "Not in SFDC";
   const rowOpacity = isUnmatched ? (m.isIcp ? 0.6 : 0.4) : 1;
 
   // YoY rank movement. Lower rank number = better position.
@@ -549,7 +549,7 @@ function EnrRow({ match: m }: { match: EnrMatch }) {
   const r24 = m.enrFirm.enrRank2024;
   let rankDelta: { label: string; color: string } | null = null;
   if (r24 === null) {
-    rankDelta = { label: "NEW", color: "var(--kojo-yellow)" };
+    rankDelta = { label: "NEW", color: "var(--brand-yellow)" };
   } else if (r24 > r25) {
     rankDelta = { label: `▲${r24 - r25}`, color: "var(--green)" };
   } else if (r24 < r25) {
@@ -593,7 +593,7 @@ function EnrRow({ match: m }: { match: EnrMatch }) {
         })}M
       </td>
       <td style={{ ...tdStyle, textAlign: "center" }}>
-        <StatusBadge status={m.kojoStatus} isIcp={m.isIcp} />
+        <StatusBadge status={m.matchStatus} isIcp={m.isIcp} />
       </td>
       <td style={{ ...tdStyle, textAlign: "center" }}>
         <MatchBadge confidence={m.matchConfidence} />
@@ -671,7 +671,7 @@ function EnrRow({ match: m }: { match: EnrMatch }) {
   );
 }
 
-function StatusBadge({ status, isIcp }: { status: KojoStatus; isIcp: boolean }) {
+function StatusBadge({ status, isIcp }: { status: MatchStatus; isIcp: boolean }) {
   const config: Record<string, { bg: string; color: string }> = {
     Customer: { bg: "#22c55e22", color: "#4ade80" },
     Former: { bg: "#f59e0b22", color: "#fbbf24" },
@@ -772,7 +772,7 @@ function getActionNeeded(m: EnrMatch): string {
   if (m.matchedAccount && !m.hasEnrTag) {
     actions.push("Add ENR Tag");
   }
-  if (m.kojoStatus === "Not in SFDC" && m.isIcp) {
+  if (m.matchStatus === "Not in SFDC" && m.isIcp) {
     actions.push("Prospect — ICP Match");
   }
   if (m.matchConfidence === "Name" || m.matchConfidence === "Name+State") {

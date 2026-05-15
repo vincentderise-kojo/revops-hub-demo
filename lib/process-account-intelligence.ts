@@ -8,7 +8,7 @@ import {
   RevenueSource,
   EnrMatch,
   MatchConfidence,
-  KojoStatus,
+  MatchStatus,
   AccountIntelligenceData,
   EnrHeroStats,
   TopCustomersHeroStats,
@@ -383,21 +383,21 @@ export function matchEnrFirms(
     }
 
     // Determine CRM Status
-    let kojoStatus: KojoStatus = "Not in SFDC";
+    let matchStatus: MatchStatus = "Not in SFDC";
     if (matchedAccount) {
       if (matchedAccount.type === "Customer - Active") {
-        kojoStatus = "Customer";
+        matchStatus = "Customer";
       } else if (
         matchedAccount.type.toLowerCase().includes("churn") ||
         matchedAccount.type.toLowerCase().includes("cancel") ||
         matchedAccount.type.toLowerCase().includes("former")
       ) {
-        kojoStatus = "Former";
+        matchStatus = "Former";
       } else {
-        kojoStatus = "Active Opp";
+        matchStatus = "Active Opp";
       }
     } else if (openOppAccountNames.has(normFirmName)) {
-      kojoStatus = "Active Opp";
+      matchStatus = "Active Opp";
     }
 
     // ICP classification
@@ -425,7 +425,7 @@ export function matchEnrFirms(
 
     return {
       enrFirm: firm,
-      kojoStatus,
+      matchStatus,
       isIcp,
       matchConfidence,
       matchedAccount,
@@ -441,10 +441,10 @@ export function matchEnrFirms(
 // ── Hero Stats ──
 
 export function computeEnrHeroStats(matches: EnrMatch[]): EnrHeroStats {
-  const customers = matches.filter((m) => m.kojoStatus === "Customer");
-  const activeOpps = matches.filter((m) => m.kojoStatus === "Active Opp");
-  const notInSfdc = matches.filter((m) => m.kojoStatus === "Not in SFDC");
-  const former = matches.filter((m) => m.kojoStatus === "Former");
+  const customers = matches.filter((m) => m.matchStatus === "Customer");
+  const activeOpps = matches.filter((m) => m.matchStatus === "Active Opp");
+  const notInSfdc = matches.filter((m) => m.matchStatus === "Not in SFDC");
+  const former = matches.filter((m) => m.matchStatus === "Former");
   const matched = matches.filter((m) => m.matchedAccount !== null);
 
   const withRevDelta = matched.filter((m) => m.revenueDeltaPct !== null);
@@ -455,7 +455,7 @@ export function computeEnrHeroStats(matches: EnrMatch[]): EnrHeroStats {
   const tagged = matched.filter((m) => m.hasEnrTag);
 
   return {
-    kojoCustomers: customers.length,
+    matchedCustomers: customers.length,
     activeOpps: activeOpps.length,
     notInSfdc: notInSfdc.length,
     enrCustomerArr: customers.reduce((sum, m) => sum + (m.sfdcArr || 0), 0),

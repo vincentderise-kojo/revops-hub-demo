@@ -20,7 +20,7 @@ interface FunnelData {
 
 function convColor(rate: number): string {
   if (rate >= 0.3) return "var(--green)";
-  if (rate >= 0.2) return "var(--kojo-yellow)";
+  if (rate >= 0.2) return "var(--brand-yellow)";
   return "#ff6b6b";
 }
 
@@ -129,7 +129,7 @@ export default function SdrFunnel({ data }: { data: FunnelData }) {
         {[
           { label: "Meetings Set", value: String(t.meetingsSet), color: "#fff" },
           { label: "SAOs", value: String(t.saos), color: "#fff" },
-          { label: "Conv. Rate", value: `${Math.round(t.conversionRate * 100)}%`, color: "var(--kojo-yellow)" },
+          { label: "Conv. Rate", value: `${Math.round(t.conversionRate * 100)}%`, color: "var(--brand-yellow)" },
           { label: "Pipeline $", value: fmtK(t.pipelineDollars), color: "#fff" },
           { label: "Closed Won", value: fmtK(t.closedWonDollars), color: "var(--green)" },
         ].map((card, i, arr) => (

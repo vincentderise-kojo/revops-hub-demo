@@ -164,7 +164,7 @@ export default function TopCustomersView({ data }: Props) {
                 background: topN === opt.value ? "var(--card)" : "transparent",
                 border: "none",
                 borderRadius: 4,
-                color: topN === opt.value ? "var(--kojo-yellow)" : "var(--muted)",
+                color: topN === opt.value ? "var(--brand-yellow)" : "var(--muted)",
                 fontWeight: topN === opt.value ? 600 : 400,
                 cursor: "pointer",
               }}
@@ -391,7 +391,7 @@ function ParentRow({
         }}
         onClick={hasChildren ? onToggle : undefined}
       >
-        <td style={{ ...tdStyle, color: hasChildren ? "var(--kojo-yellow)" : "var(--border)" }}>
+        <td style={{ ...tdStyle, color: hasChildren ? "var(--brand-yellow)" : "var(--border)" }}>
           {hasChildren ? (isExpanded ? "▼" : "▶") : "▶"}
         </td>
         <td style={{ ...tdStyle, fontWeight: 600, color: "var(--text)" }}>{rank}</td>
@@ -409,7 +409,7 @@ function ParentRow({
             ...tdStyle,
             textAlign: "right",
             fontWeight: 600,
-            color: "var(--kojo-yellow)",
+            color: "var(--brand-yellow)",
           }}
         >
           {fmtK(family.totalFamilyArr)}
@@ -430,7 +430,7 @@ function ParentRow({
           style={{
             ...tdStyle,
             textAlign: "center",
-            color: family.enrRank ? "var(--kojo-yellow)" : "var(--muted)",
+            color: family.enrRank ? "var(--brand-yellow)" : "var(--muted)",
             fontWeight: family.enrRank ? 500 : 400,
           }}
         >

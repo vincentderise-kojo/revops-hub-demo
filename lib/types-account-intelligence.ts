@@ -101,11 +101,11 @@ export interface AccountFamily {
 // ── ENR Matching types ──
 
 export type MatchConfidence = "Tag" | "Manual" | "Name+State" | "Name";
-export type KojoStatus = "Customer" | "Former" | "Active Opp" | "Not in SFDC";
+export type MatchStatus = "Customer" | "Former" | "Active Opp" | "Not in SFDC";
 
 export interface EnrMatch {
   enrFirm: EnrFirm;
-  kojoStatus: KojoStatus;
+  matchStatus: MatchStatus;
   isIcp: boolean;
   matchConfidence: MatchConfidence | null;
   matchedAccount: SfdcAccount | null;
@@ -194,7 +194,7 @@ export interface AccountIntelligenceData {
 // ── Hero stat types ──
 
 export interface EnrHeroStats {
-  kojoCustomers: number;
+  matchedCustomers: number;
   activeOpps: number;
   notInSfdc: number;
   enrCustomerArr: number;

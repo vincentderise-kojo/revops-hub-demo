@@ -155,7 +155,7 @@ export default function ScenariosDashboard({ data }: { data: ScenariosData }) {
   return (
     <>
       {/* CRESTLINE HEADER */}
-      <div className="kojo-header">
+      <div className="brand-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <a href="/hub" style={{ fontSize: 15, fontWeight: 800, color: "#FFE500", letterSpacing: 1.5, textDecoration: "none" }}>CRESTLINE</a>
           <span style={{ width: 1, height: 16, background: "#555", display: "inline-block" }} />
@@ -180,7 +180,7 @@ export default function ScenariosDashboard({ data }: { data: ScenariosData }) {
       {/* APP HEADER */}
       <div style={{ padding: "16px 20px 12px", borderBottom: "1px solid var(--border)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div style={{ width: 8, height: 8, borderRadius: 4, background: "var(--kojo-yellow)", boxShadow: "0 0 8px #FFE50088" }} />
+          <div style={{ width: 8, height: 8, borderRadius: 4, background: "var(--brand-yellow)", boxShadow: "0 0 8px #FFE50088" }} />
           <span style={{ fontSize: 18, fontWeight: 700, letterSpacing: -0.5 }}>Pipeline Scenarios</span>
           <span style={{ fontSize: 11, color: "var(--muted)", marginLeft: 4 }}>Backtest &amp; What-If Modeling</span>
         </div>

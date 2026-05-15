@@ -84,7 +84,7 @@ export default function UpdatesPage({ entries }: { entries: ChangelogEntry[] }) 
   return (
     <>
       {/* KOJO HEADER BAR */}
-      <div className="kojo-header">
+      <div className="brand-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <a href="/hub" style={{ fontSize: 15, fontWeight: 800, color: "#FFE500", letterSpacing: 1.5, textDecoration: "none" }}>KOJO</a>
           <span style={{ width: 1, height: 16, background: "#555", display: "inline-block" }} />

@@ -314,7 +314,7 @@ export default function CoverageDashboard({ data, quotaMap }: { data: CoverageSt
   return (
     <>
       {/* CRESTLINE HEADER BAR */}
-      <div className="kojo-header">
+      <div className="brand-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <a href="/hub" style={{ fontSize: 15, fontWeight: 800, color: "#FFE500", letterSpacing: 1.5, textDecoration: "none" }}>CRESTLINE</a>
           <span style={{ width: 1, height: 16, background: "#555", display: "inline-block" }} />

@@ -10,7 +10,7 @@ function pctDisplay(rate: number): string {
 const statusColors: Record<string, string> = {
   Accepted: "var(--green)",
   Rejected: "#ff6b6b",
-  Pending: "var(--kojo-yellow)",
+  Pending: "var(--brand-yellow)",
 };
 
 function formatDate(iso: string): string {
@@ -49,7 +49,7 @@ export default function MmSdrSaoPipeline({ data }: { data: SaoPipelineState }) {
                 <td style={{ textAlign: "center", padding: 8, color: r.rejected > 0 ? "#ff6b6b" : "#ccc", fontWeight: r.rejected > 0 ? 600 : 400 }}>
                   {r.rejected}
                 </td>
-                <td style={{ textAlign: "center", padding: 8, color: r.acceptanceRate >= 0.8 ? "var(--green)" : r.acceptanceRate >= 0.6 ? "var(--kojo-yellow)" : "#ff6b6b", fontWeight: 600 }}>
+                <td style={{ textAlign: "center", padding: 8, color: r.acceptanceRate >= 0.8 ? "var(--green)" : r.acceptanceRate >= 0.6 ? "var(--brand-yellow)" : "#ff6b6b", fontWeight: 600 }}>
                   {pctDisplay(r.acceptanceRate)}
                 </td>
                 <td style={{ textAlign: "center", padding: 8, color: "#bbb" }}>{r.pending}</td>

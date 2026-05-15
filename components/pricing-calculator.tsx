@@ -218,7 +218,7 @@ export default function PricingCalculator() {
   return (
     <>
       {/* Crestline header */}
-      <div className="kojo-header">
+      <div className="brand-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <a
             href="/hub"
@@ -468,7 +468,7 @@ export default function PricingCalculator() {
                       padding: "10px 16px",
                       background:
                         termMonths === t.months
-                          ? "var(--kojo-yellow)"
+                          ? "var(--brand-yellow)"
                           : "var(--bg)",
                       color:
                         termMonths === t.months ? "#1a1a1a" : "var(--muted)",
@@ -585,7 +585,7 @@ export default function PricingCalculator() {
                   max={100}
                   value={discountPct}
                   onChange={(e) => setDiscountPct(Number(e.target.value))}
-                  style={{ flex: 1, accentColor: "var(--kojo-yellow)" }}
+                  style={{ flex: 1, accentColor: "var(--brand-yellow)" }}
                 />
                 <input
                   type="number"
@@ -678,7 +678,7 @@ export default function PricingCalculator() {
                         width: 18,
                         height: 18,
                         borderRadius: 4,
-                        background: row.checked ? "var(--kojo-yellow)" : "transparent",
+                        background: row.checked ? "var(--brand-yellow)" : "transparent",
                         border: row.checked ? "none" : "2px solid #555",
                         display: "flex",
                         alignItems: "center",
@@ -754,7 +754,7 @@ export default function PricingCalculator() {
                   <td
                     style={{
                       fontWeight: 600,
-                      color: row.checked ? "var(--kojo-yellow)" : "var(--muted)",
+                      color: row.checked ? "var(--brand-yellow)" : "var(--muted)",
                       textDecoration: row.checked ? "none" : "line-through",
                     }}
                   >
@@ -873,7 +873,7 @@ export default function PricingCalculator() {
                   style={{
                     fontWeight: 700,
                     fontSize: 13,
-                    color: "var(--kojo-yellow)",
+                    color: "var(--brand-yellow)",
                   }}
                 >
                   {fmtDollar(pricing.rom.discountedAcv)}
@@ -921,7 +921,7 @@ export default function PricingCalculator() {
                 background: "var(--bg)",
                 borderRadius: 8,
                 padding: 16,
-                borderLeft: "3px solid var(--kojo-yellow)",
+                borderLeft: "3px solid var(--brand-yellow)",
               }}
             >
               <div
@@ -951,7 +951,7 @@ export default function PricingCalculator() {
                   style={{
                     fontSize: 24,
                     fontWeight: 700,
-                    color: "var(--kojo-yellow)",
+                    color: "var(--brand-yellow)",
                   }}
                 >
                   {fmtDollar(pricing.rom.listAcv + 10000)}
@@ -960,7 +960,7 @@ export default function PricingCalculator() {
               <div
                 style={{ marginTop: 6, fontSize: 11, color: "var(--muted)" }}
               >
-                <span style={{ color: "var(--kojo-yellow)" }}>±$10k</span>{" "}
+                <span style={{ color: "var(--brand-yellow)" }}>±$10k</span>{" "}
                 of whole-deal BPS list price
               </div>
             </div>
@@ -991,7 +991,7 @@ export default function PricingCalculator() {
                 {
                   label: "Discounted ACV",
                   value: fmtDollar(pricing.rom.discountedAcv),
-                  color: "var(--kojo-yellow)",
+                  color: "var(--brand-yellow)",
                 },
                 ...(pricing.rom.oneTimeTotal > 0
                   ? [

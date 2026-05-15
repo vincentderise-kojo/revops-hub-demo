@@ -127,7 +127,7 @@ export default function Dashboard({ data, sdrData, aePerformance, inspections }:
       )}
 
       {/* CRESTLINE HEADER BAR */}
-      <div className="kojo-header">
+      <div className="brand-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <a
             href="/hub"
@@ -203,7 +203,7 @@ export default function Dashboard({ data, sdrData, aePerformance, inspections }:
                 width: 8,
                 height: 8,
                 borderRadius: 4,
-                background: "var(--kojo-yellow)",
+                background: "var(--brand-yellow)",
                 boxShadow: "0 0 8px #FFE50088",
               }}
             />

@@ -57,7 +57,7 @@ export default function SdrKpiCards({ data }: { data: KpiData }) {
       value: `${Math.round(data.conversionRate * 100)}%`,
       format: "pct" as const,
       trend: data.conversionWow,
-      valueColor: "var(--kojo-yellow)",
+      valueColor: "var(--brand-yellow)",
     },
   ];
 

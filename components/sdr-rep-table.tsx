@@ -12,13 +12,13 @@ interface RepTableData {
 
 function paceColor(pct: number): string {
   if (pct >= 90) return "var(--green)";
-  if (pct >= 75) return "var(--kojo-yellow)";
+  if (pct >= 75) return "var(--brand-yellow)";
   return "#ff6b6b";
 }
 
 function gapColor(gap: number): string {
   if (gap > 0) return "var(--green)";
-  if (gap === 0) return "var(--kojo-yellow)";
+  if (gap === 0) return "var(--brand-yellow)";
   return "#ff6b6b";
 }
 
