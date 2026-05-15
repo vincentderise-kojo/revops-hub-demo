@@ -8,9 +8,12 @@ export interface MonthlyQuota {
 }
 
 export const MONTHLY_QUOTAS: Record<string, MonthlyQuota> = {
-  "2026-01": { totalQuota: 662708, mmQuota: 321000, entQuota: 341708 },
-  "2026-02": { totalQuota: 672708, mmQuota: 321000, entQuota: 351708 },
-  "2026-03": { totalQuota: 682000, mmQuota: 321000, entQuota: 361000 },
+  "2026-01": { totalQuota: 580000, mmQuota: 280000, entQuota: 300000 },
+  "2026-02": { totalQuota: 590000, mmQuota: 280000, entQuota: 310000 },
+  "2026-03": { totalQuota: 600000, mmQuota: 280000, entQuota: 320000 },
+  "2026-04": { totalQuota: 615000, mmQuota: 290000, entQuota: 325000 },
+  "2026-05": { totalQuota: 625000, mmQuota: 290000, entQuota: 335000 },
+  "2026-06": { totalQuota: 635000, mmQuota: 290000, entQuota: 345000 },
 };
 
 // ── Coverage Multiple ──
@@ -60,7 +63,7 @@ export const AE_PERFORMANCE_CONFIG = {
 };
 
 // ── External Links ──
-export const SFDC_BASE_URL = "https://usekojo.lightning.force.com/lightning/r/Opportunity";
+export const SFDC_BASE_URL = "https://crestline.lightning.force.com/lightning/r/Opportunity";
 
 /** Build SFDC opportunity URL from an 18-char opportunity ID. */
 export function sfdcOppUrl(oppId: string): string {
@@ -68,19 +71,19 @@ export function sfdcOppUrl(oppId: string): string {
 }
 
 // ── Monthly Pipeline Creation Goals (Board-Committed) ──
-// Source: Q2'26 Board Pipeline Reporting.xlsx → Board sheet, rows 26-28
+// Source: Crestline FY26 board plan (synthetic). Hardcoded for the demo app.
 // Locked quarterly. AE Self-Set is explicitly excluded from board plan (treated as upside).
 export interface MonthlyPipelineGoal {
-  bdrOutbound: number;     // SDR group (Sadie): SDR Outbound + 6sense/Warmly
-  fieldMarketing: number;  // Marketing group (Alex): Events + Partner + Webinar
-  perfMarketing: number;   // Demand Gen group (Ali): Inbound
+  bdrOutbound: number;     // SDR group (Riley): SDR Outbound + 6sense/Warmly
+  fieldMarketing: number;  // Marketing group (Owen): Events + Partner + Webinar
+  perfMarketing: number;   // Demand Gen group (Priya): Inbound
   totalGoal: number;       // Sum of 3 — excludes AE Self-Set per board plan
 }
 
 export const MONTHLY_PIPELINE_GOALS: Record<string, MonthlyPipelineGoal> = {
-  "2026-04": { bdrOutbound: 1_039_274, fieldMarketing: 378_976, perfMarketing: 480_000,   totalGoal: 1_898_274 },
-  "2026-05": { bdrOutbound: 1_234_022, fieldMarketing: 558_941, perfMarketing: 910_000,   totalGoal: 2_703_022 },
-  "2026-06": { bdrOutbound: 1_429_141, fieldMarketing: 648_924, perfMarketing: 1_170_000, totalGoal: 3_248_141 },
+  "2026-04": { bdrOutbound: 950000,  fieldMarketing: 350000, perfMarketing: 450000,  totalGoal: 1750000 },
+  "2026-05": { bdrOutbound: 1100000, fieldMarketing: 500000, perfMarketing: 850000,  totalGoal: 2450000 },
+  "2026-06": { bdrOutbound: 1300000, fieldMarketing: 600000, perfMarketing: 1100000, totalGoal: 3000000 },
 };
 
 // ── Source Win Rates & CW Shares ──
@@ -114,11 +117,10 @@ export const OPP_SET_TYPE_MAP: Record<string, SourceLabel> = {
 };
 
 // ── Manager → Segment Override ──
-// Per CLAUDE.md: "Sean Coyle = ENT, Jeremy Taylor or Jared Moor = MM"
+// Kevin Brand = MM, Patrick Yu = ENT
 export const MANAGER_SEGMENT_MAP: Record<string, "MM" | "ENT"> = {
-  "Jeremy Taylor": "MM",
-  "Jared Moor": "MM",
-  "Sean Coyle": "ENT",
+  "Kevin Brand": "MM",
+  "Patrick Yu": "ENT",
 };
 
 /**
@@ -147,25 +149,25 @@ export interface OwnerGroupConfig {
 export const OWNER_GROUPS: OwnerGroupConfig[] = [
   {
     group: "Demand Gen",
-    owner: "Ali Karshenas",
+    owner: "Priya Banerjee",
     color: "var(--yellow)",
     sources: ["Inbound"],
   },
   {
     group: "Marketing",
-    owner: "Alex Harmon",
+    owner: "Owen Hartwell",
     color: "var(--blue)",
     sources: ["Events", "Partner", "Webinar"],
   },
   {
     group: "SDR",
-    owner: "Sadie Rankin",
+    owner: "Riley Quinn",
     color: "var(--green)",
     sources: ["SDR Outbound", "6sense/Warmly"],
   },
   {
     group: "Sales",
-    owner: "Jeremy Taylor & Sean Coyle",
+    owner: "Kevin Brand & Patrick Yu",
     color: "var(--teal)",
     sources: ["AE Self-Set"],
   },
@@ -319,12 +321,12 @@ export function getLastLoadedGoalMonth(): string | null {
 // ── Coverage View Config ──
 export const COVERAGE_CONFIG = {
   mm: {
-    requiredPipeline: 1_369_459,
+    requiredPipeline: 1_682_000,
     freshDays: 40,
     agingDays: 70,
   },
   ent: {
-    requiredPipeline: 1_888_110,
+    requiredPipeline: 1_885_500,
     freshDays: 90,
     agingDays: 150,
   },
@@ -347,16 +349,16 @@ export const SCENARIOS_CONFIG = {
   entWinRate: 0.164,
 };
 
-// 2025 monthly quotas (operating plan — $563K/mo baseline)
+// 2025 monthly quotas (operating plan — $490K/mo baseline)
 export const MONTHLY_QUOTAS_2025: Record<string, number> = {
-  "2025-01": 563000, "2025-02": 563000, "2025-03": 563000,
-  "2025-04": 563000, "2025-05": 563000, "2025-06": 563000,
-  "2025-07": 563000, "2025-08": 563000, "2025-09": 563000,
-  "2025-10": 563000, "2025-11": 563000, "2025-12": 563000,
+  "2025-01": 490000, "2025-02": 490000, "2025-03": 490000,
+  "2025-04": 490000, "2025-05": 490000, "2025-06": 490000,
+  "2025-07": 490000, "2025-08": 490000, "2025-09": 490000,
+  "2025-10": 490000, "2025-11": 490000, "2025-12": 490000,
 };
 
-// 2025 segment split ratios (derived from 2026: MM $321K / $682K ≈ 47.1%, ENT ≈ 52.9%)
-export const SEGMENT_QUOTA_SPLIT = { mm: 0.471, ent: 0.529 };
+// 2025 segment split ratios (derived from 2026: MM $280K / $580K ≈ 48.3%, ENT ≈ 51.7%)
+export const SEGMENT_QUOTA_SPLIT = { mm: 0.483, ent: 0.517 };
 
 export function getQuotaForMonth(
   monthKey: string,
@@ -423,7 +425,7 @@ export const SDR_TL_QUOTA = 5;
 
 // ── MM SDR Outbound Targets ──
 export const MM_SDR_TARGETS = {
-  saosPerWeek: 8,           // Jared: "30/month (8/week)"
+  saosPerWeek: 8,           // Marcus: "30/month (8/week)"
   saosPerMonth: 30,
   cwConversionTarget: 0.15, // 15% close-won conversion
 };
@@ -467,7 +469,7 @@ export const AI_CONFIG = {
     "construction", "contracting", "services", "company",
   ],
   revenueDeltaThresholds: { accurate: 0.15, warning: 0.30 },
-  exportPasscode: "revops2026",
+  exportPasscode: "crestline2026",
   stateAbbreviations: {
     "alabama": "AL", "alaska": "AK", "arizona": "AZ", "arkansas": "AR",
     "california": "CA", "calif.": "CA", "colorado": "CO", "colo.": "CO",
@@ -508,11 +510,11 @@ export const UPSELL_CONFIG = {
 } as const;
 
 // ── GMV / Size Signal (Phase 1, static snapshot) ──
-// GMV = T12 product spend from Luke's Customer Summary sheet.
-// Micah's heuristic (4/9 + 4/15): GMV ≈ 30% of Annual Construction Revenue when right-sized.
+// GMV = T12 product spend from Sara's Customer Summary sheet.
+// Daniel's heuristic: GMV ≈ 30% of Annual Construction Revenue when right-sized.
 // Outside 25-35% fires the Size signal (alongside the existing ENR delta) with two motions:
 //   >35% → Reprice (AR likely stale)
-//   <25% → Wallet Share (low Kojo penetration)
+//   <25% → Wallet Share (low Crestline penetration)
 // Strong/moderate tiers measure band distance so we can blend with ENR delta via max().
 export const GMV_CONFIG = {
   lowerBand: 0.25,
