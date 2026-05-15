@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import AuthGate from "@/components/auth-gate";
 
 export const metadata: Metadata = {
   title: "Pipeline Pulse — Source-Adjusted Coverage",
@@ -20,9 +19,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>
-        <AuthGate>{children}</AuthGate>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
