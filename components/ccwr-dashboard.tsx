@@ -775,7 +775,7 @@ export default function CcwrDashboard({ data }: CcwrDashboardProps) {
 
   return (
     <>
-      {/* KOJO HEADER BAR */}
+      {/* CRESTLINE HEADER BAR */}
       <div className="brand-header">
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <a
@@ -788,7 +788,7 @@ export default function CcwrDashboard({ data }: CcwrDashboardProps) {
               textDecoration: "none",
             }}
           >
-            KOJO
+            CRESTLINE
           </a>
           <span
             style={{

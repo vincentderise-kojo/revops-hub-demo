@@ -191,9 +191,8 @@ const APPS: AppEntry[] = [
     category: "PIPELINE",
     route: "/",
     status: "live",
-    automation: "⏰ Mon 9:30 ET → #pipeline-review",
     description:
-      "Weekly pipeline creation dashboard tracking Q2'26 board-plan targets by owner group (BDR/Field/Perf + AE upside). Scoreboard, MTD tracker, Q2 pacing charts, deal list with period/group filters, and All/MM/ENT segment toggle. Auto-posts a Block Kit exec summary to #pipeline-review every Monday at 9:30am ET via Vercel Cron (route: /api/cron/monday-pulse), DST-aware, with fail-closed sanity gate and Slack-history idempotency.",
+      "Weekly pipeline creation dashboard tracking Q2'26 board-plan targets by owner group (BDR/Field/Perf + AE upside). Scoreboard, MTD tracker, Q2 pacing charts, deal list with period/group filters, and All/MM/ENT segment toggle.",
   },
   {
     name: "AE Performance",
