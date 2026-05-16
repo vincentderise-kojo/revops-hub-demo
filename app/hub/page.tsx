@@ -60,15 +60,6 @@ export default async function HubPage() {
       lastUpdated: lastUpdated ?? undefined,
     },
     {
-      title: "AE Performance",
-      category: "PIPELINE",
-      description:
-        "Per-AE follow-up speed, pipeline staleness, and self-set volume — exception management for inbound/event accountability.",
-      status: "Live",
-      href: "/",
-      accentColor: "var(--teal)",
-    },
-    {
       title: "Pipeline Coverage",
       category: "PIPELINE",
       description:
